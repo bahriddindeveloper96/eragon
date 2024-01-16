@@ -1,25 +1,30 @@
+<?php
+
+/** @var \yii\web\View $this */
+/** @var string $content */
+
+use common\widgets\Alert;
+use frontend\assets\AppAsset;
+use yii\bootstrap5\Breadcrumbs;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\Nav;
+use yii\bootstrap5\NavBar;
+
+AppAsset::register($this);
+?>
+<?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="en-US" itemscope="itemscope">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <title>Techmarket HTML</title>
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/font-techmarket.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/techmarket-font-awesome.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/slick-style.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/animate.min.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/colors/blue.css" media="all" />
-       
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900" rel="stylesheet">
         <link rel="shortcut icon" href="images/fav-icon.png">
+        <?php $this->head() ?>
     </head>
     <body class="woocommerce-active page-template-template-homepage-v1 can-uppercase">
+    <?php $this->beginBody() ?>
         <div id="page" class="hfeed site">
             <!-- .top-bar-v1 -->
             <header id="masthead" class="site-header header-v1" style="background-image: none; ">
@@ -342,6 +347,7 @@
                     </div>
                     <!-- .techmarket-sticky-wrap -->
                     <div class="row align-items-center">
+                       
                         <div id="departments-menu" class="dropdown departments-menu">
                             <button class="btn dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="tm tm-departments-thin"></i>
@@ -856,77 +862,70 @@
                             <!-- .input-group -->
                         </form>
                         <!-- .navbar-search -->
-                        <ul class="header-compare nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="compare.html" class="nav-link">
-                                    <i class="tm tm-compare"></i>
-                                    <span id="top-cart-compare-count" class="value">3</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- .header-compare -->
-                        <ul class="header-wishlist nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="wishlist.html" class="nav-link">
-                                    <i class="tm tm-favorites"></i>
-                                    <span id="top-cart-wishlist-count" class="value">3</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- .header-wishlist -->
-                        <ul id="site-header-cart" class="site-header-cart menu">
-                            <li class="animate-dropdown dropdown ">
-                                <a class="cart-contents" href="cart.html" data-toggle="dropdown" title="View your shopping cart">
-                                    <i class="tm tm-shopping-bag"></i>
-                                    <span class="count">2</span>
-                                    <span class="amount">
-                                        <span class="price-label">Your Cart</span>&#036;136.99</span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-mini-cart">
-                                    <li>
-                                        <div class="widget woocommerce widget_shopping_cart">
-                                            <div class="widget_shopping_cart_content">
-                                                <ul class="woocommerce-mini-cart cart_list product_list_widget ">
-                                                    <li class="woocommerce-mini-cart-item mini_cart_item">
-                                                        <a href="#" class="remove" aria-label="Remove this item" data-product_id="65" data-product_sku="">×</a>
-                                                        <a href="single-product-sidebar.html">
-                                                            <img src="images/products/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
-                                                        </a>
-                                                        <span class="quantity">1 ×
-                                                            <span class="woocommerce-Price-amount amount">
-                                                                <span class="woocommerce-Price-currencySymbol">$</span>64.99</span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="woocommerce-mini-cart-item mini_cart_item">
-                                                        <a href="#" class="remove" aria-label="Remove this item" data-product_id="27" data-product_sku="">×</a>
-                                                        <a href="single-product-sidebar.html">
-                                                            <img src="images/products/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
-                                                        </a>
-                                                        <span class="quantity">1 ×
-                                                            <span class="woocommerce-Price-amount amount">
-                                                                <span class="woocommerce-Price-currencySymbol">$</span>72.00</span>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                                <!-- .cart_list -->
-                                                <p class="woocommerce-mini-cart__total total">
-                                                    <strong>Subtotal:</strong>
-                                                    <span class="woocommerce-Price-amount amount">
-                                                        <span class="woocommerce-Price-currencySymbol">$</span>136.99</span>
-                                                </p>
-                                                <p class="woocommerce-mini-cart__buttons buttons">
-                                                    <a href="cart.html" class="button wc-forward">View cart</a>
-                                                    <a href="checkout.html" class="button checkout wc-forward">Checkout</a>
-                                                </p>
+                            <!-- <ul class="header-wishlist nav navbar-nav"> -->
+                            <ul class="site-header-cart header-wishlist">
+                                <li class="nav-item">
+                                    <a href="wishlist.html" class="nav-link">
+                                        <i class="tm tm-favorites"></i>
+                                        <span id="top-cart-wishlist-count" class="value">3</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- .header-wishlist -->
+                            
+                            <ul id="site-header-cart" class="site-header-cart menu">
+                                <li class="animate-dropdown dropdown ">
+                                    <a class="cart-contents" href="cart.html" data-toggle="dropdown" title="View your shopping cart">
+                                        <i class="tm tm-shopping-bag"></i>
+                                        <span class="count">2</span>
+                                        <span class="amount">
+                                            <span class="price-label">Your Cart</span>&#036;136.99</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-mini-cart">
+                                        <li>
+                                            <div class="widget woocommerce widget_shopping_cart">
+                                                <div class="widget_shopping_cart_content">
+                                                    <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                                            <a href="#" class="remove" aria-label="Remove this item" data-product_id="65" data-product_sku="">×</a>
+                                                            <a href="single-product-sidebar.html">
+                                                                <img src="images/products/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
+                                                            </a>
+                                                            <span class="quantity">1 ×
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    <span class="woocommerce-Price-currencySymbol">$</span>64.99</span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                                            <a href="#" class="remove" aria-label="Remove this item" data-product_id="27" data-product_sku="">×</a>
+                                                            <a href="single-product-sidebar.html">
+                                                                <img src="images/products/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
+                                                            </a>
+                                                            <span class="quantity">1 ×
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    <span class="woocommerce-Price-currencySymbol">$</span>72.00</span>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- .cart_list -->
+                                                    <p class="woocommerce-mini-cart__total total">
+                                                        <strong>Subtotal:</strong>
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <span class="woocommerce-Price-currencySymbol">$</span>136.99</span>
+                                                    </p>
+                                                    <p class="woocommerce-mini-cart__buttons buttons">
+                                                        <a href="cart.html" class="button wc-forward">View cart</a>
+                                                        <a href="checkout.html" class="button checkout wc-forward">Checkout</a>
+                                                    </p>
+                                                </div>
+                                                <!-- .widget_shopping_cart_content -->
                                             </div>
-                                            <!-- .widget_shopping_cart_content -->
-                                        </div>
-                                        <!-- .widget_shopping_cart -->
-                                    </li>
-                                </ul>
-                                <!-- .dropdown-menu-mini-cart -->
-                            </li>
-                        </ul>
+                                            <!-- .widget_shopping_cart -->
+                                        </li>
+                                    </ul>
+                                    <!-- .dropdown-menu-mini-cart -->
+                                </li>
+                            </ul>
                         <!-- .site-header-cart -->
                     </div>
                     <!-- /.row -->
@@ -1570,7 +1569,7 @@
                     <!-- .before-footer-wrap -->
                     <div class="footer-widgets-block">
                         <div class="row">
-                            <div class="footer-contact">
+                            <div class="footer-contact col-6">
                                 <div class="footer-logo">
                                     <a href="home-v1.html" class="custom-logo-link" rel="home">
                                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 28">
@@ -1675,8 +1674,8 @@
                                 <!-- .contact-payment-wrap -->
                             </div>
                             <!-- .footer-contact -->
-                            <div class="footer-widgets">
-                                <div class="columns">
+                            <div class="footer-widgets col-6">
+                                <div class="col">
                                     <aside class="widget clearfix">
                                         <div class="body">
                                             <h4 class="widget-title">Find it Fast</h4>
@@ -1709,7 +1708,7 @@
                                     <!-- .widget -->
                                 </div>
                                 <!-- .columns -->
-                                <div class="columns">
+                                <div class="col">
                                     <aside class="widget clearfix">
                                         <div class="body">
                                             <h4 class="widget-title">&nbsp;</h4>
@@ -1742,7 +1741,7 @@
                                     <!-- .widget -->
                                 </div>
                                 <!-- .columns -->
-                                <div class="columns">
+                                <div class="col">
                                     <aside class="widget clearfix">
                                         <div class="body">
                                             <h4 class="widget-title">Customer Care</h4>
@@ -1778,7 +1777,7 @@
                                     <!-- .widget -->
                                 </div>
                                 <!-- .columns -->
-                            </div>
+                            </div>                        
                             <!-- .footer-widgets -->
                         </div>
                         <!-- .row -->
@@ -1800,21 +1799,7 @@
             </footer>
             <!-- .site-footer -->
         </div>
-        
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/tether.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
-        <script type="text/javascript" src="js/hidemaxlistitem.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/hidemaxlistitem.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="js/scrollup.min.js"></script>
-        <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-        <script type="text/javascript" src="js/waypoints-sticky.min.js"></script>
-        <script type="text/javascript" src="js/pace.min.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        
+        <?php $this->endBody() ?>
     </body>
 </html>
+<?php $this->endPage();
