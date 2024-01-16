@@ -3,6 +3,7 @@
 namespace backend\controllers;
 
 use common\models\LoginForm;
+use common\models\User;
 use Yii;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -26,6 +27,7 @@ class SiteController extends Controller
                     [
                         'actions' => ['login', 'error'],
                         'allow' => true,
+                        
                     ],
                     [
                         'actions' => ['logout', 'index'],
@@ -41,6 +43,7 @@ class SiteController extends Controller
                 ],
             ],
         ];
+        
     }
 
     /**
@@ -62,6 +65,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        // $user = User::findOne(['id'=>Yii::$app->request->get('id')]);
+        $user = Yii::$app->request->get('id');
+        // echo '<pre>';
+        // var_dump($user);die();
+        // echo '</pre>';
         return $this->render('index');
     }
 
@@ -76,7 +84,7 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-        $this->layout = 'blank';
+        $this->layout = 'main-login';
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
