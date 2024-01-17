@@ -18,7 +18,7 @@ AppAsset::register($this);
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-        <title>Techmarket HTML</title>
+        <title><?= Html::encode($this->title) ?></title>
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900" rel="stylesheet">
         <link rel="shortcut icon" href="images/fav-icon.png">
         <?php $this->head() ?>
@@ -110,45 +110,7 @@ AppAsset::register($this);
                                                                 <li class="menu-item">
                                                                     <a href="home-v1.html">Home v1</a>
                                                                 </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v2.html">Home v2</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v3.html">Home v3</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v4.html">Home v4</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v5.html">Home v5</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v6.html">Home v6</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v7.html">Home v7</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v8.html">Home v8</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v9.html">Home v9</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v10.html">Home v10</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v11.html">Home v11</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v12.html">Home v12</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v13.html">Home v13</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v14.html">Home v14</a>
-                                                                </li>
+                                                                
                                                             </ul>
                                                             <!-- .menu -->
                                                         </div>
@@ -889,7 +851,7 @@ AppAsset::register($this);
                                                         <li class="woocommerce-mini-cart-item mini_cart_item">
                                                             <a href="#" class="remove" aria-label="Remove this item" data-product_id="65" data-product_sku="">×</a>
                                                             <a href="single-product-sidebar.html">
-                                                                <img src="images/products/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
+                                                                <img src="images/eragon/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
                                                             </a>
                                                             <span class="quantity">1 ×
                                                                 <span class="woocommerce-Price-amount amount">
@@ -899,7 +861,7 @@ AppAsset::register($this);
                                                         <li class="woocommerce-mini-cart-item mini_cart_item">
                                                             <a href="#" class="remove" aria-label="Remove this item" data-product_id="27" data-product_sku="">×</a>
                                                             <a href="single-product-sidebar.html">
-                                                                <img src="images/products/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
+                                                                <img src="images/eragon/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
                                                             </a>
                                                             <span class="quantity">1 ×
                                                                 <span class="woocommerce-Price-amount amount">
@@ -1713,26 +1675,7 @@ AppAsset::register($this);
                                         <div class="body">
                                             <h4 class="widget-title">&nbsp;</h4>
                                             <div class="menu-footer-menu-2-container">
-                                                <ul id="menu-footer-menu-2" class="menu">
-                                                    <li class="menu-item">
-                                                        <a href="shop.html">Printers &#038; Ink</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="shop.html">Audio &amp; Music</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="shop.html">Home Theaters</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="shop.html">PC Components</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="shop.html">Ultrabooks</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="shop.html">Smartwatches</a>
-                                                    </li>
-                                                </ul>
+                                                
                                             </div>
                                             <!-- .menu-footer-menu-2-container -->
                                         </div>
@@ -1785,10 +1728,10 @@ AppAsset::register($this);
                     <!-- .footer-widgets-block -->
                     <div class="site-info">
                         <div class="col-full">
-                            <div class="copyright">Copyright &copy; 2017 <a href="home-v1.html">Techmarket</a> Theme. All rights reserved.</div>
+                            <div class="copyright">Copyright &copy; 2024 <a href="home-v1.html">Eragon.uz</a> Theme. All rights reserved.</div>
                             <!-- .copyright -->
                             <div class="credit">Made with
-                                <i class="fa fa-heart"></i> by bcube.</div>
+                                <i class="fa fa-heart"></i> Mitti.master</div>
                             <!-- .credit -->
                         </div>
                         <!-- .col-full -->
