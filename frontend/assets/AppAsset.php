@@ -24,7 +24,7 @@ class AppAsset extends AssetBundle
         'css/animate.min.css',
         'css/style.css',
         'css/colors/blue.css',
-    ];
+        ];
     public $js = [
         'js/jquery.min.js',
         'js/tether.min.js',
@@ -40,6 +40,7 @@ class AppAsset extends AssetBundle
         'js/pace.min.js',
         'js/slick.min.js',
         'js/scripts.js',
+        
     ];
     public $depends = [
         'yii\web\YiiAsset',
