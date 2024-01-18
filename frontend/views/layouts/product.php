@@ -883,14 +883,23 @@ AppAsset::register($this);
                             <!-- .input-group -->
                         </form>
                         <!-- .navbar-search -->
-                            <ul class="site-header-cart header-wishlist">
-                                <li class="nav-item">
-                                    <a href="wishlist.html" class="nav-link">
-                                        <i class="tm tm-favorites"></i>
-                                        <span id="top-cart-wishlist-count" class="value">3</span>
-                                    </a>
-                                </li>
-                            </ul>
+                        <ul class="header-compare nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="compare.html" class="nav-link">
+                                    <i class="tm tm-compare"></i>
+                                    <span id="top-cart-compare-count" class="value">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- .header-compare -->
+                        <ul class="header-wishlist nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="wishlist.html" class="nav-link">
+                                    <i class="tm tm-favorites"></i>
+                                    <span id="top-cart-wishlist-count" class="value">3</span>
+                                </a>
+                            </li>
+                        </ul>
                         <!-- .header-wishlist -->
                         <ul id="site-header-cart" class="site-header-cart menu">
                             <li class="animate-dropdown dropdown ">
@@ -1588,7 +1597,7 @@ AppAsset::register($this);
                     <!-- .before-footer-wrap -->
                     <div class="footer-widgets-block">
                         <div class="row">
-                            <div class="footer-contact col-6">
+                            <div class="footer-contact">
                                 <div class="footer-logo">
                                     <a href="home-v1.html" class="custom-logo-link" rel="home">
                                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 28">
@@ -1693,8 +1702,8 @@ AppAsset::register($this);
                                 <!-- .contact-payment-wrap -->
                             </div>
                             <!-- .footer-contact -->
-                            <div class="footer-widgets col-6">
-                                <div class="col">
+                            <div class="footer-widgets">
+                                <div class="columns">
                                     <aside class="widget clearfix">
                                         <div class="body">
                                             <h4 class="widget-title">Find it Fast</h4>
@@ -1727,12 +1736,31 @@ AppAsset::register($this);
                                     <!-- .widget -->
                                 </div>
                                 <!-- .columns -->
-                                <div class="col">
+                                <div class="columns">
                                     <aside class="widget clearfix">
                                         <div class="body">
                                             <h4 class="widget-title">&nbsp;</h4>
                                             <div class="menu-footer-menu-2-container">
-                                                
+                                                <ul id="menu-footer-menu-2" class="menu">
+                                                    <li class="menu-item">
+                                                        <a href="shop.html">Printers &#038; Ink</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="shop.html">Audio &amp; Music</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="shop.html">Home Theaters</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="shop.html">PC Components</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="shop.html">Ultrabooks</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="shop.html">Smartwatches</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <!-- .menu-footer-menu-2-container -->
                                         </div>
@@ -1741,7 +1769,7 @@ AppAsset::register($this);
                                     <!-- .widget -->
                                 </div>
                                 <!-- .columns -->
-                                <div class="col">
+                                <div class="columns">
                                     <aside class="widget clearfix">
                                         <div class="body">
                                             <h4 class="widget-title">Customer Care</h4>
@@ -1777,7 +1805,7 @@ AppAsset::register($this);
                                     <!-- .widget -->
                                 </div>
                                 <!-- .columns -->
-                            </div>                        
+                            </div>
                             <!-- .footer-widgets -->
                         </div>
                         <!-- .row -->
@@ -1785,10 +1813,10 @@ AppAsset::register($this);
                     <!-- .footer-widgets-block -->
                     <div class="site-info">
                         <div class="col-full">
-                            <div class="copyright">Copyright &copy; 2024 <a href="home-v1.html">Eragon.uz</a> Theme. All rights reserved.</div>
+                            <div class="copyright">Copyright &copy; 2017 <a href="home-v1.html">Techmarket</a> Theme. All rights reserved.</div>
                             <!-- .copyright -->
                             <div class="credit">Made with
-                                <i class="fa fa-heart"></i> Mitti.master</div>
+                                <i class="fa fa-heart"></i> by bcube.</div>
                             <!-- .credit -->
                         </div>
                         <!-- .col-full -->

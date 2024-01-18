@@ -24,6 +24,7 @@ class AppAsset extends AssetBundle
         'css/animate.min.css',
         'css/style.css',
         'css/colors/blue.css',
+        
         ];
     public $js = [
         'js/jquery.min.js',
