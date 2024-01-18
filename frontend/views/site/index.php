@@ -37,7 +37,6 @@
                                     <header class="section-header">
                                         <h4 class="pre-title">Featured</h4>
                                         <h2 class="section-title">Top categories
-                                            <br>this week</h2>
                                         <nav class="custom-slick-nav"></nav>
                                         <!-- .custom-slick-nav -->
                                         <a class="readmore-link" href="#">Full Catalog</a>
@@ -75,7 +74,7 @@
                                                 <!-- .product-category -->
                                                 <div class="product-category product">
                                                     <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Computers &amp; Laptops" src="images/eragon/cat-comp.png">
+                                                        <img width="224" height="197" alt="Computers &amp; Laptops" src="images/eragon/cat-audi.png">
                                                         <h2 class="woocommerce-loop-category__title">
                                                             Computers &amp; Laptops
                                                         </h2>
@@ -84,7 +83,7 @@
                                                 <!-- .product-category -->
                                                 <div class="product-category product last">
                                                     <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Desktop PCs" src="images/category/20.png">
+                                                        <img width="224" height="197" alt="Desktop PCs" src="images/eragon/cat-tab.png">
                                                         <h2 class="woocommerce-loop-category__title">
                                                             Desktop PCs
                                                         </h2>
@@ -96,24 +95,6 @@
                                                         <img width="224" height="197" alt="Digital Cameras" src="images/category/21.png">
                                                         <h2 class="woocommerce-loop-category__title">
                                                             Digital Cameras
-                                                        </h2>
-                                                    </a>
-                                                </div>
-                                                <!-- .product-category -->
-                                                <div class="product-category product">
-                                                    <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Games &amp; Consoles" src="images/category/22.png">
-                                                        <h2 class="woocommerce-loop-category__title">
-                                                            Games &amp; Consoles
-                                                        </h2>
-                                                    </a>
-                                                </div>
-                                                <!-- .product-category -->
-                                                <div class="product-category product">
-                                                    <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Headphones" src="images/category/23.png">
-                                                        <h2 class="woocommerce-loop-category__title">
-                                                            Headphones
                                                         </h2>
                                                     </a>
                                                 </div>
