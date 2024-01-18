@@ -908,7 +908,7 @@ AppAsset::register($this);
                                                     <li class="woocommerce-mini-cart-item mini_cart_item">
                                                         <a href="#" class="remove" aria-label="Remove this item" data-product_id="65" data-product_sku="">×</a>
                                                         <a href="single-product-sidebar.html">
-                                                            <img src="images/eragon/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
+                                                            <img src="images/products/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
                                                         </a>
                                                         <span class="quantity">1 ×
                                                             <span class="woocommerce-Price-amount amount">
@@ -918,7 +918,7 @@ AppAsset::register($this);
                                                     <li class="woocommerce-mini-cart-item mini_cart_item">
                                                         <a href="#" class="remove" aria-label="Remove this item" data-product_id="27" data-product_sku="">×</a>
                                                         <a href="single-product-sidebar.html">
-                                                            <img src="images/eragon/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
+                                                            <img src="images/products/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
                                                         </a>
                                                         <span class="quantity">1 ×
                                                             <span class="woocommerce-Price-amount amount">
