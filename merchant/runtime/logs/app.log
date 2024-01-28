@@ -1,0 +1,1376 @@
+2024-01-28 13:51:09 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:51:09 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't0fv46eqpesgfqmv5fs1hvvg72'
+    '_identity-backend' => '0b673479d4e48bb0c03b05dd4ff9bdeb621f4392b87ad6804d3fa0125b66aa75a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"RAJofVQByvUqjOwhXu6O27sp7US8riJk\",2592000]\";}'
+    '_csrf-backend' => '0d4f9112f6a8ed93567d91cf90c0a5c2fa5f7ad2e1e66f65049cd5b45bb74ee4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LmPoH193p3JqdmkRnOaUTq6gaptVKXqI\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=t0fv46eqpesgfqmv5fs1hvvg72; _identity-backend=0b673479d4e48bb0c03b05dd4ff9bdeb621f4392b87ad6804d3fa0125b66aa75a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RAJofVQByvUqjOwhXu6O27sp7US8riJk%22%2C2592000%5D%22%3B%7D; _csrf-backend=0d4f9112f6a8ed93567d91cf90c0a5c2fa5f7ad2e1e66f65049cd5b45bb74ee4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LmPoH193p3JqdmkRnOaUTq6gaptVKXqI%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4234'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446269.183
+    'REQUEST_TIME' => 1706446269
+]
+2024-01-28 13:55:36 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:55:36 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4299'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446536.5874
+    'REQUEST_TIME' => 1706446536
+]
+2024-01-28 13:57:12 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:57:12 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4327'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446632.2762
+    'REQUEST_TIME' => 1706446632
+]
+2024-01-28 13:57:15 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:57:15 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4328'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446635.8228
+    'REQUEST_TIME' => 1706446635
+]
+2024-01-28 13:58:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:58:32 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4347'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446711.9862
+    'REQUEST_TIME' => 1706446711
+]
+2024-01-28 13:58:33 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:58:33 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4348'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446713.8061
+    'REQUEST_TIME' => 1706446713
+]
+2024-01-28 13:58:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:58:35 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4349'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446715.0671
+    'REQUEST_TIME' => 1706446715
+]
+2024-01-28 13:58:53 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 13:58:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4355'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706446733.7253
+    'REQUEST_TIME' => 1706446733
+]
+2024-01-28 14:05:29 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:05:29 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4433'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706447129.3305
+    'REQUEST_TIME' => 1706447129
+]
+2024-01-28 14:05:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:05:31 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4434'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706447131.4847
+    'REQUEST_TIME' => 1706447131
+]
+2024-01-28 14:05:43 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:05:43 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4437'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706447143.4143
+    'REQUEST_TIME' => 1706447143
+]
+2024-01-28 14:06:54 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:06:54 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4452'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706447214.9028
+    'REQUEST_TIME' => 1706447214
+]
+2024-01-28 14:10:52 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:10:52 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4502'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706447452.3519
+    'REQUEST_TIME' => 1706447452
+]
+2024-01-28 14:12:18 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:12:18 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-backend' => 'bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8\";}'
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=bf0068dedb1b6879e4c07c6c98e9b72f1a8f1104d4fc086b59a70751cef44c7aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224GfADcjzbhZ1bTvZy0Q6TF_ryaGppFQ8%22%3B%7D; advanced-backend=ntcrmp1nghm8j6u98ft70isbti'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4510'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706447538.4591
+    'REQUEST_TIME' => 1706447538
+]
+2024-01-28 14:25:13 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:25:13 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+    '_csrf-backend' => 'fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=ntcrmp1nghm8j6u98ft70isbti; _csrf-backend=fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4601'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706448313.1679
+    'REQUEST_TIME' => 1706448313
+]
+2024-01-28 14:26:51 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:26:51 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+    '_csrf-backend' => 'fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=ntcrmp1nghm8j6u98ft70isbti; _csrf-backend=fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4617'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706448411.2832
+    'REQUEST_TIME' => 1706448411
+]
+2024-01-28 14:26:53 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:26:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+    '_csrf-backend' => 'fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=ntcrmp1nghm8j6u98ft70isbti; _csrf-backend=fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4618'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706448413.1706
+    'REQUEST_TIME' => 1706448413
+]
+2024-01-28 14:30:18 [127.0.0.1][1][ca70u1up62uqng7oqtkjr88rb3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "category". in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('category', Array)
+#1 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\xampp\htdocs\baxa.uz\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\baxa.uz\merchant\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2024-01-28 14:30:16 [127.0.0.1][1][ca70u1up62uqng7oqtkjr88rb3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'ntcrmp1nghm8j6u98ft70isbti'
+    '_csrf-backend' => 'fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ\";}'
+    'advanced-merchant' => 'ca70u1up62uqng7oqtkjr88rb3'
+    '_identity-vendor' => 'f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba:2:{i:0;s:16:\"_identity-vendor\";i:1;s:46:\"[1,\"RAJofVQByvUqjOwhXu6O27sp7US8riJk\",2592000]\";}'
+    '_csrf-merchant' => 'e406ada4145515357df4a8935a5ecfda54372586535b89ac432bfb6143963674a:2:{i:0;s:14:\"_csrf-merchant\";i:1;s:32:\"9c8Ff80bfPKhFl04E3zUjQBhZ5UWq2Tu\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://baxa.uz/merchant/'
+    '__id' => 1
+    '__authKey' => 'RAJofVQByvUqjOwhXu6O27sp7US8riJk'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=ntcrmp1nghm8j6u98ft70isbti; _csrf-backend=fd2942f6bcb12c3f9e295937e99ad5e9384b22a11df0abb6f9b91fd0e16ba560a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rDZbjAqlqqE8qEhGNqnzeFpOMHrItcgQ%22%3B%7D; advanced-merchant=ca70u1up62uqng7oqtkjr88rb3; _identity-vendor=f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-vendor%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RAJofVQByvUqjOwhXu6O27sp7US8riJk%22%2C2592000%5D%22%3B%7D; _csrf-merchant=e406ada4145515357df4a8935a5ecfda54372586535b89ac432bfb6143963674a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-merchant%22%3Bi%3A1%3Bs%3A32%3A%229c8Ff80bfPKhFl04E3zUjQBhZ5UWq2Tu%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '4666'
+    'REDIRECT_URL' => '/merchant/category'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/category'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706448616.9558
+    'REQUEST_TIME' => 1706448616
+]
