@@ -22,7 +22,7 @@ class m240128_105730_create_product_table extends Migration
             'description' => $this->text(),
             'price' => $this->string(),
             'old_price' => $this->string(),
-            'photo' => $this->string(),
+            'photo' => $this->integer(),
             'created_by' => $this->integer()->notNull(),
             'updated_by' => $this->integer()->notNull(),
         ]);
