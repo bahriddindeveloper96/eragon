@@ -1456,3 +1456,239 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1706459389.2283
     'REQUEST_TIME' => 1706459389
 ]
+2024-01-28 18:54:47 [127.0.0.1][-][-][warning][yii\web\User::renewAuthStatus] Invalid session auth key attempted for user '1' from 127.0.0.1: RAJofVQByvUqjOwhXu6O27sp7US8riJk
+2024-01-28 18:54:46 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-merchant' => 'roe6nc53ku2rdem627hg2og143'
+    '_identity-vendor' => 'f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba:2:{i:0;s:16:\"_identity-vendor\";i:1;s:46:\"[1,\"RAJofVQByvUqjOwhXu6O27sp7US8riJk\",2592000]\";}'
+    '_csrf-merchant' => '317ffe2e759ad707f4c6dff7559a509caf8428e67ed521dc60e5bb579b1fb084a:2:{i:0;s:14:\"_csrf-merchant\";i:1;s:32:\"6wyDWv6Z0e2htPPW0wb0Yqxyi7ktHzV6\";}'
+    '_csrf-backend' => 'fc541936a9fb1208bc0c17d097f8922f1088f11723d413452c8c5ef7242fd213a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kgrNFOy2Gmr5PRWGHWUGJ_QbGiTCRWGy\";}'
+    'advanced-backend' => '0lmnbo6ve7b4ksln2593ejoan2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://baxa.uz/merchant/'
+    '__id' => 1
+    '__authKey' => 'RAJofVQByvUqjOwhXu6O27sp7US8riJk'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-merchant=roe6nc53ku2rdem627hg2og143; _identity-vendor=f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-vendor%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RAJofVQByvUqjOwhXu6O27sp7US8riJk%22%2C2592000%5D%22%3B%7D; _csrf-merchant=317ffe2e759ad707f4c6dff7559a509caf8428e67ed521dc60e5bb579b1fb084a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-merchant%22%3Bi%3A1%3Bs%3A32%3A%226wyDWv6Z0e2htPPW0wb0Yqxyi7ktHzV6%22%3B%7D; _csrf-backend=fc541936a9fb1208bc0c17d097f8922f1088f11723d413452c8c5ef7242fd213a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kgrNFOy2Gmr5PRWGHWUGJ_QbGiTCRWGy%22%3B%7D; advanced-backend=0lmnbo6ve7b4ksln2593ejoan2'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '14259'
+    'REDIRECT_URL' => '/merchant/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706464486.6912
+    'REQUEST_TIME' => 1706464486
+]
+2024-01-28 18:54:47 [127.0.0.1][-][-][warning][yii\web\User::renewAuthStatus] Invalid session auth key attempted for user '1' from 127.0.0.1: RAJofVQByvUqjOwhXu6O27sp7US8riJk
+2024-01-28 18:54:47 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-merchant' => 'roe6nc53ku2rdem627hg2og143'
+    '_identity-vendor' => 'f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba:2:{i:0;s:16:\"_identity-vendor\";i:1;s:46:\"[1,\"RAJofVQByvUqjOwhXu6O27sp7US8riJk\",2592000]\";}'
+    '_csrf-merchant' => '317ffe2e759ad707f4c6dff7559a509caf8428e67ed521dc60e5bb579b1fb084a:2:{i:0;s:14:\"_csrf-merchant\";i:1;s:32:\"6wyDWv6Z0e2htPPW0wb0Yqxyi7ktHzV6\";}'
+    '_csrf-backend' => 'fc541936a9fb1208bc0c17d097f8922f1088f11723d413452c8c5ef7242fd213a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kgrNFOy2Gmr5PRWGHWUGJ_QbGiTCRWGy\";}'
+    'advanced-backend' => '0lmnbo6ve7b4ksln2593ejoan2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://baxa.uz/merchant/'
+    '__id' => 1
+    '__authKey' => 'RAJofVQByvUqjOwhXu6O27sp7US8riJk'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-merchant=roe6nc53ku2rdem627hg2og143; _identity-vendor=f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-vendor%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RAJofVQByvUqjOwhXu6O27sp7US8riJk%22%2C2592000%5D%22%3B%7D; _csrf-merchant=317ffe2e759ad707f4c6dff7559a509caf8428e67ed521dc60e5bb579b1fb084a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-merchant%22%3Bi%3A1%3Bs%3A32%3A%226wyDWv6Z0e2htPPW0wb0Yqxyi7ktHzV6%22%3B%7D; _csrf-backend=fc541936a9fb1208bc0c17d097f8922f1088f11723d413452c8c5ef7242fd213a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kgrNFOy2Gmr5PRWGHWUGJ_QbGiTCRWGy%22%3B%7D; advanced-backend=0lmnbo6ve7b4ksln2593ejoan2'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '14259'
+    'REDIRECT_URL' => '/merchant/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/site/login'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706464487.11
+    'REQUEST_TIME' => 1706464487
+]
+2024-01-28 18:55:17 [127.0.0.1][1][-][warning][yii\web\User::renewAuthStatus] Invalid session auth key attempted for user '1' from 127.0.0.1: RAJofVQByvUqjOwhXu6O27sp7US8riJk
+2024-01-28 18:55:17 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-merchant' => 'VGeSENdnCUIDOBB5UX4fcvF98l3ieOQrPFddttxQSB1sH8IkhARdCUJgWTI1HFQ3iCSrDKkup3pVFjL_qX0HLw=='
+    'LoginVendor' => [
+        'username' => 'vendor'
+        'password' => '1q2w3e4r5t'
+        'rememberMe' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-merchant' => 'roe6nc53ku2rdem627hg2og143'
+    '_identity-vendor' => 'f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba:2:{i:0;s:16:\"_identity-vendor\";i:1;s:46:\"[1,\"RAJofVQByvUqjOwhXu6O27sp7US8riJk\",2592000]\";}'
+    '_csrf-backend' => 'fc541936a9fb1208bc0c17d097f8922f1088f11723d413452c8c5ef7242fd213a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"kgrNFOy2Gmr5PRWGHWUGJ_QbGiTCRWGy\";}'
+    'advanced-backend' => '0lmnbo6ve7b4ksln2593ejoan2'
+    '_csrf-merchant' => '06cb883c8ec04713d0c7064676d3881dee31683e1cef6c6f92599383d1b430bda:2:{i:0;s:14:\"_csrf-merchant\";i:1;s:32:\"8xP4ScTKAXIKdbKEyYYQKVCQiAoIu-O2\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://baxa.uz/merchant/'
+    '__id' => 1
+    '__authKey' => 'gfJSPYF-gX96Ef9ebLU0p00Yk6Lvj0-u'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'baxa.uz'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://baxa.uz'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://baxa.uz/merchant/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6'
+    'HTTP_COOKIE' => 'advanced-merchant=roe6nc53ku2rdem627hg2og143; _identity-vendor=f2bfd27d855f16abc80102aadbc09b1eca78f62c45aff7926ed47bc54d7981aba%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22_identity-vendor%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22RAJofVQByvUqjOwhXu6O27sp7US8riJk%22%2C2592000%5D%22%3B%7D; _csrf-backend=fc541936a9fb1208bc0c17d097f8922f1088f11723d413452c8c5ef7242fd213a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22kgrNFOy2Gmr5PRWGHWUGJ_QbGiTCRWGy%22%3B%7D; advanced-backend=0lmnbo6ve7b4ksln2593ejoan2; _csrf-merchant=06cb883c8ec04713d0c7064676d3881dee31683e1cef6c6f92599383d1b430bda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-merchant%22%3Bi%3A1%3Bs%3A32%3A%228xP4ScTKAXIKdbKEyYYQKVCQiAoIu-O2%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python312\\Scripts\\;C:\\Program Files\\Python312\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;D:\\xampp\\php;C:\\composer;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Users\\admin\\AppData\\Roaming\\Python\\Python312\\Scripts;C:\\Program Files\\heroku\\bin;C:\\Users\\admin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at baxa.uz Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12'
+    'SERVER_NAME' => 'baxa.uz'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs/baxa.uz'
+    'SERVER_ADMIN' => 'baxa.uz'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/baxa.uz/merchant/web/index.php'
+    'REMOTE_PORT' => '14272'
+    'REDIRECT_URL' => '/merchant/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/merchant/site/login'
+    'SCRIPT_NAME' => '/merchant/web/index.php'
+    'PHP_SELF' => '/merchant/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1706464517.6431
+    'REQUEST_TIME' => 1706464517
+]

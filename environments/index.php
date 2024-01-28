@@ -34,6 +34,8 @@ return [
         'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
+            'merchant/runtime',
+            'merchant/web/assets',
             'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
@@ -44,6 +46,7 @@ return [
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
+            'merchant/config/main-local.php',
             'common/config/codeception-local.php',
             'frontend/config/main-local.php',
         ],
@@ -53,6 +56,8 @@ return [
         'setWritable' => [
             'backend/runtime',
             'backend/web/assets',
+            'merchant/runtime',
+            'merchant/web/assets',
             'console/runtime',
             'frontend/runtime',
             'frontend/web/assets',
@@ -62,6 +67,7 @@ return [
         ],
         'setCookieValidationKey' => [
             'backend/config/main-local.php',
+            'merchant/config/main-local.php',
             'frontend/config/main-local.php',
         ],
     ],
