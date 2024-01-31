@@ -22,7 +22,7 @@ class m240128_105730_create_product_table extends Migration
             'description' => $this->text(),
             'price' => $this->string(),
             'old_price' => $this->string(),
-            'photo' => $this->integer(),
+            
             'created_by' => $this->integer()->notNull(),
             'updated_by' => $this->integer()->notNull(),
         ]);
@@ -30,13 +30,13 @@ class m240128_105730_create_product_table extends Migration
         $this->createIndex('index-product_updated_by', 'product', 'updated_by');
         $this->createIndex('index-product_category_id', 'product', 'category_id');
         $this->createIndex('index-product_company_id', 'product', 'company_id');
-        $this->createIndex('index-product_photo_id', 'product', 'photo_id');
+        
 
       $this->addForeignKey('fkey-product_created_by', 'product', 'created_by', 'vendor', 'id', 'RESTRICT', 'RESTRICT');
       $this->addForeignKey('fkey-product_updated_by', 'product', 'updated_by', 'vendor', 'id', 'RESTRICT', 'RESTRICT');
       $this->addForeignKey('fkey-product_category_id', 'product', 'category_id', 'category', 'id', 'RESTRICT', 'RESTRICT');
       $this->addForeignKey('fkey-product_company_id', 'product', 'company_id', 'company', 'id', 'RESTRICT', 'RESTRICT');
-      $this->addForeignKey('fkey-product_photo_id', 'product', 'photo_id', 'photo', 'id', 'RESTRICT', 'RESTRICT');
+      
     }
 
     /**
