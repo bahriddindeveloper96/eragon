@@ -69,11 +69,8 @@
                     //     //     ['label' => 'Level2', 'iconStyle' => 'far']
                     //     // ]
                     // ],
-                    ['label' => 'Product Attribte', 'url' => ['attribute/index'], 'iconStyle' => 'far'],
-                    ['label' => 'Product Value', 'url' => ['value/index'], 'iconStyle' => 'far'],
-                    ['label' => 'Stock', 'header' => true],
-                    ['label' => 'Stock', 'url' => ['stock/index'], 'iconStyle' => 'far'],
-                    ['label' => 'Settings', 'header' => true],
+                    ['label' => 'Level1'],
+                    ['label' => 'LABELS', 'header' => true],
                     ['label' => 'Important', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
                     ['label' => 'Warning', 'iconClass' => 'nav-icon far fa-circle text-warning'],
                     ['label' => 'Informational', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],
