@@ -69,8 +69,8 @@
                     //     //     ['label' => 'Level2', 'iconStyle' => 'far']
                     //     // ]
                     // ],
-                    ['label' => 'Product Attribte', 'url' => ['attribute/index'], 'iconStyle' => 'far'],
-                    ['label' => 'Product Value', 'url' => ['value/index'], 'iconStyle' => 'far'],
+                    ['label' => 'Product Attribte', 'url' => ['product-attribute/index'], 'iconStyle' => 'far'],
+                    ['label' => 'Product Value', 'url' => ['product-value/index'], 'iconStyle' => 'far'],
                     ['label' => 'Stock', 'header' => true],
                     ['label' => 'Stock', 'url' => ['stock/index'], 'iconStyle' => 'far'],
                     ['label' => 'Settings', 'header' => true],
