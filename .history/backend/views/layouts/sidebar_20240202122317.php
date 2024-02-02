@@ -44,7 +44,7 @@
                             ['label' => 'Vendor', 'url' => ['vendor/index'], 'iconStyle' => 'far'],
                         ]
                     ],
-                    ['label' => 'Start marketplace', 'url' => ['/'],'icon' => 'th', 'badge' => '<span class="right badge badge-primary">Go</span>'],
+                    ['label' => 'Start marketplace', 'url' => [''],'icon' => 'th', 'badge' => '<span class="right badge badge-primary">Go</span>'],
                     ['label' => 'Product bars', 'header' => true],
                     ['label' => 'Category', 'url' => ['category/index'], 'iconStyle' => 'far'],
                     ['label' => 'Products', 'url' => ['product/index'], 'iconStyle' => 'far'],

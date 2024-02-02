@@ -35,9 +35,9 @@ $this->params['breadcrumbs'][] = $this->title;
             //'photo_id',
             'name',
             'price',
-            //'old_price',
-            //'description:ntext',    
-            //'content:ntext',
+            'old_price',
+            'description:ntext',    
+            'content:ntext',
                     
             //'photo',
             // 'created_by',
