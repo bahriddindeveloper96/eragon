@@ -1,6 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use common\models\User;
+use common\models\Category;
 
 /** @var yii\web\View $this */
 /** @var common\models\Category $model */
@@ -9,12 +12,32 @@ $this->title = 'Create Category';
 $this->params['breadcrumbs'][] = ['label' => 'Categories', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="category-create">
+<div class="category-form">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+<?php $form = ActiveForm::begin(); ?>
+<?php $category_ids = Category::find()->select(['id', 'name'])->asArray()->all(); ?>
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
+<?= $form->field($model, 'parent_id')->dropDownList(
+    \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
+    ['prompt' => 'Parent Category']
+) ?>
+
+<?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+
+<?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
+
+<?php $user_ids = User::find()->select(['id', 'username'])->asArray()->all(); ?>
+
+<?= $form->field($model, 'created_by')->dropDownList(
+    \yii\helpers\ArrayHelper::map($user_ids, 'id', 'username'),
+    ['prompt' => 'Administrator']
+) ?> 
+
+<div class="form-group">
+    <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+</div>
+
+<?php ActiveForm::end(); ?>
 
 </div>
+

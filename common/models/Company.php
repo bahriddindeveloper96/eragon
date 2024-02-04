@@ -1,7 +1,7 @@
 <?php
 
 namespace common\models;
-
+use common\models\Vendor;
 use Yii;
 
 /**
@@ -37,11 +37,11 @@ class Company extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'created_by', 'updated_by', 'created_at', 'updated_at'], 'required'],
+            [['name', 'created_by', 'updated_by'], 'required'],
             [['inn', 'phone', 'created_by', 'updated_by', 'created_at', 'updated_at'], 'integer'],
             [['name', 'address'], 'string', 'max' => 255],
-            [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['created_by' => 'id']],
-            [['updated_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['updated_by' => 'id']],
+          //  [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['created_by' => 'id']],
+           // [['updated_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['updated_by' => 'id']],
         ];
     }
 
@@ -68,10 +68,16 @@ class Company extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery|yii\db\ActiveQuery
      */
-    public function getCreatedBy()
+    public function getVendor()
     {
-        return $this->hasOne(Vendor::class, ['id' => 'created_by']);
+        return $this->hasOne(Vendor::className(), ['id' => 'created_by']);
     }
+
+    public function getUpdatedBy()
+    {
+        return $this->hasOne(Vendor::className(), ['id' => 'updated_by']);
+    }
+    
 
     /**
      * Gets query for [[Products]].
@@ -88,10 +94,7 @@ class Company extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery|yii\db\ActiveQuery
      */
-    public function getUpdatedBy()
-    {
-        return $this->hasOne(Vendor::class, ['id' => 'updated_by']);
-    }
+   
 
     /**
      * {@inheritdoc}

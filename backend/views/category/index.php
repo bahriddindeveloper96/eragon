@@ -15,8 +15,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="category-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('Create Category', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
@@ -30,10 +28,22 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'parent_id',
+            [
+                'attribute'=> 'parent_id',
+                'value' => function ($data) {
+                 $parent = Category::findOne(['id' => $data->parent_id]);
+                    return $parent ? $parent->name .' '  : '';
+                }
+            ],
             'name',
             'description:ntext',
-            'created_by',
+            [
+                'attribute'=> 'created_by',
+                'value' => function ($data) {
+                // $instruction = Instruction::findOne(['id' => $model->instructions_id]);
+                    return $data ? $data->user->username .' '  : '';
+                }
+            ],
             //'updated_by',
             [
                 'class' => ActionColumn::className(),

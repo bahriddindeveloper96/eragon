@@ -70,13 +70,18 @@ class CategoryController extends Controller
         $model = new Category();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
+            if ($model->load($this->request->post())) {
+                // Assign the value of created_by to updated_by before saving
+                $model->updated_by = $model->created_by;
+    
+                if ($model->save()) {
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
             }
         } else {
             $model->loadDefaultValues();
         }
-
+    
         return $this->render('create', [
             'model' => $model,
         ]);

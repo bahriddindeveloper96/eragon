@@ -5,6 +5,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
+use common\models\Vendor;
 
 /** @var yii\web\View $this */
 /** @var common\models\CompanySearch $searchModel */
@@ -14,9 +15,6 @@ $this->title = 'Companies';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="company-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('Create Company', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
@@ -34,7 +32,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'inn',
             'phone',
             'address',
-            //'created_by',
+            [
+                'attribute'=> 'created_by',
+                'value' => function ($data) {
+                // $instruction = Instruction::findOne(['id' => $model->instructions_id]);
+                    return $data ? $data->vendor->username .' '  : '';
+                }
+            ],
             //'updated_by',
             //'created_at',
             //'updated_at',

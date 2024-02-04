@@ -1,6 +1,8 @@
 <?php
 
 use yii\helpers\Html;
+use common\models\Vendor;
+use yii\widgets\ActiveForm;
 
 /** @var yii\web\View $this */
 /** @var common\models\Company $model */
@@ -11,10 +13,29 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="company-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+<?php $form = ActiveForm::begin(); ?>
 
-    <?= $this->render('_form', [
-        'model' => $model,
-    ]) ?>
+<?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+
+<?= $form->field($model, 'inn')->textInput() ?>
+
+<?= $form->field($model, 'phone')->textInput() ?>
+
+<?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
+
+
+<?php $user_ids = Vendor::find()->select(['id', 'username'])->asArray()->all(); ?>
+
+<?= $form->field($model, 'created_by')->dropDownList(
+    \yii\helpers\ArrayHelper::map($user_ids, 'id', 'username'),
+    ['prompt' => 'Select Sotuvchi']
+) ?> 
+
+<div class="form-group">
+    <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+</div>
+
+<?php ActiveForm::end(); ?>
+
 
 </div>

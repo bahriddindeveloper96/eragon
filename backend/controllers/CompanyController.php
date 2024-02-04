@@ -7,6 +7,8 @@ use common\models\CompanySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\Vendor;
+use yii\helpers\ArrayHelper;
 
 /**
  * CompanyController implements the CRUD actions for Company model.
@@ -66,21 +68,26 @@ class CompanyController extends Controller
      * @return string|\yii\web\Response
      */
     public function actionCreate()
-    {
-        $model = new Company();
+{
+    $model = new Company();
 
-        if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
+    if ($this->request->isPost) {
+        if ($model->load($this->request->post())) {
+            // Assign the value of created_by to updated_by before saving
+            $model->updated_by = $model->created_by;
+
+            if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
-        } else {
-            $model->loadDefaultValues();
         }
-
-        return $this->render('create', [
-            'model' => $model,
-        ]);
+    } else {
+        $model->loadDefaultValues();
     }
+
+    return $this->render('create', [
+        'model' => $model,
+    ]);
+}
 
     /**
      * Updates an existing Company model.

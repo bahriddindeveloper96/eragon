@@ -2,6 +2,9 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use common\models\User;
+use common\models\Category;
+
 
 /** @var yii\web\View $this */
 /** @var common\models\Category $model */
@@ -30,11 +33,29 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'parent_id',
+            [
+                'attribute'=> 'parent_id',
+                'value' => function ($data) {
+                 $parent = Category::findOne(['id' => $data->parent_id]);
+                    return $parent ? $parent->name .' '  : '';
+                }
+            ],
             'name',
             'description:ntext',
-            'created_by',
-            'updated_by',
+            [
+                'attribute'=> 'created_by',
+                'value' => function ($data) {
+                // $instruction = Instruction::findOne(['id' => $model->instructions_id]);
+                    return $data ? $data->user->username .' '  : '';
+                }
+            ],
+            [
+                'attribute'=> 'updated_by',
+                'value' => function ($data) {
+                // $instruction = Instruction::findOne(['id' => $model->instructions_id]);
+                    return $data ? $data->user->username .' '  : '';
+                }
+            ],
         ],
     ]) ?>
 

@@ -1,6 +1,7 @@
 <?php
 
 namespace common\models;
+use common\models\User;
 
 use Yii;
 
@@ -62,7 +63,7 @@ class Category extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery|yii\db\ActiveQuery
      */
-    public function getCreatedBy()
+    public function getUser()
     {
         return $this->hasOne(User::class, ['id' => 'created_by']);
     }
