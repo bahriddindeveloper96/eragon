@@ -25,6 +25,7 @@ return [
     2 => [
         'supervisor',
         'inspector',
+        'xodim',
     ],
     21 => [
         'admin',
