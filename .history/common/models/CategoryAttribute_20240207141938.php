@@ -58,8 +58,8 @@ class CategoryAttribute extends \yii\db\ActiveRecord
      * {@inheritdoc}
      * @return ProductAttributeQuery the active query used by this AR class.
      */
-    // public static function find()
-    // {
-    //     return new CategoryAttributeQuery(get_called_class());
-    // }
+    public static function find()
+    {
+        return new CategoryAttributeQuery(get_called_class());
+    }
 }

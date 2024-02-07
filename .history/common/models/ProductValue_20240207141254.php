@@ -35,7 +35,7 @@ class ProductValue extends \yii\db\ActiveRecord
         return [
             [['attribute_id', 'product_id', 'photo_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
-            [['attribute_id'], 'exist', 'skipOnError' => true, 'targetClass' => CategoryAttribute::class, 'targetAttribute' => ['attribute_id' => 'id']],
+            [['attribute_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductAttribute::class, 'targetAttribute' => ['attribute_id' => 'id']],
            // [['photo_id'], 'exist', 'skipOnError' => true, 'targetClass' => Photo::class, 'targetAttribute' => ['photo_id' => 'id']],
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
@@ -62,7 +62,7 @@ class ProductValue extends \yii\db\ActiveRecord
      */
     public function getAttribute0()
     {
-        return $this->hasOne(CategoryAttribute::class, ['id' => 'attribute_id']);
+        return $this->hasOne(ProductAttribute::class, ['id' => 'attribute_id']);
     }
 
     /**
@@ -70,10 +70,10 @@ class ProductValue extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery|PhotoQuery
      */
-    // public function getPhoto()
-    // {
-    //     return $this->hasOne(Photo::class, ['id' => 'photo_id']);
-    // }
+    public function getPhoto()
+    {
+        return $this->hasOne(Photo::class, ['id' => 'photo_id']);
+    }
 
     /**
      * Gets query for [[Product]].

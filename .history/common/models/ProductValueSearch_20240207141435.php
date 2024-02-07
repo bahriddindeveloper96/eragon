@@ -17,7 +17,7 @@ class ProductValueSearch extends ProductValue
     public function rules()
     {
         return [
-            [['id', 'attribute_id', 'product_id'], 'integer'],
+            [['id', 'attribute_id', 'product_id', 'photo_id'], 'integer'],
             [['name'], 'safe'],
         ];
     }
