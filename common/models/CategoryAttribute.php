@@ -1,16 +1,17 @@
 <?php
 
 namespace common\models;
-use common\models\CategoryAttributeQuery;
 
 use Yii;
 
 /**
- * This is the model class for table "product_attribute".
+ * This is the model class for table "category_attribute".
  *
  * @property int $id
+ * @property int $category_id
  * @property string|null $name
  *
+ * @property Category $category
  * @property ProductValue[] $productValues
  */
 class CategoryAttribute extends \yii\db\ActiveRecord
@@ -29,7 +30,10 @@ class CategoryAttribute extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['category_id'], 'required'],
+            [['category_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
+            [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::class, 'targetAttribute' => ['category_id' => 'id']],
         ];
     }
 
@@ -40,26 +44,28 @@ class CategoryAttribute extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
+            'category_id' => 'Category ID',
             'name' => 'Name',
         ];
     }
 
     /**
+     * Gets query for [[Category]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategory()
+    {
+        return $this->hasOne(Category::class, ['id' => 'category_id']);
+    }
+
+    /**
      * Gets query for [[ProductValues]].
      *
-     * @return \yii\db\ActiveQuery|ProductValueQuery
+     * @return \yii\db\ActiveQuery
      */
     public function getProductValues()
     {
         return $this->hasMany(ProductValue::class, ['attribute_id' => 'id']);
     }
-
-    /**
-     * {@inheritdoc}
-     * @return ProductAttributeQuery the active query used by this AR class.
-     */
-    // public static function find()
-    // {
-    //     return new CategoryAttributeQuery(get_called_class());
-    // }
 }

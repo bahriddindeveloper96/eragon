@@ -7,18 +7,18 @@ use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var common\models\ProductAttributeSearch $searchModel */
+/** @var common\models\CategoryAttributeSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Category Attributes';
+$this->title = Yii::t('app', 'Category Attributes');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="product-attribute-index">
+<div class="category-attribute-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Product Attribute', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Category Attribute'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
+            'category_id',
             'name',
             [
                 'class' => ActionColumn::className(),

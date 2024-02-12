@@ -7,7 +7,7 @@ use yii\data\ActiveDataProvider;
 use common\models\CategoryAttribute;
 
 /**
- * ProductAttributeSearch represents the model behind the search form of `common\models\ProductAttribute`.
+ * CategoryAttributeSearch represents the model behind the search form of `common\models\CategoryAttribute`.
  */
 class CategoryAttributeSearch extends CategoryAttribute
 {
@@ -17,7 +17,7 @@ class CategoryAttributeSearch extends CategoryAttribute
     public function rules()
     {
         return [
-            [['id'], 'integer'],
+            [['id', 'category_id'], 'integer'],
             [['name'], 'safe'],
         ];
     }
@@ -59,6 +59,7 @@ class CategoryAttributeSearch extends CategoryAttribute
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'category_id' => $this->category_id,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name]);
