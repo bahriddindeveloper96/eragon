@@ -14,10 +14,11 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Category Attributes'
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">
-    <div class="container">
+    
         <?php $form = ActiveForm::begin([
                     'id' => 'dynamic-form',
                     'enableClientValidation' => false,
+                    
                     'options' => [
                         'enctype' => 'multipart/form-data',
                     ]
@@ -26,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <i class="fa fa-toggle-down " id = "close2" onclick=closePanel2(); style="font-size:24px;color:blue; " ></i> 
                    
             <div class="row" id="content2"  >
-                <div class="box box-default" style="display: inline-block">           
+                <div class="box box-default" style="display: inline-block; width:90%;">           
                     <div class="panel-body">
                         <?php DynamicFormWidget::begin([
                             'widgetContainer' => 'dynamicform_wrapper', // required: only alphanumeric characters plus "_" [A-Za-z0-9_]
@@ -49,23 +50,24 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <div class="item panel panel-default"><!-- widgetBody -->
                                     <div class="panel-heading">
                                         <div class="pull-right">
-                                            <button type="button" class="add-item btn btn-success btn-xs"><i class="fa fa-plus"></i></button>
-                                            <button type="button" class="remove-item btn btn-danger btn-xs"><i class="fa fa-minus"></i></button>
+                                            <button type="button" class="add-item btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button>
+                                            <button type="button" class="remove-item btn btn-danger btn-xs"><i class="fa fa-minus fa-2x"></i></button>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                     <?php $category_ids = Category::find()->select(['id', 'name'])->asArray()->all(); ?>
                                     <div class="panel-body">
                                         <div class="row">                                        
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-6">
                                                 <?= $form->field($prevent, "[{$i}]category_id")->dropDownList(
                                                     \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
                                                     ['prompt' => 'Category']
                                                 ) ?>
                                             </div>
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-6">
                                                 <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
                                             </div>
+                                            
                                                                         
                                         </div><!-- .row -->
                                     </div>
@@ -82,5 +84,5 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
 
             <?php ActiveForm::end(); ?>
-    </div>
+    
 </div>

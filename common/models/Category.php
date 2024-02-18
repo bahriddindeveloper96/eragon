@@ -2,6 +2,7 @@
 
 namespace common\models;
 use common\models\User;
+use common\models\CategoryAttribute;
 
 use Yii;
 
@@ -76,6 +77,9 @@ class Category extends \yii\db\ActiveRecord
     public function getUpdatedBy()
     {
         return $this->hasOne(User::class, ['id' => 'updated_by']);
+    }
+    public function getCategoryAttributes(){
+        return $this->hasMany(CategoryAttribute::class,['category_id'=>'id']);
     }
 
     /**

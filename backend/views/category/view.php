@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 use common\models\User;
 use common\models\Category;
+use common\models\CategoryAttribute;
 
 
 /** @var yii\web\View $this */
@@ -58,5 +59,24 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ],
     ]) ?>
+
+<h2>Category Attributes</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <!-- Add more headers if needed -->
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($categoryAttributes as $attribute): ?>
+            <tr>
+                <td><?= $attribute->name ?></td>
+                <!-- Display more attribute fields if needed -->
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
 
 </div>
