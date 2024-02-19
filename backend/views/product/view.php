@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use common\models\CategoryAttribute;
 
 /** @var yii\web\View $this */
 /** @var common\models\Product $model */
@@ -43,5 +44,24 @@ $this->params['breadcrumbs'][] = $this->title;
             'updated_by',
         ],
     ]) ?>
+    <h2>Product Values</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <!-- Add more headers if needed -->
+            </tr>
+        </thead>
+        <tbody>        
+            <?php foreach ($productValues as $attribute): ?>
+                <tr>
+                    <td><?= $attribute->attribute_id ?></td>
+                    <td><?= $attribute->name ?></td>
+                    <!-- Display more attribute fields if needed -->
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 
 </div>

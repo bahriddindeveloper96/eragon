@@ -4,9 +4,13 @@ namespace backend\controllers;
 
 use common\models\ProductValue;
 use common\models\ProductValueSearch;
+use common\models\CategoryAttribute;
+use common\models\CategoryAttributeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\Model;
+use Yii;    
 
 /**
  * ProductValueController implements the CRUD actions for ProductValue model.
@@ -65,20 +69,52 @@ class ProductValueController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
+    // public function actionCreate()
+    // {
+    //     $model = new ProductValue();
+
+    //     if ($this->request->isPost) {
+    //         if ($model->load($this->request->post()) && $model->save()) {
+    //             return $this->redirect(['view', 'id' => $model->id]);
+    //         }
+    //     } else {
+    //         $model->loadDefaultValues();
+    //     }
+
+    //     return $this->render('create', [
+    //         'model' => $model,
+    //     ]);
+    // }
     public function actionCreate()
     {
-        $model = new ProductValue();
+       // $model = new CategoryAttribute();
+        $modelsPrevent = [new ProductValue];        
+        if (Yii::$app->request->post()) {
 
-        if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
+            $modelsPrevent = Model::createMultiple(ProductValue::classname(),  $modelsPrevent);
+            Model::loadMultiple($modelsPrevent, $this->request->post());
+
+            foreach ($modelsPrevent as $index => $modelOptionValue) { 
             }
-        } else {
-            $model->loadDefaultValues();
+            if (Model::validateMultiple($modelsPrevent)) {
+                $transaction = Yii::$app->db->beginTransaction();
+                try {
+                    foreach ($modelsPrevent as $key => $product) {                        
+                      //  $product->instructions_id = $id;
+                        $product->save(false);
+                    }
+                    $transaction->commit();
+                    return $this->redirect(['index']);
+                } catch (Exception $e) {
+                    $transaction->rollBack();
+                    throw $e;
+                }
+            }
         }
 
         return $this->render('create', [
-            'model' => $model,
+            'modelsPrevent' =>  $modelsPrevent,
+           // 'company' => $company,
         ]);
     }
 

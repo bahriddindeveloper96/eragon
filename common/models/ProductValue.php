@@ -33,7 +33,7 @@ class ProductValue extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['attribute_id', 'product_id', 'photo_id'], 'integer'],
+            [['attribute_id', 'product_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
             [['attribute_id'], 'exist', 'skipOnError' => true, 'targetClass' => CategoryAttribute::class, 'targetAttribute' => ['attribute_id' => 'id']],
            // [['photo_id'], 'exist', 'skipOnError' => true, 'targetClass' => Photo::class, 'targetAttribute' => ['photo_id' => 'id']],

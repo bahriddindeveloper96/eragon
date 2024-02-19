@@ -11,28 +11,39 @@ use yii\widgets\ActiveForm;
 <div class="product-form">
 
     <?php $form = ActiveForm::begin(); ?>
-
-    <?= $form->field($model, 'category_id')->textInput() ?>
-
-    <?= $form->field($model, 'company_id')->textInput() ?>
-
-    <?= $form->field($model, 'photo_id')->textInput() ?>
-
-    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
-
-    <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
-
-    <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'old_price')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'photo')->textInput() ?>
-
-    <?= $form->field($model, 'created_by')->textInput() ?>
-
-    <?= $form->field($model, 'updated_by')->textInput() ?>
+    <div class="row">
+        <div class="col-sm-4">
+            <?= $form->field($model, 'category_id')->textInput() ?>
+        </div>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'company_id')->textInput() ?>
+        </div>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
+        </div>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'old_price')->textInput(['maxlength' => true]) ?>
+        </div>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'created_by')->textInput() ?>
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col-sm-12">
+            <?= $form->field($model, 'content')->textarea(['rows' => 2]) ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <?= $form->field($model, 'description')->textarea(['rows' => 2]) ?>
+        </div>
+    </div>
+       
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
