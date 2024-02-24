@@ -48,36 +48,22 @@
                     ['label' => 'Start marketplace', 'url' => ['/'],'icon' => 'th', 'badge' => '<span class="right badge badge-primary">Go</span>'],
                     ['label' => 'Product bars', 'header' => true],
                     ['label' => 'Category', 'url' => ['category/index'], 'iconStyle' => 'far'],
-                    ['label' => 'Products', 'url' => ['product/index'], 'iconStyle' => 'far'],
+                    ['label' => 'Products', 'url' => ['product/index'], 'iconStyle' => 'far'],                    
                     //['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
                     //['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],
                     //['label' => 'Debug', 'icon' => 'bug', 'url' => ['/debug'], 'target' => '_blank'],
-                    ['label' => 'Product attribute', 'header' => true],
-                    // ['label' => 'Level1'],
-                    // [
-                    //     'label' => 'Level1',
-                    //     // 'items' => [
-                    //     //     ['label' => 'Level2', 'iconStyle' => 'far'],
-                    //     //     [
-                    //     //         'label' => 'Level2',
-                    //     //         'iconStyle' => 'far',
-                    //     //         'items' => [
-                    //     //             ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                    //     //             ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                    //     //             ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle']
-                    //     //         ]
-                    //     //     ],
-                    //     //     ['label' => 'Level2', 'iconStyle' => 'far']
-                    //     // ]
-                    // ],
-                    ['label' => 'Attribte', 'url' => ['category-attribute/index'], 'iconStyle' => 'far'],
+                    ['label' => 'Product attribute', 'header' => true],              
+                    ['label' => 'Photo', 'url' => ['photo/index'], 'iconStyle' => 'far'],
+                    ['label' => 'Attribute', 'url' => ['category-attribute/index'], 'iconStyle' => 'far'],
                     ['label' => 'Product Value', 'url' => ['product-value/index'], 'iconStyle' => 'far'],
                     ['label' => 'Stock', 'header' => true],
                     ['label' => 'Stock', 'url' => ['stock/index'], 'iconStyle' => 'far'],
                     ['label' => 'Settings', 'header' => true],
+                    
                     ['label' => 'Important', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
                     ['label' => 'Warning', 'iconClass' => 'nav-icon far fa-circle text-warning'],
                     ['label' => 'Informational', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],
+                    ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
                 ],
             ]);
             ?>

@@ -108,18 +108,19 @@ $this->params['breadcrumbs'][] = $this->title;
                                             <div class="clearfix"></div>
                                         </div>                                    
                                         <div class="panel-body">
-                                        <?php $category_ids = CategoryAttribute::find()->select(['id', 'name'])->asArray()->all(); ?>
+                                        <?php $category_item = CategoryAttribute::find()->select(['id', 'name'])->asArray()->all(); ?>
                                         <div class="panel-body">
-                                            <div class="row">
+                                            <div class="row">                                               
                                                 <div class="col-sm-6">
                                                     <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
-                                                        \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
+                                                        \yii\helpers\ArrayHelper::map($category_item, 'id', 'name'),
                                                         ['prompt' => 'Attribute']
                                                     ) ?>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
                                                 </div>
+                                               
                                                 
                                                                             
                                             </div><!-- .row -->
