@@ -137,10 +137,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 </div>
                 <!-- Photo-->
-                <i class="fa fa-toggle-right" id = "open2" onclick=openPanel2(); style="font-size:24px;color:blue;display:none;"></i> 
-                 <i class="fa fa-toggle-down " id = "close2" onclick=closePanel2(); style="font-size:24px;color:blue; " ></i> 
+                <i class="fa fa-toggle-right" id = "open3" onclick=openPanel3(); style="font-size:24px;color:blue;display:none;"></i> 
+                 <i class="fa fa-toggle-down " id = "close3" onclick=closePanel3(); style="font-size:24px;color:blue; " ></i> 
                    
-                <div class="row" id="content2"  >
+                <div class="row" id="content3"  >
                     <div class="box box-default" style="display: inline-block; width:90%;">           
                         <div class="panel-body">
                             <?php DynamicFormWidget::begin([
@@ -154,8 +154,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                 'model' => $modelsPhoto[0],
                                 'formId' => 'dynamic-form',
                                 'formFields' => [
-                                'product_value',
-                                'photo',
+                                 'product_value',
+                                 'photo',
                                 ],
                             ]); ?>
 

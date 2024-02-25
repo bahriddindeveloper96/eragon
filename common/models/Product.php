@@ -1,6 +1,7 @@
 <?php
 
 namespace common\models;
+use common\models\Photo;
 
 use Yii;
 
@@ -109,6 +110,10 @@ class Product extends \yii\db\ActiveRecord
     public function getProductValues()
     {
         return $this->hasMany(ProductValue::class, ['product_id' => 'id']);
+    }
+    public function getPhotos()
+    {
+        return $this->hasMany(Photo::class, ['product_id' => 'id']);
     }
 
     /**
