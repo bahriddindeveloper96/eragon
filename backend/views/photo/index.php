@@ -13,9 +13,7 @@ use yii\grid\GridView;
 $this->title = Yii::t('app', 'Photos');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="photo-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="photo-index">    
 
     <p>
         <?= Html::a(Yii::t('app', 'Create Photo'), ['create'], ['class' => 'btn btn-success']) ?>

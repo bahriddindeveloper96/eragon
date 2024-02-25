@@ -14,9 +14,6 @@ $this->title = 'Product Values';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="product-value-index">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
     <p>
         <?= Html::a('Create Product Value', ['create'], ['class' => 'btn btn-success']) ?>
     </p>

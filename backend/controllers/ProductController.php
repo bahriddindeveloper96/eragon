@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use common\models\Product;
 use common\models\ProductSearch;
+use common\models\Photo;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -87,71 +88,139 @@ class ProductController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
-    // public function actionCreate()
+
+    // public function actionCreate()    
     // {
     //     $model = new Product();
-
-    //     if ($this->request->isPost) {
-    //         if ($model->load($this->request->post()) && $model->save()) {
-    //             return $this->redirect(['view', 'id' => $model->id]);
+    //     $modelsPrevent = [new ProductValue()];   
+    //     $post = Yii::$app->request->post();
+    
+    //     if ($this->request->isPost) {       
+    //         if ($model->load($post)) {
+    //             // Set updated_by attribute to created_by before saving
+    //             $model->updated_by = $model->created_by;           
+    //             if ($model->save()) {
+                   
+    //              }            
+    //             // Load CategoryAttribute models with POST data
+    //             $modelsPrevent = Model::createMultiple(ProductValue::className(),  $modelsPrevent);
+    //             Model::loadMultiple($modelsPrevent, $post);
+    
+    //             // Loop through loaded models
+    //             foreach ($modelsPrevent as $index => $modelOptionValue) {               
+    //                 $modelOptionValue->product_id = $model->id; // Set category_id accordingly
+    //             }
+    
+    //             // Validate CategoryAttribute models
+    //             if (Model::validateMultiple($modelsPrevent)) {
+    //                 $transaction = Yii::$app->db->beginTransaction();
+    //                 try {
+    //                     // Save CategoryAttribute models
+    //                     foreach ($modelsPrevent as $product) {                        
+    //                         $product->save(false);
+    //                     }
+    //                     $transaction->commit();
+    //                     return $this->redirect(['index']);
+    //                 } catch (Exception $e) {
+    //                     $transaction->rollBack();
+    //                     throw $e;
+    //                 }
+    //             }
+    //         } else {
+    //             // Handle the case when Category model fails to save
+    //             // You can log the error or perform any other actions here
+    //             Yii::error('Failed to save the Category model.');
     //         }
-    //     } else {
-    //         $model->loadDefaultValues();
     //     }
-
+        
     //     return $this->render('create', [
+    //         'modelsPrevent' =>  $modelsPrevent,
     //         'model' => $model,
     //     ]);
     // }
-    public function actionCreate()    
-    {
-        $model = new Product();
-        $modelsPrevent = [new ProductValue()];   
-        $post = Yii::$app->request->post();
-    
-        if ($this->request->isPost) {       
-            if ($model->load($post)) {
-                // Set updated_by attribute to created_by before saving
-                $model->updated_by = $model->created_by;           
-                if ($model->save()) {
-                   
-                 }            
-                // Load CategoryAttribute models with POST data
-                $modelsPrevent = Model::createMultiple(ProductValue::className(),  $modelsPrevent);
-                Model::loadMultiple($modelsPrevent, $post);
-    
-                // Loop through loaded models
-                foreach ($modelsPrevent as $index => $modelOptionValue) {               
-                    $modelOptionValue->product_id = $model->id; // Set category_id accordingly
+    public function actionCreate()
+{
+    $model = new Product();
+    $modelsPrevent = [new ProductValue()];
+    $modelsPhoto = [new Photo()];
+    $post = Yii::$app->request->post();   
+
+    if ($this->request->isPost) {       
+        if ($model->load($post)) {
+            // Set updated_by attribute to created_by before saving
+            $model->updated_by = $model->created_by;           
+            if ($model->save()) {
+               
+             }  
+        
+             $modelsPrevent = Model::createMultiple(ProductValue::className(),  $modelsPrevent);
+            Model::loadMultiple($modelsPrevent, $post);
+        
+       
+            foreach ($modelsPrevent as $index => $modelOptionValue) {
+                $modelOptionValue->product_id = $model->id;
+                if (!$modelOptionValue->save(false)) {
+                    throw new \Exception('Failed to save product values.');
                 }
-    
-                // Validate CategoryAttribute models
-                if (Model::validateMultiple($modelsPrevent)) {
-                    $transaction = Yii::$app->db->beginTransaction();
-                    try {
-                        // Save CategoryAttribute models
-                        foreach ($modelsPrevent as $product) {                        
-                            $product->save(false);
-                        }
-                        $transaction->commit();
-                        return $this->redirect(['index']);
-                    } catch (Exception $e) {
-                        $transaction->rollBack();
-                        throw $e;
+            }
+            if (Model::validateMultiple($modelsPrevent)) {
+                $transaction = Yii::$app->db->beginTransaction();
+                try {
+                    // Save CategoryAttribute models
+                    foreach ($modelsPrevent as $product) {                        
+                        $product->save(false);
                     }
+                    $transaction->commit();
+                 //   return $this->redirect(['index']);
+                } catch (Exception $e) {
+                    $transaction->rollBack();
+                    throw $e;
+                }
                 }
             } else {
                 // Handle the case when Category model fails to save
                 // You can log the error or perform any other actions here
                 Yii::error('Failed to save the Category model.');
             }
-        }
-        
-        return $this->render('create', [
-            'modelsPrevent' =>  $modelsPrevent,
-            'model' => $model,
-        ]);
-    }
+            $modelsPhoto = Model::createMultiple(Photo::className(),  $modelsPhoto);
+            Model::loadMultiple($modelsPhoto, $post);
+
+            foreach ($modelsPhoto as $index => $modelValue) {
+                $modelValue->product_id = $model->id;
+                $modelValue->created_by = $model->created_by;
+                $modelValue->updated_by = $model->updated_by;
+ 
+                //$modelValue->product_id = $model->id;
+                if (!$modelValue->save(false)) {
+                    throw new \Exception('Failed to save photos.');
+                }
+            }
+            if (Model::validateMultiple($modelsPhoto)) {
+                $transaction = Yii::$app->db->beginTransaction();
+                try {
+                    // Save CategoryAttribute models
+                    foreach ($modelsPhoto as $photo) {                        
+                        $photo->save(false);
+                    }
+                    $transaction->commit();
+                    return $this->redirect(['index']);
+                } catch (Exception $e) {
+                    $transaction->rollBack();
+                    throw $e;
+                }
+                }
+            } else {
+                // Handle the case when Category model fails to save
+                // You can log the error or perform any other actions here
+                Yii::error('Failed to save the Category model.');
+            }  
+
+    return $this->render('create', [
+        'modelsPrevent' => $modelsPrevent,
+        'modelsPhoto' => $modelsPhoto,
+        'model' => $model,
+    ]);
+}
 
     /**
      * Updates an existing Product model.
