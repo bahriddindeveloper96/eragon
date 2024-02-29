@@ -85,61 +85,7 @@ class ProductController extends Controller
         ]);
     }
 
-    /**
-     * Creates a new Product model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return string|\yii\web\Response
-     */
-
-    // public function actionCreate()    
-    // {
-    //     $model = new Product();
-    //     $modelsPrevent = [new ProductValue()];   
-    //     $post = Yii::$app->request->post();
-    
-    //     if ($this->request->isPost) {       
-    //         if ($model->load($post)) {
-    //             // Set updated_by attribute to created_by before saving
-    //             $model->updated_by = $model->created_by;           
-    //             if ($model->save()) {
-                   
-    //              }            
-    //             // Load CategoryAttribute models with POST data
-    //             $modelsPrevent = Model::createMultiple(ProductValue::className(),  $modelsPrevent);
-    //             Model::loadMultiple($modelsPrevent, $post);
-    
-    //             // Loop through loaded models
-    //             foreach ($modelsPrevent as $index => $modelOptionValue) {               
-    //                 $modelOptionValue->product_id = $model->id; // Set category_id accordingly
-    //             }
-    
-    //             // Validate CategoryAttribute models
-    //             if (Model::validateMultiple($modelsPrevent)) {
-    //                 $transaction = Yii::$app->db->beginTransaction();
-    //                 try {
-    //                     // Save CategoryAttribute models
-    //                     foreach ($modelsPrevent as $product) {                        
-    //                         $product->save(false);
-    //                     }
-    //                     $transaction->commit();
-    //                     return $this->redirect(['index']);
-    //                 } catch (Exception $e) {
-    //                     $transaction->rollBack();
-    //                     throw $e;
-    //                 }
-    //             }
-    //         } else {
-    //             // Handle the case when Category model fails to save
-    //             // You can log the error or perform any other actions here
-    //             Yii::error('Failed to save the Category model.');
-    //         }
-    //     }
-        
-    //     return $this->render('create', [
-    //         'modelsPrevent' =>  $modelsPrevent,
-    //         'model' => $model,
-    //     ]);
-    // }
+  
     public function actionCreate()
 {
     $model = new Product();
@@ -157,6 +103,9 @@ class ProductController extends Controller
         
              $modelsPrevent = Model::createMultiple(ProductValue::className(),  $modelsPrevent);
             Model::loadMultiple($modelsPrevent, $post);
+            echo '<pre>';
+             var_dump($modelsPrevent);die();
+            echo '</pre>';
         
        
             foreach ($modelsPrevent as $index => $modelOptionValue) {
@@ -165,6 +114,7 @@ class ProductController extends Controller
                     throw new \Exception('Failed to save product values.');
                 }
             }
+            
             if (Model::validateMultiple($modelsPrevent)) {
                 $transaction = Yii::$app->db->beginTransaction();
                 try {

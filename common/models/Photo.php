@@ -1,8 +1,6 @@
 <?php
 
 namespace common\models;
-use yiidreamteam\upload\FileUploadBehavior;
-use yii\behaviors\BlameableBehavior;
 
 use Yii;
 
@@ -10,17 +8,14 @@ use Yii;
  * This is the model class for table "photo".
  *
  * @property int $id
- * @property string|null $name
  * @property int $product_id
- * @property int $product_value
- * @property string|null $description
+ * @property string $product_value
  * @property string $photo
  * @property int $created_by
  * @property int $updated_by
  *
  * @property Vendor $createdBy
  * @property Product $product
- * @property ProductValue $productValue
  * @property Vendor $updatedBy
  */
 class Photo extends \yii\db\ActiveRecord
@@ -28,12 +23,10 @@ class Photo extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
-    public $s_photo;
     public static function tableName()
     {
         return 'photo';
     }
-    
 
     /**
      * {@inheritdoc}
@@ -41,13 +34,12 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_id', 'product_value', 'created_by', 'updated_by'], 'required'],
-            [['product_id', 'product_value', 'created_by', 'updated_by'], 'integer'],
-           // [['name', 'description'], 'string', 'max' => 255],
-           // [['photo'],'photo','extensions'=> 'jpg,png'],
+            [['product_id', 'product_value', 'photo', 'created_by', 'updated_by'], 'required'],
+            [['product_id', 'created_by', 'updated_by'], 'integer'],
+            [['product_value'], 'string'],
+            [['photo'], 'string', 'max' => 255],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['created_by' => 'id']],
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
-            [['product_value'], 'exist', 'skipOnError' => true, 'targetClass' => ProductValue::class, 'targetAttribute' => ['product_value' => 'id']],
             [['updated_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['updated_by' => 'id']],
         ];
     }
@@ -59,26 +51,11 @@ class Photo extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-           // 'name' => 'Name',
             'product_id' => 'Product ID',
             'product_value' => 'Product Value',
-          //  'description' => 'Description',
             'photo' => 'Photo',
             'created_by' => 'Created By',
             'updated_by' => 'Updated By',
-        ];
-    }
-
-    public function behaviors()
-    {
-        return [
-            BlameableBehavior::class,           
-            [
-                'class' => FileUploadBehavior::class,
-                'attribute' => 's_photo',
-                'filePath' => '@webroot/uploads/product/[[filename]].[[extension]]',
-                'fileUrl' => '/uploads/product/[[filename]].[[extension]]',
-            ],           
         ];
     }
 
@@ -100,16 +77,6 @@ class Photo extends \yii\db\ActiveRecord
     public function getProduct()
     {
         return $this->hasOne(Product::class, ['id' => 'product_id']);
-    }
-
-    /**
-     * Gets query for [[ProductValue]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getProductValue()
-    {
-        return $this->hasOne(ProductValue::class, ['id' => 'product_value']);
     }
 
     /**

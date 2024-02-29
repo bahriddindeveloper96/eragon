@@ -69,10 +69,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                                 ) ?>
                                             </div>
                                             <div class="col-sm-3">
-                                                <?= $form->field($prevent, "[{$i}]product_value")->dropDownList(
-                                                    \yii\helpers\ArrayHelper::map($value_ids, 'id', 'name'),
-                                                    ['prompt' => 'Value']
-                                                ) ?>
+                                                <?= $form->field($prevent, "[{$i}]product_value")->textarea(['rows' => 6]) ?>
+                                                
                                             </div> 
                                                                                       
                                             <div class="col-sm-3">

@@ -174,10 +174,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                             <div class="row">                                        
                                                 
                                                 <div class="col-sm-4">
-                                                    <?= $form->field($photo, "[{$i}]product_value")->dropDownList(
-                                                        \yii\helpers\ArrayHelper::map($value_ids, 'id', 'name'),
-                                                        ['prompt' => 'Value']
-                                                    ) ?>
+                                                    <?= $form->field($photo, "[{$i}]product_value")->textarea(['rows' => 4])?>
+                                                    
                                                 </div> 
                                                                                         
                                                 

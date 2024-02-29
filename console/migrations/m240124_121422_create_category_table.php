@@ -24,8 +24,8 @@ class m240124_121422_create_category_table extends Migration
         ]);
          $this->createIndex('index-category_created_by', 'category', 'created_by');
           $this->createIndex('index-category_updated_by', 'category', 'updated_by');
-        $this->addForeignKey('fkey-category_created_by', 'category', 'created_by', 'user', 'id', 'RESTRICT', 'RESTRICT');
-        $this->addForeignKey('fkey-category_updated_by', 'category', 'updated_by', 'user', 'id', 'RESTRICT', 'RESTRICT');
+        $this->addForeignKey('fkey-category_created_by', 'category', 'created_by', 'user', 'id', 'CASCADE', 'CASCADE');
+        $this->addForeignKey('fkey-category_updated_by', 'category', 'updated_by', 'user', 'id', 'CASCADE', 'CASCADE');
     }
 
     /**

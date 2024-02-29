@@ -17,8 +17,8 @@ class PhotoSearch extends Photo
     public function rules()
     {
         return [
-            [['id', 'product_id', 'product_value', 'created_by', 'updated_by'], 'integer'],
-            [['photo'], 'safe'],
+            [['id', 'product_id', 'created_by', 'updated_by'], 'integer'],
+            [['product_value', 'photo'], 'safe'],
         ];
     }
 
@@ -60,12 +60,12 @@ class PhotoSearch extends Photo
         $query->andFilterWhere([
             'id' => $this->id,
             'product_id' => $this->product_id,
-            'product_value' => $this->product_value,
             'created_by' => $this->created_by,
             'updated_by' => $this->updated_by,
         ]);
 
-        $query->andFilterWhere(['like', 'photo', $this->photo]);
+        $query->andFilterWhere(['like', 'product_value', $this->product_value])
+            ->andFilterWhere(['like', 'photo', $this->photo]);
 
         return $dataProvider;
     }

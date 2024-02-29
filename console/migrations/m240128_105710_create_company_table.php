@@ -30,8 +30,8 @@ class m240128_105710_create_company_table extends Migration
 
         $this->createIndex('index-company-created_by', 'company', 'created_by');
         $this->createIndex('index-company-updated_by', 'company', 'updated_by');
-        $this->addForeignKey('fkey-company-created_by', 'company', 'created_by', 'vendor', 'id', 'RESTRICT', 'RESTRICT');
-        $this->addForeignKey('fkey-company-updated_by', 'company', 'updated_by', 'vendor', 'id', 'RESTRICT', 'RESTRICT');
+        $this->addForeignKey('fkey-company-created_by', 'company', 'created_by', 'vendor', 'id', 'CASCADE', 'RESTRICT');
+        $this->addForeignKey('fkey-company-updated_by', 'company', 'updated_by', 'vendor', 'id', 'CASCADE', 'RESTRICT');
     }
 
     /**
