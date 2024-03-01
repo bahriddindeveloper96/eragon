@@ -13,6 +13,7 @@ use common\models\Model;
 use yii\helpers\ArrayHelper;
 use yii\web\UploadedFile;
 use yii\helpers\FileHelper;
+use Exception;
 use Yii;
 
 /**
@@ -73,6 +74,7 @@ class ProductController extends Controller
 
         // Load the related category attributes
         $productValues = $model->productValues;
+        $productPhotos = $model->photos;
 
         if ($model === null) {
             throw new NotFoundHttpException('The requested category does not exist.');
@@ -81,7 +83,8 @@ class ProductController extends Controller
         // Render the view page with the category model and its associated attributes
         return $this->render('view', [
             'model' => $model,
-            'productValues' => $productValues,
+            'productValues' => $productValues,        
+            'productPhotos' => $productPhotos,
         ]);
     }
 
@@ -103,9 +106,7 @@ class ProductController extends Controller
         
              $modelsPrevent = Model::createMultiple(ProductValue::className(),  $modelsPrevent);
             Model::loadMultiple($modelsPrevent, $post);
-            echo '<pre>';
-             var_dump($modelsPrevent);die();
-            echo '</pre>';
+           
         
        
             foreach ($modelsPrevent as $index => $modelOptionValue) {

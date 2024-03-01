@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 use common\models\CategoryAttribute;
+use common\models\Photo;
 
 /** @var yii\web\View $this */
 /** @var common\models\Product $model */
@@ -31,14 +32,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'category_id',
             'company_id',
-            'photo_id',
+          //  'photo_id',
             'name',
             'content:ntext',
             'description:ntext',
             'price',
             'old_price',
-            'photo',
-            'created_by',
+         //   'photo',
+         //   'created_by',
             'updated_by',
         ],
     ]) ?>
@@ -56,6 +57,26 @@ $this->params['breadcrumbs'][] = $this->title;
                 <tr>
                     <td><?= $attribute->attribute_id ?></td>
                     <td><?= $attribute->name ?></td>
+                    <!-- Display more attribute fields if needed -->
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <h2>Product Photos</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <!-- Add more headers if needed -->
+            </tr>
+        </thead>
+        <tbody>        
+            <?php foreach ($productPhotos as $attributes): ?>
+                <tr>
+                    <td><?= $attributes->product_id ?></td>
+                   <?php $imageUrl = Yii::getAlias('@fileUrl/').'/backend/web/uploads/product/'.$attributes->photo;?>
+                    <td><img src="<?= Html::encode($imageUrl) ?>" alt="Rasm"width="200"></td>
                     <!-- Display more attribute fields if needed -->
                 </tr>
             <?php endforeach; ?>

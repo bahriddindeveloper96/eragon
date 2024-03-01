@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use common\models\Product;
 use common\models\ProductValue;
 use common\models\Vendor;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 use wbraganca\dynamicform\DynamicFormWidget;
 use common\models\User;

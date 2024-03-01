@@ -13,7 +13,10 @@ use common\models\PhotoValue;
 use yii\web\UploadedFile;
 use yii\helpers\FileHelper;
 use common\models\Vendor;
+use Exception;
 use Yii;
+use yii\filters\AccessControl;
+use yii\helpers\VarDumper;
 
 /**
  * PhotoController implements the CRUD actions for Photo model.

@@ -31,7 +31,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'product_id',
             'product_value',
          //   'description',
-            'photo',
+            //'photo',
+            
+            [
+                'attribute' => 'photo',
+                'value' => Yii::getAlias('@fileUrl/').'backend/web/uploads/product/'.$model->photo,
+                'format' => ['image',['width'=>'200','height'=>'200']],
+            ],
             'created_by',
             'updated_by',
         ],

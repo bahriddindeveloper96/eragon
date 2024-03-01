@@ -1,6 +1,9 @@
 <?php
 
 namespace common\models;
+use yiidreamteam\upload\FileUploadBehavior;
+use yii\behaviors\BlameableBehavior;
+use yii\db\Expression;
 
 use Yii;
 
@@ -23,6 +26,7 @@ class Photo extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $s_photo;
     public static function tableName()
     {
         return 'photo';
@@ -34,9 +38,10 @@ class Photo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_id', 'product_value', 'photo', 'created_by', 'updated_by'], 'required'],
+            [['product_id',  'photo', 'created_by', 'updated_by'], 'required'],
             [['product_id', 'created_by', 'updated_by'], 'integer'],
             [['product_value'], 'string'],
+          //  [['photo'],'photo','extension'=> 'jpg,png'],
             [['photo'], 'string', 'max' => 255],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['created_by' => 'id']],
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
@@ -56,6 +61,18 @@ class Photo extends \yii\db\ActiveRecord
             'photo' => 'Photo',
             'created_by' => 'Created By',
             'updated_by' => 'Updated By',
+        ];
+    }
+    public function behaviors()
+    {
+        return [
+            BlameableBehavior::class,           
+            [
+                'class' => FileUploadBehavior::class,
+                'attribute' => 's_photo',
+                'filePath' => '@webroot/uploads/product/[[filename]].[[extension]]',
+                'fileUrl' => '/uploads/product/[[filename]].[[extension]]',
+            ],           
         ];
     }
 
