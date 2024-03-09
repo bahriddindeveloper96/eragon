@@ -32,16 +32,25 @@ AppAsset::register($this);
                 <div class="col-full">
                     <ul id="menu-top-bar-left" class="nav justify-content-center">
                         <li class="menu-item animate-dropdown">
-                            <a title="TechMarket eCommerce - Always free delivery" href="contact-v1.html">TechMarket eCommerce &#8211; Always free delivery</a>
+                            <a title="TechMarket eCommerce - Always free delivery" href="contact-v1.html">Доставим ваш заказ бесплатно - всего за 3 день!</a>
                         </li>
                         <li class="menu-item animate-dropdown">
-                            <a title="Quality Guarantee of products" href="shop.html">Quality Guarantee of products</a>
+                            <a title="Quality Guarantee of products" href="shop.html">Вопрос-ответ</a>
                         </li>
                         <li class="menu-item animate-dropdown">
-                            <a title="Fast returnings program" href="track-your-order.html">Fast returnings program</a>
+                            <a title="Fast returnings program" href="track-your-order.html">Мои заказы</a>
                         </li>
-                        <li class="menu-item animate-dropdown">
-                            <a title="No additional fees" href="contact-v2.html">No additional fees</a>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487 animate-dropdown dropdown">
+                            <a title="Dollar (US)" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
+                                <i class="tm tm-language"></i>Русский
+                                <span class="caret"></span>
+                            </a>
+                            <ul role="menu" class=" dropdown-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-489 animate-dropdown">
+                                    <a title="AUD" href="#">O'zbekcha</a>
+                                </li>     
+                            </ul>
+                                        <!-- .dropdown-menu -->
                         </li>
                     </ul>
                     <!-- .nav -->
@@ -92,278 +101,82 @@ AppAsset::register($this);
                                     </svg>
                                 </a>
                                 <!-- /.custom-logo-link -->
-                            </div>
-                            <!-- /.site-branding -->
-                            <!-- ============================================================= End Header Logo ============================================================= -->
-                            <nav id="primary-navigation" class="primary-navigation" aria-label="Primary Navigation" data-nav="flex-menu">
-                                <ul id="menu-primary-menu" class="nav yamm">
-                                    <li class="sale-clr yamm-fw menu-item animate-dropdown">
-                                        <a title="Super deals" href="product-category.html">Super deals</a>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children animate-dropdown dropdown">
-                                        <a title="Mother`s Day" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">Mother`s Day <span class="caret"></span></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li class="menu-item animate-dropdown">
-                                                <a title="Wishlist" href="wishlist.html">Wishlist</a>
-                                            </li>
-                                            <li class="menu-item animate-dropdown">
-                                                <a title="Add to compare" href="compare.html">Add to compare</a>
-                                            </li>
-                                            <li class="menu-item animate-dropdown">
-                                                <a title="About Us" href="about.html">About Us</a>
-                                            </li>
-                                            <li class="menu-item animate-dropdown">
-                                                <a title="Track Order" href="track-your-order.html">Track Order</a>
-                                            </li>
-                                        </ul>
-                                        <!-- .dropdown-menu -->
-                                    </li>
-                                    <li class="yamm-fw menu-item menu-item-has-children animate-dropdown dropdown">
-                                        <a title="Pages" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">Pages <span class="caret"></span></a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li class="menu-item menu-item-object-static_block animate-dropdown">
-                                                <div class="yamm-content">
-                                                    <div class="tm-mega-menu">
-                                                        <div class="widget widget_nav_menu">
-                                                            <ul class="menu">
-                                                                <li class="nav-title menu-item">
-                                                                    <a href="#">Home Pages</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v1.html">Home v1</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v2.html">Home v2</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v3.html">Home v3</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v4.html">Home v4</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v5.html">Home v5</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v6.html">Home v6</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v7.html">Home v7</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v8.html">Home v8</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v9.html">Home v9</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v10.html">Home v10</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v11.html">Home v11</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v12.html">Home v12</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v13.html">Home v13</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="home-v14.html">Home v14</a>
-                                                                </li>
-                                                            </ul>
-                                                            <!-- .menu -->
-                                                        </div>
-                                                        <!-- .widget_nav_menu -->
-                                                        <div class="widget widget_nav_menu">
-                                                            <ul class="menu">
-                                                                <li class="nav-title menu-item">
-                                                                    <a href="#">Landing Pages</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="landing-page-v1.html">Landing v1</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="landing-page-v2.html">Landing v2</a>
-                                                                </li>
-                                                                <li class="nav-title menu-item">
-                                                                    <a href="#">Shop Pages</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="shop.html">Shop</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="shop-extended.html">Shop Extended</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="shop-listing.html">Shop Listing</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="shop-listing-large.html">Shop Listing Large</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="shop-listing-with-product-sidebar.html">Shop Listing with Product Sidebar</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="product-category.html">Categories</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="shop-right-sidebar.html">Shop Right Sidebar</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="shop-fullwidth.html">Shop Full Width</a>
-                                                                </li>
-                                                            </ul>
-                                                            <!-- .menu -->
-                                                        </div>
-                                                        <!-- .widget_nav_menu -->
-                                                        <div class="widget widget_nav_menu">
-                                                            <ul class="menu">
-                                                                <li class="nav-title menu-item">
-                                                                    <a href="#">Single Product Pages</a>
-                                                                </li>
-                                                                <li class="menu-item menu-item-object-product">
-                                                                    <a href="single-product-sidebar.html">Single Product Sidebar</a>
-                                                                </li>
-                                                                <li class="menu-item menu-item-object-product">
-                                                                    <a href="single-product-fullwidth.html">Single Product Fullwidth</a>
-                                                                </li>
-                                                                <li class="menu-item menu-item-object-product">
-                                                                    <a href="single-product-extended.html">Single Product Extended</a>
-                                                                </li>
-                                                                <li class="nav-title menu-item">
-                                                                    <a href="#">Ecommerce Pages</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="cart.html">Cart</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="checkout.html">Checkout</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="login-and-register.html">My Account</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="compare.html">Compare</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="wishlist.html">Wishlist</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="track-your-order.html">Track Order</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="terms-and-conditions.html">Terms and Conditions</a>
-                                                                </li>
-                                                            </ul>
-                                                            <!-- .menu -->
-                                                        </div>
-                                                        <!-- .widget_nav_menu -->
-                                                        <div class="widget widget_nav_menu">
-                                                            <ul class="menu">
-                                                                <li class="nav-title menu-item">
-                                                                    <a href="#">Blog Pages</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="blog-v1.html">Blog v1</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="blog-v2.html">Blog v2</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="blog-v3.html">Blog v3</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="blog-fullwidth.html">Blog Full Width</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="blog-single.html">Single Blog Post</a>
-                                                                </li>
-                                                                <li class="nav-title menu-item">
-                                                                    <a href="#">Other Pages</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="about.html">About Us</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="contact-v1.html">Contact v1</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="contact-v2.html">Contact v2</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="faq.html">FAQ</a>
-                                                                </li>
-                                                                <li class="menu-item">
-                                                                    <a href="404.html">404</a>
-                                                                </li>
-                                                            </ul>
-                                                            <!-- .menu -->
-                                                        </div>
-                                                        <!-- .widget_nav_menu -->
-                                                    </div>
-                                                    <!-- .tm-mega-menu -->
-                                                </div>
-                                                <!-- .yamm-content -->
-                                            </li>
-                                            <!-- .menu-item -->
-                                        </ul>
-                                        <!-- .dropdown-menu -->
-                                    </li>
-                                    <li class="menu-item animate-dropdown">
-                                        <a title="Logitech Sale" href="product-category.html">Logitech Sale</a>
-                                    </li>
-                                    <li class="menu-item animate-dropdown">
-                                        <a title="Headphones Sale" href="product-category.html">Headphones Sale</a>
-                                    </li>
-                                    <li class="techmarket-flex-more-menu-item dropdown">
-                                        <a title="..." href="#" data-toggle="dropdown" class="dropdown-toggle">...</a>
-                                        <ul class="overflow-items dropdown-menu"></ul>
-                                        <!-- . -->
-                                    </li>
-                                </ul>
-                                <!-- .nav -->
-                            </nav>
-                            <!-- .primary-navigation -->
-                            <nav id="secondary-navigation" class="secondary-navigation" aria-label="Secondary Navigation" data-nav="flex-menu">
-                                <ul id="menu-secondary-menu" class="nav">
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802 animate-dropdown">
-                                        <a title="Track Your Order" href="track-your-order.html">
-                                            <i class="tm tm-order-tracking"></i>Track Your Order</a>
-                                    </li>
-                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487 animate-dropdown dropdown">
-                                        <a title="Dollar (US)" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
-                                            <i class="tm tm-dollar"></i>Dollar (US)
-                                            <span class="caret"></span>
-                                        </a>
-                                        <ul role="menu" class=" dropdown-menu">
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-489 animate-dropdown">
-                                                <a title="AUD" href="#">AUD</a>
-                                            </li>
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-490 animate-dropdown">
-                                                <a title="INR" href="#">INR</a>
-                                            </li>
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-491 animate-dropdown">
-                                                <a title="AED" href="#">AED</a>
-                                            </li>
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-492 animate-dropdown">
-                                                <a title="SGD" href="#">SGD</a>
-                                            </li>
-                                        </ul>
-                                        <!-- .dropdown-menu -->
-                                    </li>
-                                    <li class="menu-item">
+                            </div>  
+                            <form class="navbar-search" method="get" action="home-v1.html">
+                                <label class="sr-only screen-reader-text" for="search"></label>
+                                <div class="input-group">
+                                    <input type="text" id="search" class="form-control search-field product-search-field" dir="ltr" value="" name="s" placeholder="Искать товары и категории" />
+                                    <!-- .input-group-addon -->
+                                    <div class="input-group-btn input-group-append">
+                                        <input type="hidden" id="search-param" name="post_type" value="product" />
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fa fa-search"></i>
+                                            <span class="search-btn">Поиск</span>
+                                        </button>
+                                    </div>
+                                    <!-- .input-group-btn -->
+                                </div>
+                            <!-- .input-group -->
+                            </form>
+                            <ul class="site-header-cart header-wishlist">
+                                <li class="nav-item-center">
                                         <a title="My Account" href="login-and-register.html">
-                                            <i class="tm tm-login-register"></i>Register or Sign in</a>
-                                    </li>
-                                    <li class="techmarket-flex-more-menu-item dropdown">
-                                        <a title="..." href="#" data-toggle="dropdown" class="dropdown-toggle">...</a>
-                                        <ul class="overflow-items dropdown-menu"></ul>
-                                    </li>
-                                </ul>
-                                <!-- .nav -->
-                            </nav>
-                            <!-- .secondary-navigation -->
+                                            <i class="tm tm-login-register"></i>Регистер и войти</a>
+                                </li>
+                            </ul>
+                            <ul id="site-header-cart" class="site-header-cart menu">
+                                <li class="animate-dropdown dropdown ">
+                                    <a class="cart-contents" href="cart.html" data-toggle="dropdown" title="View your shopping cart">
+                                        <i class="tm tm-shopping-bag"></i>
+                                        <span class="count">2</span>
+                                        <span class="amount">
+                                            <span class="price-label">Корзина</span>&#036;136.99</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-mini-cart">
+                                        <li>
+                                            <div class="widget woocommerce widget_shopping_cart">
+                                                <div class="widget_shopping_cart_content">
+                                                    <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                                            <a href="#" class="remove" aria-label="Remove this item" data-product_id="65" data-product_sku="">×</a>
+                                                            <a href="single-product-sidebar.html">
+                                                                <img src="images/eragon/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
+                                                            </a>
+                                                            <span class="quantity">1 ×
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    <span class="woocommerce-Price-currencySymbol">$</span>64.99</span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                                            <a href="#" class="remove" aria-label="Remove this item" data-product_id="27" data-product_sku="">×</a>
+                                                            <a href="single-product-sidebar.html">
+                                                                <img src="images/eragon/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
+                                                            </a>
+                                                            <span class="quantity">1 ×
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    <span class="woocommerce-Price-currencySymbol">$</span>72.00</span>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- .cart_list -->
+                                                    <p class="woocommerce-mini-cart__total total">
+                                                        <strong>Итого:</strong>
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <span class="woocommerce-Price-currencySymbol">$</span>136.99</span>
+                                                    </p>
+                                                    <p class="woocommerce-mini-cart__buttons buttons">
+                                                        <a href="cart.html" class="button wc-forward">Перейти в корзина</a>
+                                                        <a href="checkout.html" class="button checkout wc-forward">Оформление товара</a>
+                                                    </p>
+                                                </div>
+                                                <!-- .widget_shopping_cart_content -->
+                                            </div>
+                                            <!-- .widget_shopping_cart -->
+                                        </li>
+                                    </ul>
+                                    <!-- .dropdown-menu-mini-cart -->
+                                </li>
+                            </ul> 
                         </div>
                         <!-- /.row -->
                     </div>
@@ -372,7 +185,7 @@ AppAsset::register($this);
                         <div id="departments-menu" class="dropdown departments-menu">
                             <button class="btn dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="tm tm-departments-thin"></i>
-                                <span>All Departments</span>
+                                <span>Каталог</span>
                             </button>
                             <ul id="menu-departments-menu" class="dropdown-menu yamm departments-menu-dropdown">
                                 <li class="highlight menu-item animate-dropdown">
@@ -840,118 +653,48 @@ AppAsset::register($this);
                             </ul>
                         </div>
                         <!-- .departments-menu -->
-                        <form class="navbar-search" method="get" action="home-v1.html">
-                            <label class="sr-only screen-reader-text" for="search">Search for:</label>
-                            <div class="input-group">
-                                <input type="text" id="search" class="form-control search-field product-search-field" dir="ltr" value="" name="s" placeholder="Search for products" />
-                                <div class="input-group-addon search-categories popover-header">
-                                    <select name='product_cat' id='product_cat' class='postform resizeselect'>
-                                        <option value='0' selected='selected'>All Categories</option>
-                                        <option class="level-0" value="television">Televisions</option>
-                                        <option class="level-0" value="home-theater-audio">Home Theater &amp; Audio</option>
-                                        <option class="level-0" value="headphones">Headphones</option>
-                                        <option class="level-0" value="digital-cameras">Digital Cameras</option>
-                                        <option class="level-0" value="cells-tablets">Cells &amp; Tablets</option>
-                                        <option class="level-0" value="smartwatches">Smartwatches</option>
-                                        <option class="level-0" value="games-consoles">Games &amp; Consoles</option>
-                                        <option class="level-0" value="printer">Printer</option>
-                                        <option class="level-0" value="tv-video">TV &amp; Video</option>
-                                        <option class="level-0" value="home-entertainment">Home Entertainment</option>
-                                        <option class="level-0" value="tvs">TVs</option>
-                                        <option class="level-0" value="speakers">Speakers</option>
-                                        <option class="level-0" value="computers-laptops">Computers &amp; Laptops</option>
-                                        <option class="level-0" value="laptops">Laptops</option>
-                                        <option class="level-0" value="ultrabooks">Ultrabooks</option>
-                                        <option class="level-0" value="notebooks">Notebooks</option>
-                                        <option class="level-0" value="desktop-pcs">Desktop PCs</option>
-                                        <option class="level-0" value="mac-computers">Mac Computers</option>
-                                        <option class="level-0" value="all-in-one-pc">All in One PC</option>
-                                        <option class="level-0" value="audio-music">Audio &amp; Music</option>
-                                        <option class="level-0" value="pc-components">PC Components</option>
-                                    </select>
-                                </div>
-                                <!-- .input-group-addon -->
-                                <div class="input-group-btn input-group-append">
-                                    <input type="hidden" id="search-param" name="post_type" value="product" />
-                                    <button type="submit" class="btn btn-primary">
-                                        <i class="fa fa-search"></i>
-                                        <span class="search-btn">Search</span>
-                                    </button>
-                                </div>
-                                <!-- .input-group-btn -->
-                            </div>
-                            <!-- .input-group -->
-                        </form>
-                        <!-- .navbar-search -->
-                            <ul class="site-header-cart header-wishlist">
-                                <li class="nav-item">
-                                    <a href="wishlist.html" class="nav-link">
-                                        <i class="tm tm-favorites"></i>
-                                        <span id="top-cart-wishlist-count" class="value">3</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        <!-- .header-wishlist -->
-                        <ul id="site-header-cart" class="site-header-cart menu">
-                            <li class="animate-dropdown dropdown ">
-                                <a class="cart-contents" href="cart.html" data-toggle="dropdown" title="View your shopping cart">
-                                    <i class="tm tm-shopping-bag"></i>
-                                    <span class="count">2</span>
-                                    <span class="amount">
-                                        <span class="price-label">Your Cart</span>&#036;136.99</span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-mini-cart">
-                                    <li>
-                                        <div class="widget woocommerce widget_shopping_cart">
-                                            <div class="widget_shopping_cart_content">
-                                                <ul class="woocommerce-mini-cart cart_list product_list_widget ">
-                                                    <li class="woocommerce-mini-cart-item mini_cart_item">
-                                                        <a href="#" class="remove" aria-label="Remove this item" data-product_id="65" data-product_sku="">×</a>
-                                                        <a href="single-product-sidebar.html">
-                                                            <img src="images/eragon/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
-                                                        </a>
-                                                        <span class="quantity">1 ×
-                                                            <span class="woocommerce-Price-amount amount">
-                                                                <span class="woocommerce-Price-currencySymbol">$</span>64.99</span>
-                                                        </span>
-                                                    </li>
-                                                    <li class="woocommerce-mini-cart-item mini_cart_item">
-                                                        <a href="#" class="remove" aria-label="Remove this item" data-product_id="27" data-product_sku="">×</a>
-                                                        <a href="single-product-sidebar.html">
-                                                            <img src="images/eragon/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
-                                                        </a>
-                                                        <span class="quantity">1 ×
-                                                            <span class="woocommerce-Price-amount amount">
-                                                                <span class="woocommerce-Price-currencySymbol">$</span>72.00</span>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                                <!-- .cart_list -->
-                                                <p class="woocommerce-mini-cart__total total">
-                                                    <strong>Subtotal:</strong>
-                                                    <span class="woocommerce-Price-amount amount">
-                                                        <span class="woocommerce-Price-currencySymbol">$</span>136.99</span>
-                                                </p>
-                                                <p class="woocommerce-mini-cart__buttons buttons">
-                                                    <a href="cart.html" class="button wc-forward">View cart</a>
-                                                    <a href="checkout.html" class="button checkout wc-forward">Checkout</a>
-                                                </p>
-                                            </div>
-                                            <!-- .widget_shopping_cart_content -->
-                                        </div>
-                                        <!-- .widget_shopping_cart -->
+                        <nav id="primary-navigation" class="primary-navigation" aria-label="Primary Navigation" data-nav="flex-menu">
+                                <ul id="menu-primary-menu" class="nav yamm">
+                                    <li class="sale-clr yamm-fw menu-item animate-dropdown">
+                                        <a title="Super deals" href="product-category.html">Рассрочка</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children animate-dropdown dropdown">
+                                        <a title="Mother`s Day" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">Распродажа <span class="caret"></span></a>
+                                        
+                                        <!-- .dropdown-menu -->
+                                    </li>
+                                    
+                                    <li class="menu-item animate-dropdown">
+                                        <a title="Logitech Sale" href="product-category.html">Карго товара</a>
+                                    </li>                                   
+                                    
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2802 animate-dropdown">
+                                        <a title="Track Your Order" href="track-your-order.html">
+                                            <i class="tm tm-order-tracking"></i> Доставка товара</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487 animate-dropdown dropdown">
+                                        <a title="Dollar (US)" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
+                                            Курсы валют
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul role="menu" class=" dropdown-menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-489 animate-dropdown">
+                                                <a title="AUD" href="#">Сумма (UZD)</a>
+                                            </li>
+                                            
+                                        </ul>
+                                        <!-- .dropdown-menu -->
                                     </li>
                                 </ul>
-                                <!-- .dropdown-menu-mini-cart -->
-                            </li>
-                        </ul>
-                        <!-- .site-header-cart -->
+                                <!-- .nav -->
+                        </nav>                           
                     </div>
                     <!-- /.row -->
                 </div>
-                <!-- .col-full -->
+                <!-- .Мобиле -->
                 <div class="col-full handheld-only">
                     <div class="handheld-header">
+                        <!--Mobile-->
                         <div class="row">
                             <div class="site-branding">
                                 <a href="home-v1.html" class="custom-logo-link" rel="home">
@@ -1500,9 +1243,9 @@ AppAsset::register($this);
                                 <div class="site-search">
                                     <div class="widget woocommerce widget_product_search">
                                         <form role="search" method="get" class="woocommerce-product-search" action="home-v1.html">
-                                            <label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
-                                            <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products&hellip;" value="" name="s" />
-                                            <input type="submit" value="Search" />
+                                            <label class="screen-reader-text" for="woocommerce-product-search-field-0"></label>
+                                            <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Искать товары и категории" value="" name="s" />
+                                            <input type="submit" value="Поиск" />
                                             <input type="hidden" name="post_type" value="product" />
                                         </form>
                                     </div>
@@ -1528,63 +1271,6 @@ AppAsset::register($this);
             <!-- #content -->
             <footer class="site-footer footer-v1">
                 <div class="col-full">
-                    <div class="before-footer-wrap">
-                        <div class="col-full">
-                            <div class="footer-newsletter">
-                                <div class="media">
-                                    <i class="footer-newsletter-icon tm tm-newsletter"></i>
-                                    <div class="media-body">
-                                        <div class="clearfix">
-                                            <div class="newsletter-header">
-                                                <h5 class="newsletter-title">Sign up to Newsletter</h5>
-                                                <span class="newsletter-marketing-text">...and receive
-                                                    <strong>$20 coupon for first shopping</strong>
-                                                </span>
-                                            </div>
-                                            <!-- .newsletter-header -->
-                                            <div class="newsletter-body">
-                                                <form class="newsletter-form">
-                                                    <input type="text" placeholder="Enter your email address">
-                                                    <button class="button" type="button">Sign up</button>
-                                                </form>
-                                            </div>
-                                            <!-- .newsletter body -->
-                                        </div>
-                                        <!-- .clearfix -->
-                                    </div>
-                                    <!-- .media-body -->
-                                </div>
-                                <!-- .media -->
-                            </div>
-                            <!-- .footer-newsletter -->
-                            <div class="footer-social-icons">
-                                <ul class="social-icons nav">
-                                    <li class="nav-item">
-                                        <a class="sm-icon-label-link nav-link" href="#">
-                                            <i class="fa fa-facebook"></i> Facebook</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="sm-icon-label-link nav-link" href="#">
-                                            <i class="fa fa-twitter"></i> Twitter</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="sm-icon-label-link nav-link" href="#">
-                                            <i class="fa fa-google-plus"></i> Google+</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="sm-icon-label-link nav-link" href="#">
-                                            <i class="fa fa-vimeo-square"></i> Vimeo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="sm-icon-label-link nav-link" href="#">
-                                            <i class="fa fa-rss"></i> RSS</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- .footer-social-icons -->
-                        </div>
-                        <!-- .col-full -->
-                    </div>
                     <!-- .before-footer-wrap -->
                     <div class="footer-widgets-block">
                         <div class="row">
@@ -1636,11 +1322,11 @@ AppAsset::register($this);
                                                 <i class="tm tm-call-us-footer"></i>
                                             </span>
                                             <div class="media-body">
-                                                <span class="call-us-title">Got Questions ? Call us 24/7!</span>
-                                                <span class="call-us-text">(800) 8001-8588, (0600) 874 548</span>
-                                                <address class="footer-contact-address">17 Princess Road, London, Greater London NW1 8JR, UK</address>
+                                                <span class="call-us-title">ЕСТЬ ВОПРОСЫ? ЗВОНИТЕ НАМ 24/7!</span>
+                                                <span class="call-us-text">(+998) 99 896 9616, (+998) 99 755 0599</span>
+                                                <address class="footer-contact-address">15 улица Лутфий, район Учтепинский, Ташкент, UZ</address>
                                                 <a href="#" class="footer-address-map-link">
-                                                    <i class="tm tm-map-marker"></i>Find us on map</a>
+                                                    <i class="tm tm-map-marker"></i>Найдите нас на карте</a>
                                             </div>
                                             <!-- .media-body -->
                                         </div>
@@ -1653,7 +1339,7 @@ AppAsset::register($this);
                                                 <i class="tm tm-safe-payments"></i>
                                             </span>
                                             <div class="media-body">
-                                                <h5 class="footer-payment-info-title">We are using safe payments</h5>
+                                                <h5 class="footer-payment-info-title">МЫ ИСПОЛЬЗУЕМ БЕЗОПАСНЫЕ ПЛАТЕЖИ</h5>
                                                 <div class="footer-payment-icons">
                                                     <ul class="list-payment-icons nav">
                                                         <li class="nav-item">
@@ -1672,7 +1358,7 @@ AppAsset::register($this);
                                                 </div>
                                                 <!-- .footer-payment-icons -->
                                                 <div class="footer-secure-by-info">
-                                                    <h6 class="footer-secured-by-title">Secured by:</h6>
+                                                    <h6 class="footer-secured-by-title">Обеспечено:</h6>
                                                     <ul class="footer-secured-by-icons">
                                                         <li class="nav-item">
                                                             <img class="secure-icons-image" src="images/secured-by/norton.svg" alt="norton" />
@@ -1697,7 +1383,7 @@ AppAsset::register($this);
                                 <div class="col">
                                     <aside class="widget clearfix">
                                         <div class="body">
-                                            <h4 class="widget-title">Find it Fast</h4>
+                                            <h4 class="widget-title">Найдите это быстро</h4>
                                             <div class="menu-footer-menu-1-container">
                                                 <ul id="menu-footer-menu-1" class="menu">
                                                     <li class="menu-item">
@@ -1744,30 +1430,26 @@ AppAsset::register($this);
                                 <div class="col">
                                     <aside class="widget clearfix">
                                         <div class="body">
-                                            <h4 class="widget-title">Customer Care</h4>
+                                            <h4 class="widget-title">Обслуживание клиентов</h4>
                                             <div class="menu-footer-menu-3-container">
                                                 <ul id="menu-footer-menu-3" class="menu">
                                                     <li class="menu-item">
-                                                        <a href="login-and-register.html">My Account</a>
+                                                        <a href="#">Мой счет</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="track-your-order.html">Track Order</a>
+                                                        <a href="#">Отследить заказ</a>
+                                                    </li>
+                                                    
+                                                    <li class="menu-item">
+                                                        <a href="#">Избранное</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="shop.html">Shop</a>
+                                                        <a href="#">О нас</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="wishlist.html">Wishlist</a>
+                                                        <a href="#">Возврат/Обмен</a>
                                                     </li>
-                                                    <li class="menu-item">
-                                                        <a href="about.html">About Us</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="terms-and-conditions.html">Returns/Exchange</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="faq.html">FAQs</a>
-                                                    </li>
+                                                    
                                                 </ul>
                                             </div>
                                             <!-- .menu-footer-menu-3-container -->
@@ -1780,15 +1462,43 @@ AppAsset::register($this);
                             </div>                        
                             <!-- .footer-widgets -->
                         </div>
+                        <div class="col-full">                            
+                            <!-- .footer-newsletter -->
+                            <div class="footer-social-icons">
+                                <ul class="social-icons nav">
+                                    <li class="nav-item">
+                                        <a class="sm-icon-label-link nav-link" href="#">
+                                            <i class="fa fa-facebook"></i> Facebook</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="sm-icon-label-link nav-link" href="#">
+                                            <i class="fa fa-twitter"></i> Twitter</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="sm-icon-label-link nav-link" href="#">
+                                            <i class="fa fa-google-plus"></i> Google+</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="sm-icon-label-link nav-link" href="#">
+                                            <i class="fa fa-vimeo-square"></i> Vimeo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="sm-icon-label-link nav-link" href="#">
+                                            <i class="fa fa-rss"></i> RSS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- .footer-social-icons -->
+                        </div>
                         <!-- .row -->
-                    </div>
+                    </div>                   
                     <!-- .footer-widgets-block -->
                     <div class="site-info">
                         <div class="col-full">
-                            <div class="copyright">Copyright &copy; 2024 <a href="home-v1.html">Eragon.uz</a> Theme. All rights reserved.</div>
+                            <div class="copyright">Copyright &copy; 2024 <a href="home-v1.html">Eragon.uz</a> Все права защищены»</div>
                             <!-- .copyright -->
-                            <div class="credit">Made with
-                                <i class="fa fa-heart"></i> Mitti.master</div>
+                            <div class="credit">Сделано с
+                                </i> Mitti.master</div>
                             <!-- .credit -->
                         </div>
                         <!-- .col-full -->
