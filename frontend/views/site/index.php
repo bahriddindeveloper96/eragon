@@ -34,13 +34,13 @@
                                 </div>
                                 <!-- .home-v1-slider -->
                                 <section class="section-top-categories section-categories-carousel" id="categories-carousel-1">
-                                    <header class="section-header">
-                                        <h4 class="pre-title">Featured</h4>
-                                        <h2 class="section-title">Top categories
-                                            <br>this week</h2>
+                                    <header class="section-header" style="border:none;">
+                                        <h4 class="pre-title"></h4>
+                                        <h2 class="section-title">Топ категории
+                                            <br>На этой неделе</h2>
                                         <nav class="custom-slick-nav"></nav>
                                         <!-- .custom-slick-nav -->
-                                        <a class="readmore-link" href="#">Full Catalog</a>
+                                        
                                     </header>
                                     <!-- .section-header -->
                                     <div class="product-categories-1 product-categories-carousel" data-ride="tm-slick-carousel" data-wrap=".products" data-slick="{&quot;slidesToShow&quot;:5,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:false,&quot;arrows&quot;:true,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-left\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-right\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;appendArrows&quot;:&quot;#categories-carousel-1 .custom-slick-nav&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:1400,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}}]}">
@@ -266,13 +266,13 @@
                                             <header class="section-header">
                                                 <ul role="tablist" class="nav justify-content-end">
                                                     <li class="nav-item">
-                                                        <a class="nav-link active" href="#tab-59f89f0881f930" data-toggle="tab">New Arrivals</a>
+                                                        <a class="nav-link active" href="#tab-59f89f0881f930" data-toggle="tab">Новые поступления</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link " href="#tab-59f89f0881f931" data-toggle="tab">On Sale</a>
+                                                        <a class="nav-link " href="#tab-59f89f0881f931" data-toggle="tab">В продаже</a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link " href="#tab-59f89f0881f932" data-toggle="tab">Best Rated</a>
+                                                        <a class="nav-link " href="#tab-59f89f0881f932" data-toggle="tab">Рекомендуем</a>
                                                     </li>
                                                 </ul>
                                             </header>
@@ -953,7 +953,7 @@
                                 <section class="section-hot-new-arrivals section-products-carousel-tabs techmarket-tabs">
                                     <div class="section-products-carousel-tabs-wrap">
                                         <header class="section-header">
-                                            <h2 class="section-title">Hot Best Sellers</h2>
+                                            <h2 class="section-title">Распродажа</h2>
                                             <ul role="tablist" class="nav justify-content-end">
                                                 <li class="nav-item"><a class="nav-link active" href="#tab-59f89f08825d50" data-toggle="tab">Top 20</a></li>
                                                 <li class="nav-item"><a class="nav-link " href="#tab-59f89f08825d51" data-toggle="tab">Audio &amp; Video</a></li>
@@ -1589,7 +1589,7 @@
                                 <section class="section-hot-new-arrivals section-products-carousel-tabs techmarket-tabs">
                                     <div class="section-products-carousel-tabs-wrap">
                                         <header class="section-header">
-                                            <h2 class="section-title">Hot Best Sellers</h2>
+                                            <h2 class="section-title">Низкие цены</h2>
                                             <ul role="tablist" class="nav justify-content-end">
                                                 <li class="nav-item"><a class="nav-link active" href="#tab-11" data-toggle="tab">Top 20</a></li>
                                                 <li class="nav-item"><a class="nav-link " href="#tab-12" data-toggle="tab">Audio &amp; Video</a></li>
@@ -2225,7 +2225,7 @@
                                 <section class="section-hot-new-arrivals section-products-carousel-tabs techmarket-tabs">
                                     <div class="section-products-carousel-tabs-wrap">
                                         <header class="section-header">
-                                            <h2 class="section-title">Hot Best Sellers</h2>
+                                            <h2 class="section-title">Электроника</h2>
                                             <ul role="tablist" class="nav justify-content-end">
                                                 <li class="nav-item"><a class="nav-link active" href="#tab-15" data-toggle="tab">Top 20</a></li>
                                                 <li class="nav-item"><a class="nav-link " href="#tab-16" data-toggle="tab">Audio &amp; Video</a></li>
