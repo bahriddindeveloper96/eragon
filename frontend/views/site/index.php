@@ -46,51 +46,17 @@
                                     <div class="product-categories-1 product-categories-carousel" data-ride="tm-slick-carousel" data-wrap=".products" data-slick="{&quot;slidesToShow&quot;:5,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:false,&quot;arrows&quot;:true,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-left\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-right\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;appendArrows&quot;:&quot;#categories-carousel-1 .custom-slick-nav&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:1400,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}}]}">
                                         <div class="woocommerce columns-5">
                                             <div class="products">
-                                                <div class="product-category product first">
-                                                    <a href="product-category.html">
-                                                        <img width="224" height="197" alt="All in One PC" src="images/eragon/cate-1.png">
-                                                        <h2 class="woocommerce-loop-category__title">
-                                                            All in One PC
-                                                        </h2>
-                                                    </a>
-                                                </div>
-                                                <!-- .product-category -->
-                                                <div class="product-category product">
-                                                    <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Audio &amp; Music" src="images/eragon/cat-audi.png">
-                                                        <h2 class="woocommerce-loop-category__title">
-                                                            Audio &amp; Music
-                                                        </h2>
-                                                    </a>
-                                                </div>
-                                                <!-- .product-category -->
-                                                <div class="product-category product">
-                                                    <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Cells &amp; Tablets" src="images/eragon/cat-tab.png">
-                                                        <h2 class="woocommerce-loop-category__title">
-                                                            Cells &amp; Tablets
-                                                        </h2>
-                                                    </a>
-                                                </div>
-                                                <!-- .product-category -->
-                                                <div class="product-category product">
-                                                    <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Computers &amp; Laptops" src="images/eragon/cat-comp.png">
-                                                        <h2 class="woocommerce-loop-category__title">
-                                                            Computers &amp; Laptops
-                                                        </h2>
-                                                    </a>
-                                                </div>
-                                                <!-- .product-category -->
-                                                <div class="product-category product last">
-                                                    <a href="product-category.html">
-                                                        <img width="224" height="197" alt="Desktop PCs" src="images/eragon/cat-tab.png">
-                                                        <h2 class="woocommerce-loop-category__title">
-                                                            Desktop PCs
-                                                        </h2>
-                                                    </a>
-                                                </div>
-                                                <!-- .product-category -->
+                                                <?php foreach($categories as $category):?>
+                                                    <div class="product-category product first">
+                                                        <a href="product-category.html">
+                                                            <img width="224" height="197" alt="All in One PC" src="images/eragon/cate-1.png">
+                                                            <h2 class="woocommerce-loop-category__title">
+                                                                <?= $category->name;?>
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                    <!-- .product-category -->                      
+                                                <?php endforeach;?>
                                                
                                             </div>
                                             <!-- .products -->
