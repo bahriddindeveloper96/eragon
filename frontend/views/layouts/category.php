@@ -11,6 +11,7 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use app\components\MenuWidget;
 use app\components\MobileWidget;
+use app\components\CategoryWidget;
 
 AppAsset::register($this);
 ?>
