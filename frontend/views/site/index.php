@@ -5,7 +5,7 @@
                             <main id="main" class="site-main">
                                 <div class="home-v1-slider home-slider">
                                     <div class="slider-1" style="background-image: url(images/eragon/home-v1-background.jpg);">
-                                        <img src="images/eragon/banner1.png" alt="">
+                                        <img src="/images/eragon/banner1.png" alt="">
                                         <div class="caption">
                                             <div class="title">Turn. Click. Expand. Smart modular design simplifies adding storage for growing media.</div>
                                             <div class="sub-title">Powerful Six Core processor, vibrant 4KUHD display output and fast SSD elegantly cased in a soft alloy design.</div>
@@ -17,7 +17,7 @@
                                     </div>
                                     <!-- .slider-1 -->
                                     <div class="slider-1 slider-2" style="background-image: url(images/eragon/home-v2-background.jpg);">
-                                        <img src="images/eragon/banner-2.png" alt="">
+                                        <img src="/images/eragon/banner-2.png" alt="">
                                         <div class="caption">
                                             <div class="title">The new-tech gift you
                                                 <br> are wishing for is
@@ -49,7 +49,7 @@
                                                 <?php foreach($categories as $category):?>
                                                     <div class="product-category product first">
                                                         <a href="product-category.html">
-                                                            <img width="224" height="197" alt="All in One PC" src="images/eragon/cate-1.png">
+                                                            <img width="224" height="197" alt="All in One PC" src="/images/eragon/cate-1.png">
                                                             <h2 class="woocommerce-loop-category__title">
                                                                 <?= $category->name;?>
                                                             </h2>
@@ -112,7 +112,7 @@
                                                                             <!-- /.sale-label-outer -->
                                                                         </div>
                                                                         <!-- /.sale-product-with-timer-header -->
-                                                                        <img width="224" height="197" alt="" class="wp-post-image" src="images/eragon/1top.jpg">
+                                                                        <img width="224" height="197" alt="" class="wp-post-image" src="/images/eragon/1top.jpg">
                                                                         <div class="deal-progress">
                                                                             <div class="deal-stock">
                                                                                 <div class="stock-sold">Already Sold:
@@ -174,7 +174,7 @@
                                                                             <!-- /.sale-label-outer -->
                                                                         </div>
                                                                         <!-- /.sale-product-with-timer-header -->
-                                                                        <img width="224" height="197" alt="" class="wp-post-image" src="images/eragon/2-top.jpg">
+                                                                        <img width="224" height="197" alt="" class="wp-post-image" src="/images/eragon/2-top.jpg">
                                                                         <div class="deal-progress">
                                                                             <div class="deal-stock">
                                                                                 <div class="stock-sold">Already Sold:
@@ -254,7 +254,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -275,7 +275,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -296,7 +296,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -317,7 +317,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -338,7 +338,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -363,7 +363,7 @@
                                                                                 <span class="woocommerce-Price-amount amount">
                                                                                     <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                             </span>
-                                                                            <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> 789.95</span>
@@ -387,7 +387,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -408,7 +408,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -433,7 +433,7 @@
                                                                                 <span class="woocommerce-Price-amount amount">
                                                                                     <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                             </span>
-                                                                            <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> 789.95</span>
@@ -473,7 +473,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -494,7 +494,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -515,7 +515,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -536,7 +536,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -557,7 +557,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -582,7 +582,7 @@
                                                                                 <span class="woocommerce-Price-amount amount">
                                                                                     <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                             </span>
-                                                                            <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> 789.95</span>
@@ -606,7 +606,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -627,7 +627,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -652,7 +652,7 @@
                                                                                 <span class="woocommerce-Price-amount amount">
                                                                                     <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                             </span>
-                                                                            <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> 789.95</span>
@@ -691,7 +691,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -712,7 +712,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -733,7 +733,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -754,7 +754,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -775,7 +775,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -800,7 +800,7 @@
                                                                                 <span class="woocommerce-Price-amount amount">
                                                                                     <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                             </span>
-                                                                            <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> 789.95</span>
@@ -824,7 +824,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -845,7 +845,7 @@
                                                                             <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                            <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> </span>
@@ -870,7 +870,7 @@
                                                                                 <span class="woocommerce-Price-amount amount">
                                                                                     <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                             </span>
-                                                                            <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                            <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                             <span class="price">
                                                                                 <ins>
                                                                                     <span class="amount"> 789.95</span>
@@ -939,7 +939,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -964,7 +964,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -988,7 +988,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1009,7 +1009,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1030,7 +1030,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1055,7 +1055,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -1094,7 +1094,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1119,7 +1119,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -1143,7 +1143,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1164,7 +1164,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1185,7 +1185,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1210,7 +1210,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -1248,7 +1248,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1273,7 +1273,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -1297,7 +1297,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1318,7 +1318,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1339,7 +1339,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1364,7 +1364,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -1401,7 +1401,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1426,7 +1426,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -1450,7 +1450,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1471,7 +1471,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1492,7 +1492,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1517,7 +1517,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -1575,7 +1575,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1600,7 +1600,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -1624,7 +1624,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1645,7 +1645,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1666,7 +1666,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1691,7 +1691,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -1730,7 +1730,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1755,7 +1755,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -1779,7 +1779,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1800,7 +1800,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1821,7 +1821,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1846,7 +1846,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -1884,7 +1884,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1909,7 +1909,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -1933,7 +1933,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1954,7 +1954,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -1975,7 +1975,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2000,7 +2000,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -2037,7 +2037,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2062,7 +2062,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -2086,7 +2086,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2107,7 +2107,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2128,7 +2128,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2153,7 +2153,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -2211,7 +2211,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2236,7 +2236,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -2260,7 +2260,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2281,7 +2281,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2302,7 +2302,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2327,7 +2327,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -2366,7 +2366,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2391,7 +2391,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -2415,7 +2415,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2436,7 +2436,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2457,7 +2457,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2482,7 +2482,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -2520,7 +2520,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2545,7 +2545,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -2569,7 +2569,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2590,7 +2590,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2611,7 +2611,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2636,7 +2636,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -2674,7 +2674,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-1.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2699,7 +2699,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-2.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 262.81</span>
@@ -2723,7 +2723,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-3.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2744,7 +2744,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-4.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2765,7 +2765,7 @@
                                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                     </div>
                                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                                        <img src="images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> </span>
@@ -2790,7 +2790,7 @@
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span>150.04</span>
                                                                         </span>
-                                                                        <img src="images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                                        <img src="/images/eragon/hot-6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                                         <span class="price">
                                                                             <ins>
                                                                                 <span class="amount"> 789.95</span>
@@ -2859,7 +2859,7 @@
                                                             </div>
                                                             <!-- /.info -->
                                                         </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="images/eragon/brand-1.png">
+                                                        <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="/images/eragon/brand-1.png">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -2873,7 +2873,7 @@
                                                             </div>
                                                             <!-- /.info -->
                                                         </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="images/eragon/brand-3.png">
+                                                        <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="/images/eragon/brand-3.png">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -2887,7 +2887,7 @@
                                                             </div>
                                                             <!-- /.info -->
                                                         </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="images/eragon/brand-2.png">
+                                                        <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="/images/eragon/brand-2.png">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -2901,7 +2901,7 @@
                                                             </div>
                                                             <!-- /.info -->
                                                         </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="images/eragon/brand-4.png">
+                                                        <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="/images/eragon/brand-4.png">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -2915,7 +2915,7 @@
                                                             </div>
                                                             <!-- /.info -->
                                                         </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="images/eragon/brand-5.png">
+                                                        <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="/images/eragon/brand-5.png">
                                                     </figure>
                                                 </a>
                                             </div>
@@ -2929,7 +2929,7 @@
                                                             </div>
                                                             <!-- /.info -->
                                                         </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="images/eragon/brand-2.png">
+                                                        <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="/images/eragon/brand-2.png">
                                                     </figure>
                                                 </a>
                                             </div>

@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use common\models\Category;
+use common\models\Product;
 use common\models\CategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -54,21 +55,10 @@ class CategoryController extends Controller
    
     public function actionView($id)
     {
-        // Find the category model with the provided ID
-        $model = $this->findModel($id);
-
-        // Load the related category attributes
-        $categoryAttributes = $model->categoryAttributes;
-
-        if ($model === null) {
-            throw new NotFoundHttpException('The requested category does not exist.');
-        }
-
-        // Render the view page with the category model and its associated attributes
-        return $this->render('view', [
-            'model' => $model,
-            'categoryAttributes' => $categoryAttributes,
-        ]);
+       // $id = Yii::$app->request->get($id);
+        $products = Product::find()->where(['category_id'=> $id])->all();
+        
+        return $this->render('view',compact('products'));
     }
     
     protected function findModel($id)

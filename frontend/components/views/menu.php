@@ -9,7 +9,7 @@
                                 </li-->
                                 
                                 <li class="yamm-tfw menu-item menu-item-has-children animate-dropdown dropdown-submenu">
-                                    <a title="Computers &amp; Laptops" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#"><?= $category->name ?> <span class="caret"></span></a>
+                                    <a title="Computers &amp; Laptops" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="<?= \yii\helpers\Url::to(['category/view', 'id'=>$category->id]);?>"><?= $category->name ?> <span class="caret"></span></a>
                                        
                                     <?php
                                     
@@ -35,10 +35,10 @@
                                                                 <div class="kc_text_block">
                                                                     <ul>
                                                                         
-                                                                        <li class="nav-title"><?= $child->name;?></li>
+                                                                        <li class="nav-title"><a href="<?= \yii\helpers\Url::to(['category/view', 'id'=>$child->id]);?>"><?= $child->name;?></a></li>
                                                                             <?php $child = Category::find()->where(['parent_id'=>$child->id])->all();?>
                                                                             <?php foreach($child as $child_par):?>
-                                                                                <li><a href="shop.html"><?= $child_par->name;?></a></li>
+                                                                                <li><a href="<?= \yii\helpers\Url::to(['category/view', 'id'=>$child_par->id]);?>"><?= $child_par->name;?></a></li>
                                                                             <?php endforeach;?>
                                                                         
                                                                         

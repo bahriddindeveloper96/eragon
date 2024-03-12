@@ -2,96 +2,14 @@
                                 <ul class="product-categories ">
                                     <li class="product_cat">
                                         <span>Browse Categories</span>
-                                        <ul>
-                                            
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Headphones</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Digital Cameras</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Cells &amp; Tablets</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="no-child"></span>Smartwatches</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Games &amp; Consoles</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="no-child"></span>Printer</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="no-child"></span>TV &amp; Video</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Home Entertainment</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Computers &amp; Laptops</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="no-child"></span>Notebooks</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Desktop PCs</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="no-child"></span>Mac Computers</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>All in One PC</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Audio &amp; Music</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="no-child"></span>PC Components</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="child-indicator">
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </span>Desktop PCs</a>
-                                            </li>
-                                            <li class="cat-item">
-                                                <a href="product-category.html">
-                                                    <span class="no-child"></span>Monitors</a>
-                                            </li>
+                                        <ul>                                           
+                                            <?php foreach ($categories as $category): ?>
+                                                <li class="cat-item">
+                                                    <a href="<?= \yii\helpers\Url::to(['category/view', 'id'=>$category->id]);?>">
+                                                        <span class="no-child"></span><?= $category->name;?>
+                                                    </a>
+                                                </li>
+                                            <?php endforeach;?>
                                         </ul>
                                     </li>
                                 </ul>

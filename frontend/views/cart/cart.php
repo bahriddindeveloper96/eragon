@@ -41,7 +41,7 @@
                                                                 <td data-title="Product" class="product-name">
                                                                     <div class="media cart-item-product-detail">
                                                                         <a href="single-product-fullwidth.html">
-                                                                            <img width="180" height="180" alt="" class="wp-post-image" src="images/products/cart-1.jpg">
+                                                                            <img width="180" height="180" alt="" class="wp-post-image" src="/images/products/cart-1.jpg">
                                                                         </a>
                                                                         <div class="media-body align-self-center">
                                                                             <a href="single-product-fullwidth.html">55" KU6470 6 Series UHD  Crystal Colour HDR Smart TV</a>
@@ -78,7 +78,7 @@
                                                                 <td data-title="Product" class="product-name">
                                                                     <div class="media cart-item-product-detail">
                                                                         <a href="single-product-fullwidth.html">
-                                                                            <img width="180" height="180" alt="" class="wp-post-image" src="images/products/cart-2.jpg">
+                                                                            <img width="180" height="180" alt="" class="wp-post-image" src="/images/products/cart-2.jpg">
                                                                         </a>
                                                                         <div class="media-body align-self-center">
                                                                             <a href="single-product-fullwidth.html">4K Action Cam GPS</a>
@@ -115,7 +115,7 @@
                                                                 <td data-title="Product" class="product-name">
                                                                     <div class="media cart-item-product-detail">
                                                                         <a href="single-product-fullwidth.html">
-                                                                            <img width="180" height="180" alt="" class="wp-post-image" src="images/products/cart-3.jpg">
+                                                                            <img width="180" height="180" alt="" class="wp-post-image" src="/images/products/cart-3.jpg">
                                                                         </a>
                                                                         <div class="media-body align-self-center">
                                                                             <a href="single-product-fullwidth.html">Bluetooth on-ear PureBass Headphones</a>
@@ -305,7 +305,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="images/brands/1.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="/images/brands/1.png">
                                     </figure>
                                 </a>
                             </div>
@@ -319,7 +319,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="images/brands/2.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="/images/brands/2.png">
                                     </figure>
                                 </a>
                             </div>
@@ -333,7 +333,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="images/brands/3.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="/images/brands/3.png">
                                     </figure>
                                 </a>
                             </div>
@@ -347,7 +347,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="images/brands/4.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="/images/brands/4.png">
                                     </figure>
                                 </a>
                             </div>
@@ -361,7 +361,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="images/brands/5.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="/images/brands/5.png">
                                     </figure>
                                 </a>
                             </div>
@@ -375,7 +375,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="images/brands/6.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="/images/brands/6.png">
                                     </figure>
                                 </a>
                             </div>
@@ -389,7 +389,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="handspot" src="images/brands/7.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="handspot" src="/images/brands/7.png">
                                     </figure>
                                 </a>
                             </div>
@@ -403,7 +403,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="kinova" src="images/brands/8.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="kinova" src="/images/brands/8.png">
                                     </figure>
                                 </a>
                             </div>
@@ -417,7 +417,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="nespresso" src="images/brands/9.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="nespresso" src="/images/brands/9.png">
                                     </figure>
                                 </a>
                             </div>
@@ -431,7 +431,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="samsung" src="images/brands/10.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="samsung" src="/images/brands/10.png">
                                     </figure>
                                 </a>
                             </div>
@@ -445,7 +445,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="speedway" src="images/brands/11.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="speedway" src="/images/brands/11.png">
                                     </figure>
                                 </a>
                             </div>
@@ -459,7 +459,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="yoko" src="images/brands/12.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="yoko" src="/images/brands/12.png">
                                     </figure>
                                 </a>
                             </div>

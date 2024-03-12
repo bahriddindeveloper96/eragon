@@ -28,17 +28,17 @@
                                                         <figure class="woocommerce-product-gallery__wrapper ">
                                                             <div data-thumb="images/eragon/product-view/sm-card-1.jpg" class="woocommerce-product-gallery__image">
                                                                 <a href="images/eragon/product-view/big-card.jpg" tabindex="0">
-                                                                    <img width="600" height="600" src="images/eragon/product-view/big-card.jpg" class="attachment-shop_single size-shop_single wp-post-image" alt="">
+                                                                    <img width="600" height="600" src="/images/eragon/product-view/big-card.jpg" class="attachment-shop_single size-shop_single wp-post-image" alt="">
                                                                 </a>
                                                             </div>
                                                             <div data-thumb="images/eragon/product-view/sm-card-3.jpg" class="woocommerce-product-gallery__image">
                                                                 <a href="images/eragon/product-view/big-card-3.jpg" tabindex="-1">
-                                                                    <img width="600" height="600" src="images/eragon/product-view/big-card-2.jpg" class="attachment-shop_single size-shop_single" alt="">
+                                                                    <img width="600" height="600" src="/images/eragon/product-view/big-card-2.jpg" class="attachment-shop_single size-shop_single" alt="">
                                                                 </a>
                                                             </div>
                                                             <div data-thumb="images/eragon/product-view/sm-card-2.jpg" class="woocommerce-product-gallery__image">
                                                                 <a href="images/eragon/product-view/big-card-1.jpg" tabindex="-1">
-                                                                    <img width="600" height="600" src="images/eragon/product-view/big-card-1.jpg" class="attachment-shop_single size-shop_single" alt="">
+                                                                    <img width="600" height="600" src="/images/eragon/product-view/big-card-1.jpg" class="attachment-shop_single size-shop_single" alt="">
                                                                 </a>
                                                             </div>
                                                            
@@ -50,19 +50,19 @@
                                                 <div class="techmarket-single-product-gallery-thumbnails" data-ride="tm-slick-carousel" data-wrap=".techmarket-single-product-gallery-thumbnails__wrapper" data-slick="{&quot;infinite&quot;:false,&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:false,&quot;arrows&quot;:true,&quot;vertical&quot;:true,&quot;verticalSwiping&quot;:true,&quot;focusOnSelect&quot;:true,&quot;touchMove&quot;:true,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-up\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-down\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;asNavFor&quot;:&quot;#techmarket-single-product-gallery .woocommerce-product-gallery__wrapper&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:765,&quot;settings&quot;:{&quot;vertical&quot;:false,&quot;horizontal&quot;:true,&quot;verticalSwiping&quot;:false,&quot;slidesToShow&quot;:4}}]}">
                                                     <figure class="techmarket-single-product-gallery-thumbnails__wrapper">
                                                         <figure data-thumb="images/eragon/product-view/sm-card-1.jpg" class="techmarket-wc-product-gallery__image">
-                                                            <img width="180" height="180" src="images/eragon/product-view/sm-card-1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">
+                                                            <img width="180" height="180" src="/images/eragon/product-view/sm-card-1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">
                                                         </figure>
                                                         <figure data-thumb="images/eragon/product-view/sm-card-3.jpg" class="techmarket-wc-product-gallery__image">
-                                                            <img width="180" height="180" src="images/eragon/product-view/sm-card-3.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
+                                                            <img width="180" height="180" src="/images/eragon/product-view/sm-card-3.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
                                                         </figure>
                                                         <figure data-thumb="images/eragon/product-view/sm-card-2.jpg" class="techmarket-wc-product-gallery__image">
-                                                            <img width="180" height="180" src="images/eragon/product-view/sm-card-2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
+                                                            <img width="180" height="180" src="/images/eragon/product-view/sm-card-2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
                                                         </figure>
                                                         <figure data-thumb="images/eragon/product-view/big-4.jpg" class="techmarket-wc-product-gallery__image">
-                                                            <img width="180" height="180" src="images/eragon/product-view/big-4.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
+                                                            <img width="180" height="180" src="/images/eragon/product-view/big-4.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
                                                         </figure>
                                                         <figure data-thumb="images/eragon/product-view/sm-card-2.jpg" class="techmarket-wc-product-gallery__image">
-                                                            <img width="180" height="180" src="images/eragon/product-view/sm-card-2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
+                                                            <img width="180" height="180" src="/images/eragon/product-view/sm-card-2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
                                                         </figure>
                                                     </figure>
                                                     <!-- .techmarket-single-product-gallery-thumbnails__wrapper -->
@@ -81,7 +81,7 @@
                                             <div class="single-product-meta">
                                                 <div class="brand">
                                                     <a href="#">
-                                                        <img alt="galaxy" src="images/brands/5.png">
+                                                        <img alt="galaxy" src="/images/brands/5.png">
                                                     </a>
                                                 </div>
                                                 <div class="cat-and-sku">
@@ -180,7 +180,7 @@
                                                             <div class="products">
                                                                 <div class="product">
                                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/8.jpg">
+                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/8.jpg">
                                                                         <span class="price">
                                                                             <del>
                                                                                 <span class="woocommerce-Price-amount amount">
@@ -201,7 +201,7 @@
                                                                 </div>
                                                                 <div class="product">
                                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/16.jpg">
+                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/16.jpg">
                                                                         <span class="price">
                                                                             <del>
                                                                                 <span class="woocommerce-Price-amount amount">
@@ -222,7 +222,7 @@
                                                                 </div>
                                                                 <div class="product">
                                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/14.jpg">
+                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/14.jpg">
                                                                         <span class="price">
                                                                             <del>
                                                                                 <span class="woocommerce-Price-amount amount">
@@ -243,7 +243,7 @@
                                                                 </div>
                                                                 <div class="product">
                                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/4.jpg">
+                                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/4.jpg">
                                                                         <span class="price">
                                                                             <del>
                                                                                 <span class="woocommerce-Price-amount amount">
@@ -305,14 +305,14 @@
                                                     </div>
                                                     <!-- .content-info -->
                                                     <div class="image-info">
-                                                        <img src="images/products/des1.png" alt="">
+                                                        <img src="/images/products/des1.png" alt="">
                                                     </div>
                                                     <!-- .image-info -->
                                                 </div>
                                                 <!-- .outer-wrap -->
                                                 <div class="outer-wrap">
                                                     <div class="image-info">
-                                                        <img src="images/products/des2.png" class="alignnone" alt="">
+                                                        <img src="/images/products/des2.png" class="alignnone" alt="">
                                                     </div>
                                                     <!-- .image-info -->
                                                     <div class="content-info">
@@ -576,7 +576,7 @@
                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                     </div>
                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                        <img src="images/eragon/products/5.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                        <img src="/images/eragon/products/5.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                         <span class="price">
                                                             <ins>
                                                                 <span class="amount"> </span>
@@ -597,7 +597,7 @@
                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                     </div>
                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                        <img src="images/eragon/products/16.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                        <img src="/images/eragon/products/16.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                         <span class="price">
                                                             <ins>
                                                                 <span class="amount"> </span>
@@ -618,7 +618,7 @@
                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                     </div>
                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                        <img src="images/eragon/products/8.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                        <img src="/images/eragon/products/8.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                         <span class="price">
                                                             <ins>
                                                                 <span class="amount"> </span>
@@ -639,7 +639,7 @@
                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                     </div>
                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                        <img src="images/eragon/products/11.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                        <img src="/images/eragon/products/11.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                         <span class="price">
                                                             <ins>
                                                                 <span class="amount"> </span>
@@ -660,7 +660,7 @@
                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                     </div>
                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                        <img src="images/eragon/products/10.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                        <img src="/images/eragon/products/10.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                         <span class="price">
                                                             <ins>
                                                                 <span class="amount"> </span>
@@ -681,7 +681,7 @@
                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                     </div>
                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                        <img src="images/eragon/products/15.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                        <img src="/images/eragon/products/15.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                         <span class="price">
                                                             <ins>
                                                                 <span class="amount"> </span>
@@ -702,7 +702,7 @@
                                                         <a href="wishlist.html" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                     </div>
                                                     <a href="single-product-fullwidth.html" class="woocommerce-LoopProduct-link">
-                                                        <img src="images/eragon/products/6.jpg" width="224" height="197" class="wp-post-image" alt="">
+                                                        <img src="/images/eragon/products/6.jpg" width="224" height="197" class="wp-post-image" alt="">
                                                         <span class="price">
                                                             <ins>
                                                                 <span class="amount"> </span>
@@ -735,7 +735,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="images/brands/1.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="/images/brands/1.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -749,7 +749,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="images/brands/2.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="/images/brands/2.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -763,7 +763,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="images/brands/3.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="/images/brands/3.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -777,7 +777,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="images/brands/4.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="/images/brands/4.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -791,7 +791,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="images/brands/5.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="/images/brands/5.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -805,7 +805,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="images/brands/6.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="/images/brands/6.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -819,7 +819,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="handspot" src="images/brands/7.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="handspot" src="/images/brands/7.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -833,7 +833,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="kinova" src="images/brands/8.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="kinova" src="/images/brands/8.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -847,7 +847,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="nespresso" src="images/brands/9.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="nespresso" src="/images/brands/9.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -861,7 +861,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="samsung" src="images/brands/10.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="samsung" src="/images/brands/10.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -875,7 +875,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="speedway" src="images/brands/11.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="speedway" src="/images/brands/11.png">
                                                         </figure>
                                                     </a>
                                                 </div>
@@ -889,7 +889,7 @@
                                                                 </div>
                                                                 <!-- /.info -->
                                                             </figcaption>
-                                                            <img width="145" height="50" class="img-responsive desaturate" alt="yoko" src="images/brands/12.png">
+                                                            <img width="145" height="50" class="img-responsive desaturate" alt="yoko" src="/images/brands/12.png">
                                                         </figure>
                                                     </a>
                                                 </div>

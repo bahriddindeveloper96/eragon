@@ -51,7 +51,7 @@
                                                         </td>
                                                         <td class="product-thumbnail">
                                                             <a href="single-product-fullwidth.html">
-                                                                <img width="180" height="180" alt="" class="wp-post-image" src="images/products/cart-1.jpg">
+                                                                <img width="180" height="180" alt="" class="wp-post-image" src="/images/products/cart-1.jpg">
                                                             </a>
                                                         </td>
                                                         <td class="product-name">
@@ -82,7 +82,7 @@
                                                         </td>
                                                         <td class="product-thumbnail">
                                                             <a href="single-product-fullwidth.html">
-                                                                <img width="180" height="180" alt="" class="wp-post-image" src="images/products/cart-2.jpg">
+                                                                <img width="180" height="180" alt="" class="wp-post-image" src="/images/products/cart-2.jpg">
                                                             </a>
                                                         </td>
                                                         <td class="product-name">
@@ -113,7 +113,7 @@
                                                         </td>
                                                         <td class="product-thumbnail">
                                                             <a href="single-product-fullwidth.html">
-                                                                <img width="180" height="180" alt="" class="wp-post-image" src="images/products/cart-3.jpg">
+                                                                <img width="180" height="180" alt="" class="wp-post-image" src="/images/products/cart-3.jpg">
                                                             </a>
                                                         </td>
                                                         <td class="product-name">

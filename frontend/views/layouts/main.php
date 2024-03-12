@@ -142,7 +142,7 @@ AppAsset::register($this);
                                                         <li class="woocommerce-mini-cart-item mini_cart_item">
                                                             <a href="#" class="remove" aria-label="Remove this item" data-product_id="65" data-product_sku="">×</a>
                                                             <a href="single-product-sidebar.html">
-                                                                <img src="images/eragon/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
+                                                                <img src="/images/eragon/mini-cart1.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">XONE Wireless Controller&nbsp;
                                                             </a>
                                                             <span class="quantity">1 ×
                                                                 <span class="woocommerce-Price-amount amount">
@@ -152,7 +152,7 @@ AppAsset::register($this);
                                                         <li class="woocommerce-mini-cart-item mini_cart_item">
                                                             <a href="#" class="remove" aria-label="Remove this item" data-product_id="27" data-product_sku="">×</a>
                                                             <a href="single-product-sidebar.html">
-                                                                <img src="images/eragon/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
+                                                                <img src="/images/eragon/mini-cart2.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="">Gear Virtual Reality 3D with Bluetooth Glasses&nbsp;
                                                             </a>
                                                             <span class="quantity">1 ×
                                                                 <span class="woocommerce-Price-amount amount">
@@ -420,16 +420,16 @@ AppAsset::register($this);
                                                 <div class="footer-payment-icons">
                                                     <ul class="list-payment-icons nav">
                                                         <li class="nav-item">
-                                                            <img class="payment-icon-image" src="images/credit-cards/mastercard.svg" alt="mastercard" />
+                                                            <img class="payment-icon-image" src="/images/credit-cards/mastercard.svg" alt="mastercard" />
                                                         </li>
                                                         <li class="nav-item">
-                                                            <img class="payment-icon-image" src="images/credit-cards/visa.svg" alt="visa" />
+                                                            <img class="payment-icon-image" src="/images/credit-cards/visa.svg" alt="visa" />
                                                         </li>
                                                         <li class="nav-item">
-                                                            <img class="payment-icon-image" src="images/credit-cards/paypal.svg" alt="paypal" />
+                                                            <img class="payment-icon-image" src="/images/credit-cards/paypal.svg" alt="paypal" />
                                                         </li>
                                                         <li class="nav-item">
-                                                            <img class="payment-icon-image" src="images/credit-cards/maestro.svg" alt="maestro" />
+                                                            <img class="payment-icon-image" src="/images/credit-cards/maestro.svg" alt="maestro" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -438,10 +438,10 @@ AppAsset::register($this);
                                                     <h6 class="footer-secured-by-title">Обеспечено:</h6>
                                                     <ul class="footer-secured-by-icons">
                                                         <li class="nav-item">
-                                                            <img class="secure-icons-image" src="images/secured-by/norton.svg" alt="norton" />
+                                                            <img class="secure-icons-image" src="/images/secured-by/norton.svg" alt="norton" />
                                                         </li>
                                                         <li class="nav-item">
-                                                            <img class="secure-icons-image" src="images/secured-by/mcafee.svg" alt="mcafee" />
+                                                            <img class="secure-icons-image" src="/images/secured-by/mcafee.svg" alt="mcafee" />
                                                         </li>
                                                     </ul>
                                                 </div>
