@@ -6,6 +6,7 @@ use common\models\Vendor;
 use common\models\Category;
 use common\models\Photo;
 use common\models\Company;
+use kartik\widgets\FileInput;
 use common\models\CategoryAttribute;
 use common\models\ProductValue;
 use wbraganca\dynamicform\DynamicFormWidget;
@@ -85,12 +86,22 @@ $this->params['breadcrumbs'][] = $this->title;
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <?= $form->field($model, 'content')->textarea(['rows' => 2]) ?>
+                                            <?= $form->field($model, 'content')->widget(\bizley\quill\Quill::class, [
+                                                'toolbarOptions' => [
+                                                    ['bold', 'italic', 'underline', 'strike'],        // Formatlash tugmalar
+                                                    ['link'],                                          // Havolalar
+                                                    ['image', 'video'],                                // Rasmlar va videolar
+                                                    ['clean'],                                         // Tozalash tugmasi
+                                                    ['formula']                                        // Matematik formulalar
+                                                ],                                              
+                                            ]) ?>
+                                            
+                                            <!--?= $form->field($model, 'content')->textarea(['rows' => 2]) ?-->
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <?= $form->field($model, 'description')->textarea(['rows' => 1]) ?>
+                                             <?= $form->field($model, 'description')->widget(\bizley\quill\Quill::class, []) ?>
                                         </div>
                                     </div>
                                     

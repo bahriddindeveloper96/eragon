@@ -34,7 +34,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'company_id',
           //  'photo_id',
             'name',
-            'content:ntext',
+            [
+                'attribute' => 'content',
+                'format' => 'html',
+                'value' => function ($model) {
+                    return $model->content; // content HTML formatida keladi
+                },
+            ],
             'description:ntext',
             'price',
             'old_price',
