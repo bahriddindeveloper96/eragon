@@ -151,6 +151,7 @@ class ProductController extends Controller
                 $modelValue->created_by = $model->created_by;
                 $modelValue->updated_by = $model->updated_by;
                 
+                
                 $modelValue->s_photo = UploadedFile::getInstance($modelValue, "[{$index}]photo");                
                 if ($modelValue->s_photo) {
                     $modelValue->photo = $modelValue->s_photo->name;
@@ -219,6 +220,8 @@ class ProductController extends Controller
     // Load associated attributes and photos for the existing product
     $modelsPrevent = $model->productValues;
     $modelsPhoto = $model->photos;
+    $modelsStock = $model->stocks;
+
 
     $post = Yii::$app->request->post();
 
@@ -239,6 +242,7 @@ class ProductController extends Controller
 
             // Update photos
             $this->updateRelatedModels($modelsPhoto, $post, Photo::class, 'product_id', $model->id);
+            $this->updateRelatedModels($modelsStock, $post, Stock::class, 'product_id', $model->id);
 
             // Commit the transaction
             $transaction->commit();
@@ -257,6 +261,7 @@ class ProductController extends Controller
         'model' => $model,
         'modelsPrevent' => $modelsPrevent,
         'modelsPhoto' => $modelsPhoto,
+        'modelsStock' => $modelsStock,
        
     ]);
 }

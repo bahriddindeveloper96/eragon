@@ -5,204 +5,191 @@ use yii\widgets\ActiveForm;
 use common\models\Vendor;
 use common\models\Category;
 use common\models\Photo;
-
 use common\models\Company;
+//use kartik\widgets\FileInput;
 use common\models\CategoryAttribute;
 use common\models\ProductValue;
 use wbraganca\dynamicform\DynamicFormWidget;
+use kartik\file\FileInput;
 
 /** @var yii\web\View $this */
-/** @var common\models\Category $model */
+/** @var common\models\Product $model */
+/** @var common\models\ProductValue[] $modelsPrevent */
+/** @var common\models\Photo[] $modelsPhoto */
 
 $this->title = 'Create Product';
 $this->params['breadcrumbs'][] = ['label' => 'Categories', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="container">
 
     <div class="container">
-        
-            <?php $form = ActiveForm::begin([
-                        'id' => 'dynamic-form',
-                        'enableClientValidation' => false,
-                        
-                        'options' => [
-                            'enctype' => 'multipart/form-data',
-                        ]
-                    ]) ?>
-                <i class="fa fa-toggle-right" id = "open2" onclick=openPanel2(); style="font-size:24px;color:blue;display:none;"></i> 
-                <i class="fa fa-toggle-down " id = "close2" onclick=closePanel2(); style="font-size:24px;color:blue; " ></i> 
-                    
-                <div class="row" id="content2">
-                    <div class="box box-default" style="display: inline-block; width:90%;">           
-                        <div class="panel-body">
-                            <?php DynamicFormWidget::begin([
-                                'widgetContainer' => 'dynamicform_wrapper', // required: only alphanumeric characters plus "_" [A-Za-z0-9_]
-                                'widgetBody' => '.container-items', // required: css class selector
-                                'widgetItem' => '.item', // required: css class
-                                'limit' => 4, // the maximum times, an element can be cloned (default 999)
-                                'min' => 1, // 0 or 1 (default 1)
-                                'insertButton' => '.add-item', // css class
-                                'deleteButton' => '.remove-item', // css class
-                                'model' => $modelsPrevent[0],
-                                'formId' => 'dynamic-form',
-                                'formFields' => [
-                                'category_id',
-                                'name',
-                                ],
-                            ]); ?>
 
+        <?php $form = ActiveForm::begin([
+            'id' => 'dynamic-form',
+            'enableClientValidation' => false,
+            'options' => [
+                'enctype' => 'multipart/form-data',
+            ]
+        ]) ?>
+
+        <div class="row" id="content">
+            <div class="box box-default" style="display: inline-block; width:90%;">
+                <div class="panel-body">
+                    <?php DynamicFormWidget::begin([
+                        'widgetContainer' => 'dynamicform_wrapper_prevent',
+                        'widgetBody' => '.container-items-prevent',
+                        'widgetItem' => '.item-prevent',
+                        'limit' => 4,
+                        'min' => 1,
+                        'insertButton' => '.add-item-prevent',
+                        'deleteButton' => '.remove-item-prevent',
+                        'model' => $modelsPrevent[0],
+                        'formId' => 'dynamic-form',
+                        'formFields' => ['category_id', 'name'],
+                    ]); ?>
                     <?php $category_ids = Category::find()->select(['id', 'name'])->asArray()->all(); ?>
-                    <?php $company_ids = Company::find()->select(['id', 'name'])->asArray()->all(); ?>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <?= $form->field($model, 'category_id')->dropDownList(
-                                        \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
-                                        ['prompt' => 'Category']
-                                    ) ?>
-                                </div>
-                                <div class="col-sm-4">
-                                    <?= $form->field($model, 'company_id')->dropDownList(
-                                        \yii\helpers\ArrayHelper::map($company_ids, 'id', 'name'),
-                                        ['prompt' => 'Company']
-                                    ) ?>
-                                </div>
-                                <div class="col-sm-4">
-                                    <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <?= $form->field($model, 'old_price')->textInput(['maxlength' => true]) ?>
-                                </div>
-                                <div class="col-sm-4">
-                                    <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
-                                </div>
-                                <div class="col-sm-4">
-                                    <?php $user_ids = Vendor::find()->select(['id', 'username'])->asArray()->all(); ?>
-
-                                    <?= $form->field($model, 'created_by')->dropDownList(
-                                        \yii\helpers\ArrayHelper::map($user_ids, 'id', 'username'),
-                                        ['prompt' => 'Vendor']
-                                    ) ?> 
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <?= $form->field($model, 'content')->textarea(['rows' => 2]) ?>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <?= $form->field($model, 'description')->textarea(['rows' => 1]) ?>
-                                </div>
-                            </div>
-
-                            <div class="container-items"><!-- widgetContainer -->
-                                <?php foreach ($modelsPrevent as $i => $prevent): ?>
-                                    <div class="item panel panel-default"><!-- widgetBody -->
-                                        <div class="panel-heading">
-                                            <div class="pull-right">
-                                                <button type="button" class="add-item btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button>
-                                                <button type="button" class="remove-item btn btn-danger btn-xs"><i class="fa fa-minus fa-2x"></i></button>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>                                    
-                                        <div class="panel-body">
-                                        <?php $category_item = CategoryAttribute::find()->select(['id', 'name'])->asArray()->all(); ?>
-                                        <div class="panel-body">
-                                            <div class="row">                                               
-                                                <div class="col-sm-6">
-                                                    <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
-                                                        \yii\helpers\ArrayHelper::map($category_item, 'id', 'name'),
-                                                        ['prompt' => 'Attribute']
-                                                    ) ?>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
-                                                </div>
-                                               
-                                                
-                                                                            
-                                            </div><!-- .row -->
+                                    <?php $company_ids = Company::find()->select(['id', 'name'])->asArray()->all(); ?>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <?= $form->field($model, 'category_id')->dropDownList(
+                                                \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
+                                                ['prompt' => 'Category']
+                                            ) ?>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <?= $form->field($model, 'company_id')->dropDownList(
+                                                \yii\helpers\ArrayHelper::map($company_ids, 'id', 'name'),
+                                                ['prompt' => 'Company']
+                                            ) ?>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
                                         </div>
                                     </div>
-                                <?php endforeach; ?>
-                            </div>
-                            <?php DynamicFormWidget::end(); ?>
-                        </div>
-                    </div>
-                     
-                </div>
-                </div>
-                <!-- Photo-->
-                <i class="fa fa-toggle-right" id = "open3" onclick=openPanel3(); style="font-size:24px;color:blue;display:none;"></i> 
-                 <i class="fa fa-toggle-down " id = "close3" onclick=closePanel3(); style="font-size:24px;color:blue; " ></i> 
-                   
-                <div class="row" id="content3"  >
-                    <div class="box box-default" style="display: inline-block; width:90%;">           
-                        <div class="panel-body">
-                            <?php DynamicFormWidget::begin([
-                                'widgetContainer' => 'dynamicform_wrapper', // required: only alphanumeric characters plus "_" [A-Za-z0-9_]
-                                'widgetBody' => '.container-items', // required: css class selector
-                                'widgetItem' => '.item', // required: css class
-                                'limit' => 4, // the maximum times, an element can be cloned (default 999)
-                                'min' => 1, // 0 or 1 (default 1)
-                                'insertButton' => '.add-item', // css class
-                                'deleteButton' => '.remove-item', // css class
-                                'model' => $modelsPhoto[0],
-                                'formId' => 'dynamic-form',
-                                'formFields' => [
-                                 'product_value',
-                                 'photo',
-                                ],
-                            ]); ?>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <?= $form->field($model, 'old_price')->textInput(['maxlength' => true]) ?>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <?php $user_ids = Vendor::find()->select(['id', 'username'])->asArray()->all(); ?>
 
-                            <div class="container-items"><!-- widgetContainer -->
-                                <?php foreach ($modelsPhoto as $i => $photo): ?>
-                                    <div class="item panel panel-default"><!-- widgetBody -->
-                                        <div class="panel-heading">
-                                            <div class="pull-right">
-                                                <button type="button" class="add-item btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button>
-                                                <button type="button" class="remove-item btn btn-danger btn-xs"><i class="fa fa-minus fa-2x"></i></button>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>                                    
-                                        <?php $value_ids = ProductValue::find()->select(['id', 'name'])->asArray()->all(); ?>
-                                        <div class="panel-body">
-                                            <div class="row">                                        
-                                                
-                                                <div class="col-sm-4">
-                                                    <?= $form->field($photo, "[{$i}]product_value")->dropDownList(
-                                                        \yii\helpers\ArrayHelper::map($value_ids, 'id', 'name'),
-                                                        ['prompt' => 'Value']
-                                                    ) ?>
-                                                </div> 
-                                                                                        
-                                                
-                                                <div class="col-sm-4">
-                                                    <?= $form->field($photo, "[{$i}]photo")->fileInput()?>
-                                                </div>
-                                                
-                                                                            
-                                            </div><!-- .row -->
+                                            <?= $form->field($model, 'created_by')->dropDownList(
+                                                \yii\helpers\ArrayHelper::map($user_ids, 'id', 'username'),
+                                                ['prompt' => 'Vendor']
+                                            ) ?> 
                                         </div>
                                     </div>
-                                <?php endforeach; ?>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <?= $form->field($model, 'content')->widget(\bizley\quill\Quill::class, [
+                                                'toolbarOptions' => [
+                                                    ['bold', 'italic', 'underline', 'strike'],        // Formatlash tugmalar
+                                                    ['link'],                                          // Havolalar
+                                                    ['image', 'video'],                                // Rasmlar va videolar
+                                                    ['clean'],                                         // Tozalash tugmasi
+                                                    ['formula']                                        // Matematik formulalar
+                                                ],                                              
+                                            ]) ?>
+                                            
+                                            <!--?= $form->field($model, 'content')->textarea(['rows' => 2]) ?-->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                             <?= $form->field($model, 'description')->widget(\bizley\quill\Quill::class, []) ?>
+                                        </div>
+                                    </div>
+                                    
+                    <div class="container-items-prevent">
+                        <?php foreach ($modelsPrevent as $i => $prevent): ?>
+                            <div class="item-prevent panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="pull-right">
+                                        <button type="button" class="add-item-prevent btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button>
+                                        <button type="button" class="remove-item-prevent btn btn-danger btn-xs"><i class="fa fa-minus fa-2x"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="panel-body">
+                                    <?php $category_item = CategoryAttribute::find()->select(['id', 'name'])->asArray()->all(); ?>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
+                                                \yii\helpers\ArrayHelper::map($category_item, 'id', 'name'),
+                                                ['prompt' => 'Attribute']
+                                            ) ?>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <?php DynamicFormWidget::end(); ?>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
+                    <?php DynamicFormWidget::end(); ?>
                 </div>
+            </div>
+        </div>
 
-                <div class="form-group">
-                    <?= Html::submitButton(Yii::t('app', 'Saqlash'), ['class' => 'btn btn-success']) ?>
+        <div class="row" id="content">
+            <div class="box box-default" style="display: inline-block; width:90%;">
+                <div class="panel-body">
+                    <?php DynamicFormWidget::begin([
+                        'widgetContainer' => 'dynamicform_wrapper_photo',
+                        'widgetBody' => '.container-items-photo',
+                        'widgetItem' => '.item-photo',
+                        'limit' => 4,
+                        'min' => 1,
+                        'insertButton' => '.add-item-photo',
+                        'deleteButton' => '.remove-item-photo',
+                        'model' => $modelsPhoto[0],
+                        'formId' => 'dynamic-form',
+                        'formFields' => ['product_value', 'photo'],
+                    ]); ?>
+
+                    <div class="container-items-photo">
+                        <?php foreach ($modelsPhoto as $i => $photo): ?>
+                            <div class="item-photo panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="pull-right">
+                                        <button type="button" class="add-item-photo btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button>
+                                        <button type="button" class="remove-item-photo btn btn-danger btn-xs"><i class="fa fa-minus fa-2x"></i></button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">                                    
+                                    <div class="col-sm-4">
+                                            <label for="formFile" class="form-label">Photo yuklash</label>
+                                            <?= $form->field($photo,  "[{$i}]photo")->fileInput([
+                                                'options' => ['accept' => 'image/*'],
+                                                'class' => 'form-control',                                                
+                                            ])->label(false) ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                                    <div class="col-sm-4">
+                                        <?= $form->field($modelsStock, 'quantity')->textInput() ?>
+                                    </div>
+                    <?php DynamicFormWidget::end(); ?>
                 </div>
+            </div>
+        </div>
 
-            <?php ActiveForm::end(); ?>
+        <div class="form-group">
+            <?= Html::submitButton(Yii::t('app', 'Saqlash'), ['class' => 'btn btn-success']) ?>
+        </div>
+
+        <?php ActiveForm::end(); ?>
     </div>
 </div>
-
-
-

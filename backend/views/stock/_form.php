@@ -13,9 +13,6 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'product_id')->textInput() ?>
-
-    <?= $form->field($model, 'attributes')->textarea(['rows' => 6]) ?>
-
     <?= $form->field($model, 'quantity')->textInput() ?>
 
     <div class="form-group">

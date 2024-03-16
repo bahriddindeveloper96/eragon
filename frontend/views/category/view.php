@@ -7,8 +7,9 @@
  ?>
   <div id="content" class="site-content" tabindex="-1">
                 <div class="col-full">
-                    <div class="row">
-                        <nav class="woocommerce-breadcrumb">
+                    <div class="row">'
+                        
+                        <nav class="woocommerce-breadcrumb">                        
                             <a href="home-v1.html">Home</a>
                             <span class="delimiter">
                                 <i class="tm tm-breadcrumbs-arrow-right"></i>

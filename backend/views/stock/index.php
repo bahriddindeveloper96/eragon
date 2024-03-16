@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'product_id',
-            'attributes:ntext',
+            //'attributes:ntext',
             'quantity',
             [
                 'class' => ActionColumn::className(),

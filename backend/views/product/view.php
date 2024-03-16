@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <tbody>        
             <?php foreach ($productValues as $attribute): ?>
                 <tr>
-                    <td><?= $attribute->attribute_id ?></td>
+                    <td><?= $attribute->xususiy->name ?></td>
                     <td><?= $attribute->name ?></td>
                     <!-- Display more attribute fields if needed -->
                 </tr>

@@ -56,9 +56,10 @@ class CategoryController extends Controller
     public function actionView($id)
     {
        // $id = Yii::$app->request->get($id);
+        $category = Category::findOne($id);
         $products = Product::find()->where(['category_id'=> $id])->all();
         
-        return $this->render('view',compact('products'));
+        return $this->render('view',compact('products','category'));
     }
     
     protected function findModel($id)
