@@ -14,8 +14,7 @@ class m240131_011152_create_stock_table extends Migration
     {
         $this->createTable('{{%stock}}', [
             'id' => $this->primaryKey(),
-            'product_id' => $this->integer(),
-            'attributes' => $this->json(),
+            'product_id' => $this->integer(),            
             'quantity' => $this->integer(),
         ]);
         $this->createIndex('index-stock_product_id', 'stock', 'product_id');

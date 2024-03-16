@@ -71,9 +71,12 @@ class ProductController extends Controller
     public function actionView($id)
     {
         // Find the category model with the provided ID
-        $model = $this->findModel($id);
+        //$model = $this->findModel($id);
+        $relateds = Product::find()->all();
+        $product = Product::findOne($id);
         return $this->render('view', [
-            'model' => $model,
+            'product' => $product,
+            'relateds' => $relateds,
         ]);
     }
     protected function findModel($id)

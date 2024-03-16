@@ -39,8 +39,7 @@ class Photo extends \yii\db\ActiveRecord
     {
         return [
             [['product_id',  'photo', 'created_by', 'updated_by'], 'required'],
-            [['product_id', 'created_by', 'updated_by'], 'integer'],
-            [['product_value'], 'string'],
+            [['product_id', 'created_by', 'updated_by'], 'integer'],            
           //  [['photo'],'photo','extension'=> 'jpg,png'],
             [['photo'], 'string', 'max' => 255],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['created_by' => 'id']],
@@ -56,8 +55,7 @@ class Photo extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'product_id' => 'Product ID',
-            'product_value' => 'Product Value',
+            'product_id' => 'Product ID',            
             'photo' => 'Photo',
             'created_by' => 'Created By',
             'updated_by' => 'Updated By',

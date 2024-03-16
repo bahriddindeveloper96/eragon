@@ -18,7 +18,7 @@ class PhotoSearch extends Photo
     {
         return [
             [['id', 'product_id', 'created_by', 'updated_by'], 'integer'],
-            [['product_value', 'photo'], 'safe'],
+            [['photo'], 'safe'],
         ];
     }
 
@@ -64,8 +64,7 @@ class PhotoSearch extends Photo
             'updated_by' => $this->updated_by,
         ]);
 
-        $query->andFilterWhere(['like', 'product_value', $this->product_value])
-            ->andFilterWhere(['like', 'photo', $this->photo]);
+        $query->andFilterWhere(['like', 'photo', $this->photo]);
 
         return $dataProvider;
     }

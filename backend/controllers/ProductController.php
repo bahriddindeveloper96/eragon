@@ -150,6 +150,7 @@ class ProductController extends Controller
                 $modelValue->product_id = $model->id;
                 $modelValue->created_by = $model->created_by;
                 $modelValue->updated_by = $model->updated_by;
+                
                 $modelValue->s_photo = UploadedFile::getInstance($modelValue, "[{$index}]photo");                
                 if ($modelValue->s_photo) {
                     $modelValue->photo = $modelValue->s_photo->name;

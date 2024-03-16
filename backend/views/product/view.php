@@ -41,7 +41,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $model->content; // content HTML formatida keladi
                 },
             ],
-            'description:ntext',
+            [
+                'attribute' => 'description',
+                'format' => 'html',
+                'value' => function ($model) {
+                    return $model->description; // content HTML formatida keladi
+                },
+            ],            
             'price',
             'old_price',
          //   'photo',
@@ -77,15 +83,15 @@ $this->params['breadcrumbs'][] = $this->title;
                 <!-- Add more headers if needed -->
             </tr>
         </thead>
-        <tbody>        
-            <?php foreach ($productPhotos as $attributes): ?>
-                <tr>
-                    <td><?= $attributes->product_id ?></td>
-                   <?php $imageUrl = Yii::getAlias('@fileUrl/').'/backend/web/uploads/product/'.$attributes->photo;?>
-                    <td><img src="<?= Html::encode($imageUrl) ?>" alt="Rasm"width="200"></td>
-                    <!-- Display more attribute fields if needed -->
-                </tr>
-            <?php endforeach; ?>
+        <tbody> 
+            <tr>       
+                <?php foreach ($productPhotos as $attributes): ?>
+                                    
+                    <?php $imageUrl = Yii::getAlias('@fileUrl/').'/backend/web/uploads/product/'.$attributes->photo;?>
+                        <td><img src="<?= Html::encode($imageUrl) ?>" alt="Rasm"width="200"></td>
+                        <!-- Display more attribute fields if needed -->                    
+                    <?php endforeach; ?>
+            </tr>
         </tbody>
     </table>
 

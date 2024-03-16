@@ -2,7 +2,7 @@
                         <?php 
                         use common\models\Category;
                         ?>
-                        <ul id="menu-departments-menu" class="dropdown-menu yamm departments-menu-dropdown">
+                        <ul  id="menu-departments-menu" class="dropdown-menu yamm departments-menu-dropdown">
                             <?php foreach ($categories as $category): ?>
                                 <!--li class="menu-item menu-item-type-custom animate-dropdown">
                                     <a title="Gadgets" href="landing-page-v1.html"></a>
@@ -14,7 +14,7 @@
                                     <?php
                                     
                                     if (!empty($parent->parent_id)):?>        
-                                        <ul role="menu" class=" dropdown-menu">                                            
+                                        <ul style="overflow:auto; height:600px" role="menu" class=" dropdown-menu">                                            
                                             <li class="menu-item menu-item-object-static_block animate-dropdown">
                                                 <div class="yamm-content">
                                                     <div class="bg-yamm-content bg-yamm-content-bottom bg-yamm-content-right">

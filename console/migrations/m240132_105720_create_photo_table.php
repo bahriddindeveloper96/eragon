@@ -14,8 +14,7 @@ class m240132_105720_create_photo_table extends Migration
     {
         $this->createTable('{{%photo}}', [
             'id' => $this->primaryKey(),           
-            'product_id' => $this->integer()->notNull(),
-            'product_value' => $this->json(),            
+            'product_id' => $this->integer()->notNull(),                       
             'photo' => $this->string(255)->notNull(),
             'created_by' => $this->integer()->notNull(),
             'updated_by' => $this->integer()->notNull(),

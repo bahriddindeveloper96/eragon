@@ -6,10 +6,11 @@ use common\models\Vendor;
 use common\models\Category;
 use common\models\Photo;
 use common\models\Company;
-use kartik\widgets\FileInput;
+//use kartik\widgets\FileInput;
 use common\models\CategoryAttribute;
 use common\models\ProductValue;
 use wbraganca\dynamicform\DynamicFormWidget;
+use kartik\file\FileInput;
 
 /** @var yii\web\View $this */
 /** @var common\models\Product $model */
@@ -164,33 +165,25 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <?= $form->field($photo, "[{$i}]product_value")->textarea(['rows' => 4]) ?>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <?= $form->field($photo, "[{$i}]photo")->fileInput() ?>
+                                    <div class="row">                                    
+                                    <div class="col-sm-4">
+                                            <label for="formFile" class="form-label">Photo yuklash</label>
+                                            <?= $form->field($photo,  "[{$i}]photo")->fileInput([
+                                                'options' => ['accept' => 'image/*'],
+                                                'class' => 'form-control',                                                
+                                            ])->label(false) ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         <?php endforeach; ?>
                     </div>
+                                    <div class="col-sm-4">
+                                        <?= $form->field($stock, 'quantity')->textInput() ?>
+                                    </div>
                     <?php DynamicFormWidget::end(); ?>
                 </div>
             </div>
-        </div>
-        <hr>
-            <h3>Stock</h3>
-        <div class="row">
-            <div class="col-sm-12">
-                <?= $form->field($stock, 'attributes')->textarea(['rows' => 2]) ?>
-            </div>                
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <?= $form->field($stock, 'quantity')->textInput() ?>
-            </div>                
         </div>
 
         <div class="form-group">

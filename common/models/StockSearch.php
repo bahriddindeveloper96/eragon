@@ -18,7 +18,7 @@ class StockSearch extends Stock
     {
         return [
             [['id', 'product_id', 'quantity'], 'integer'],
-            [['attributes'], 'safe'],
+            
         ];
     }
 
@@ -63,7 +63,7 @@ class StockSearch extends Stock
             'quantity' => $this->quantity,
         ]);
 
-        $query->andFilterWhere(['like', 'attributes', $this->attributes]);
+       
 
         return $dataProvider;
     }

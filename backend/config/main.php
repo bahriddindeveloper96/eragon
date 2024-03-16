@@ -18,6 +18,16 @@ return [
         //        '@app/views' => '@vendor/hail812/yii2-adminlte3/src/views'
         //     ],
         // ],
+        'assetManager' => [
+            'bundles' => [
+                'kartik\file\FileInputAsset' => [
+                    'depends' => [
+                        'yii\web\YiiAsset',
+                        'yii\bootstrap5\BootstrapAsset',
+                    ],
+                ],
+            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-backend',
             'baseUrl' => '/admin',

@@ -30,8 +30,7 @@ class Stock extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_id', 'quantity'], 'integer'],
-            [['attributes'], 'string'],
+            [['product_id', 'quantity'], 'integer'],            
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
     }
@@ -43,8 +42,7 @@ class Stock extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'product_id' => 'Product ID',
-            'attributes' => 'Attributes',
+            'product_id' => 'Product ID',            
             'quantity' => 'Quantity',
         ];
     }
