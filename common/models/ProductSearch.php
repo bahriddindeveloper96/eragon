@@ -4,6 +4,8 @@ namespace common\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
+use common\models\Stock;
+use common\models\Photo;
 use common\models\Product;
 
 /**
@@ -40,7 +42,7 @@ class ProductSearch extends Product
      */
     public function search($params)
     {
-        $query = Product::find()->joinWith('stock')->joinWith('photo');
+        $query = Product::find()->joinWith('stocks')->joinWith('photos');
 
         // add conditions that should always apply here
 

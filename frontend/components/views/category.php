@@ -1,7 +1,7 @@
 <div class="widget woocommerce widget_product_categories techmarket_widget_product_categories" id="techmarket_product_categories_widget-2">
                                 <ul class="product-categories ">
                                     <li class="product_cat">
-                                        <span>Browse Categories</span>
+                                        <span>Каталог</span>
                                         <ul>                                           
                                             <?php foreach ($categories as $category): ?>
                                                 <li class="cat-item">

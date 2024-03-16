@@ -1,6 +1,7 @@
 <?php
 
 namespace common\models;
+use common\models\CategoryAttribute;
 
 use Yii;
 
@@ -35,7 +36,7 @@ class ProductValue extends \yii\db\ActiveRecord
         return [
             [['attribute_id', 'product_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
-            [['attribute_id'], 'exist', 'skipOnError' => true, 'targetClass' => CategoryAttribute::class, 'targetAttribute' => ['attribute_id' => 'id']],
+           // [['attribute_id'], 'exist', 'skipOnError' => true, 'targetClass' => CategoryAttribute::class, 'targetAttribute' => ['attribute_id' => 'id']],
            // [['photo_id'], 'exist', 'skipOnError' => true, 'targetClass' => Photo::class, 'targetAttribute' => ['photo_id' => 'id']],
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
@@ -60,10 +61,10 @@ class ProductValue extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery|ProductAttributeQuery
      */
-    public function getAttribute0()
-    {
-        return $this->hasOne(CategoryAttribute::class, ['id' => 'attribute_id']);
-    }
+    // public function getAttributes()
+    // {
+    //     return $this->hasOne(CategoryAttribute::class, ['id' => 'attribute_id']);
+    // }
 
     /**
      * Gets query for [[Photo]].
@@ -83,6 +84,11 @@ class ProductValue extends \yii\db\ActiveRecord
     public function getProduct()
     {
         return $this->hasOne(Product::class, ['id' => 'product_id']);
+    }
+
+    public function getXususiy()
+    {
+        return $this->hasOne(CategoryAttribute::class, ['id' => 'attribute_id']);
     }
 
     /**

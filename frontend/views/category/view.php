@@ -157,7 +157,7 @@
                                                         <?php endforeach;?> 
                                                         <div class="product list-view-large first ">
                                                             <div class="media">
-                                                                <?= \yii\helpers\Html::img(Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/view' . $photo->photo, [
+                                                                <?= \yii\helpers\Html::img(Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $photo->photo, [
                                                                     'class' => 'attachment-shop_catalog size-shop_catalog wp-post-image',
                                                                     'width' => '224',
                                                                     'height' => '197',
@@ -169,7 +169,7 @@
                                                                             <a href="#" rel="nofollow" class="add_to_wishlist"> Add to Wishlist</a>
                                                                         </div>
                                                                         <!-- .yith-wcwl-add-to-wishlist -->
-                                                                        <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="<?= \yii\helpers\Url::to(['product/index', 'id'=>$product->id]);?>">
+                                                                        <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="<?= \yii\helpers\Url::to(['product/view', 'id'=>$product->id]);?>">
                                                                             <h2 class="woocommerce-loop-product__title"><?= $product->name;?></h2>
                                                                             <div class="techmarket-product-rating">
                                                                                 <div title="Rated 5.00 out of 5" class="star-rating">

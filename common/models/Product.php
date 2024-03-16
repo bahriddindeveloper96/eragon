@@ -123,7 +123,7 @@ class Product extends \yii\db\ActiveRecord
      */
     public function getStocks()
     {
-        return $this->hasMany(Stock::class, ['product_id' => 'id']);
+        return $this->hasOne(Stock::class, ['product_id' => 'id']);
     }
 
     /**

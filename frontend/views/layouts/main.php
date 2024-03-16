@@ -188,9 +188,8 @@ AppAsset::register($this);
                             <button class="btn dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="tm tm-departments-thin"></i>
                                 <span>Каталог</span>
-                            </button>
-                            <?= MenuWidget::widget() ?>                    
-
+                            </button>                           
+                                <?= MenuWidget::widget() ?>
                         </div>
                         <!-- .departments-menu -->
                         <nav id="primary-navigation" class="primary-navigation" aria-label="Primary Navigation" data-nav="flex-menu">

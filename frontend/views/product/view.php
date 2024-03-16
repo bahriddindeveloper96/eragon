@@ -88,12 +88,14 @@
                                                             </a>
                                                         </div>
                                                         <div class="cat-and-sku">
-                                                            <span class="posted_in categories">
-                                                                <a rel="tag" href="product-category.html">TV &amp; Video</a>
-                                                            </span>
-                                                            <span class="sku_wrapper">SKU:
-                                                                <span class="sku">5487FB8/11</span>
-                                                            </span>
+                                                            <h6>
+                                                                <a rel="tag" href="product-category.html"><?= $product->category->name;?></a>
+                                                                <br>
+                                                                <span class="sku_wrapper">Склад шт:
+                                                                <span class="sku"><?= $product->stocks->quantity;?></span>
+                                                                </span>                
+                                                            </h6>
+                                                            
                                                         </div>
                                                         <div class="product-label">
                                                             <div class="ribbon label green-label">
@@ -153,16 +155,16 @@
                                             <div class="woocommerce-tabs wc-tabs-wrapper">
                                                 <ul role="tablist" class="nav tabs wc-tabs">
                                                     <li class="nav-item accessories_tab">
-                                                        <a class="nav-link active" data-toggle="tab" role="tab" aria-controls="tab-accessories" href="#tab-accessories">Accessories</a>
+                                                        <a class="nav-link active" data-toggle="tab" role="tab" aria-controls="tab-accessories" href="#tab-accessories">Аксессуары</a>
                                                     </li>
                                                     <li class="nav-item description_tab">
-                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-description" href="#tab-description">Description</a>
+                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-description" href="#tab-description">ОПИСАНИЕ</a>
                                                     </li>
                                                     <li class="nav-item specification_tab">
-                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-specification" href="#tab-specification">Specification</a>
+                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-specification" href="#tab-specification">СПЕЦИФИКАЦИЯ</a>
                                                     </li>
                                                     <li class="nav-item reviews_tab">
-                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-reviews" href="#tab-reviews">Reviews (1)</a>
+                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-reviews" href="#tab-reviews">Отзывы (1)</a>
                                                     </li>
                                                 </ul>
                                                 <!-- /.ec-tabs -->
@@ -284,98 +286,21 @@
                                                     </div>
                                                     <div class="tab-pane" id="tab-specification" role="tabpanel">
                                                         <div class="tm-shop-attributes-detail like-column columns-3">
-                                                            <h3 class="tm-attributes-title">General</h3>
-                                                            <table class="shop_attributes">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th>Brand</th>
-                                                                        <td>
-                                                                            <p><a href="#" rel="tag">Galaxy</a></p>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Label</th>
-                                                                        <td>
-                                                                            <p><a href="#" rel="tag">A+</a></p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <!-- /.shop_attributes -->
-                                                            <h3 class="tm-attributes-title">Technical Specs</h3>
-                                                            <table class="shop_attributes">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th>Screen Size</th>
-                                                                        <td>40″</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Aspect Ratio</th>
-                                                                        <td>16:9</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>3DTV</th>
-                                                                        <td>No</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Recommended Resolution</th>
-                                                                        <td>1080p</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Panel</th>
-                                                                        <td>LED</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Tuner</th>
-                                                                        <td>ATSC/Clear QAM Tuners</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Refresh Rate</th>
-                                                                        <td>120Hz</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Refresh Rate</th>
-                                                                        <td>120Hz</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <!-- /.shop_attributes -->
-                                                            <h3 class="tm-attributes-title">Connectivity</h3>
-                                                            <table class="shop_attributes">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th>HDMI</th>
-                                                                        <td>2 In</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Digital Audio</th>
-                                                                        <td>1 Optical Out</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Other Connectors</th>
-                                                                        <td>1 x RF In</td>
-                                                                        <td>1 x Audio Out (Mini Jack)</td>
-                                                                        <td>1 x RS232C</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>LAN</th>
-                                                                        <td>1</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Composite A/V</th>
-                                                                        <td>1 In</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>USB</th>
-                                                                        <td>2</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Component Video</th>
-                                                                        <td>1 in
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                            
+                                                            <h3 class="tm-attributes-title">Атрибуты</h3>
+                                                            <?php foreach($product->productValues as $value):?>
+                                                                <table class="shop_attributes">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th><?= $value->xususiy->name?></th>
+                                                                            <td><?= $value->name;?></td>
+                                                                        </tr>
+                                                                        
+                                                                       
+                                                                    </tbody>
+                                                                </table>
+                                                            <?php endforeach;?>
+                                                            
                                                             <!-- /.shop_attributes -->
                                                         </div>
                                                         <!-- /.tm-shop-attributes-detail -->
