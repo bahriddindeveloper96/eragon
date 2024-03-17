@@ -45,7 +45,7 @@
                                         </button>
                                     </div>
                                     <!-- .handheld-sidebar-toggle -->
-                                    <h1 class="woocommerce-products-header__title page-title"><?= $category->name;?></h1>
+                                    <h1 class="woocommerce-products-header__title page-title">Поиск товаров: <?= Html::encode($q) ?></h1>
                                     <ul role="tablist" class="shop-view-switcher nav nav-tabs">
                                         <li class="nav-item">
                                             <a href="#grid-extended" title="Grid Extended View" data-toggle="tab" class="nav-link ">
@@ -232,31 +232,33 @@
                                     <!-- .tab-pane -->                                    
                                 </div>
                                 <!-- .tab-content -->
-                                <div class="shop-control-bar-bottom">
-                                    <?= Html::beginForm(['category/view','id'=>$category->id], 'post', ['class' => 'form-techmarket-wc-ppp']) ?>
-                                        <select class="techmarket-wc-wppp-select c-select" onchange="this.form.submit()" name="ppp">
-                                            <option value="1">Show 20</option>
-                                            <option value="2">Show 40</option>
-                                            <option value="3">Show All</option>
-                                        </select>
-                                        <input type="hidden" value="5" name="shop_columns">
-                                        <input type="hidden" value="15" name="shop_per_page">
-                                        <input type="hidden" value="right-sidebar" name="shop_layout">
-                                    <?= Html::endForm() ?>
-                                    <!-- .form-techmarket-wc-ppp -->
-                                    <p class="woocommerce-result-count">
-                                    Показаны <?= $pages->getPage() * $pages->getPageSize() + 1 ?>–<?= min(($pages->getPage() + 1) * $pages->getPageSize(), $totalCount) ?> из <?= $totalCount ?> результаты
-                                    </p>
-                                    <?= \yii\widgets\LinkPager::widget([
-                                        'pagination' => $pages,
-                                        'options' => ['class' => 'pagination woocommerce-pagination'],
-                                        'linkContainerOptions' => ['class' => 'page-item'],
-                                        'linkOptions' => ['class' => 'page-link'],
-                                        'prevPageLabel' => '←',
-                                        'nextPageLabel' => '→',
-                                    ]) ?>                                        
-                                </div>
+                                <?php if(!empty($products)):?>
+                                    <div class="shop-control-bar-bottom">
+                                        <?= Html::beginForm(['category/view'], 'post', ['class' => 'form-techmarket-wc-ppp']) ?>
+                                            <select class="techmarket-wc-wppp-select c-select" onchange="this.form.submit()" name="ppp">
+                                                <option value="1">Show 20</option>
+                                                <option value="2">Show 40</option>
+                                                <option value="3">Show All</option>
+                                            </select>
+                                            <input type="hidden" value="5" name="shop_columns">
+                                            <input type="hidden" value="15" name="shop_per_page">
+                                            <input type="hidden" value="right-sidebar" name="shop_layout">
+                                        <?= Html::endForm() ?>
+                                        <!-- .form-techmarket-wc-ppp -->
+                                        <p class="woocommerce-result-count">
+                                        Показаны <?= $pages->getPage() * $pages->getPageSize() + 1 ?>–<?= min(($pages->getPage() + 1) * $pages->getPageSize(), $totalCount) ?> из <?= $totalCount ?> результаты
+                                        </p>
+                                        <?= \yii\widgets\LinkPager::widget([
+                                            'pagination' => $pages,
+                                            'options' => ['class' => 'pagination woocommerce-pagination'],
+                                            'linkContainerOptions' => ['class' => 'page-item'],
+                                            'linkOptions' => ['class' => 'page-link'],
+                                            'prevPageLabel' => '←',
+                                            'nextPageLabel' => '→',
+                                        ]) ?>                                        
+                                    </div>
                                 <!-- .shop-control-bar-bottom -->
+                                <?php endif;?>
                             </main>
                             <!-- #main -->
                         </div>

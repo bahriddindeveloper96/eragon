@@ -72,13 +72,12 @@ AppAsset::register($this);
                                 </a>
                                 <!-- /.custom-logo-link -->
                             </div>
-                            <form class="navbar-search" method="get" action="home-v1.html">
+                            <form class="navbar-search" method="get" action="<?= \yii\helpers\Url::to(['category/search']);?>">
                                 <label class="sr-only screen-reader-text" for="search"></label>
                                 <div class="input-group">
-                                    <input type="text" id="search" class="form-control search-field product-search-field" dir="ltr" value="" name="s" placeholder="Искать товары и категории" />
+                                    <input type="text" id="search" class="form-control search-field product-search-field" dir="ltr" value="" name="q" placeholder="Искать товары и категории" />
                                     <!-- .input-group-addon -->
-                                    <div class="input-group-btn input-group-append">
-                                        <input type="hidden" id="search-param" name="post_type" value="product" />
+                                    <div class="input-group-btn input-group-append">                                        
                                         <button type="submit" class="btn btn-primary">
                                             <i class="fa fa-search"></i>
                                             <span class="search-btn">Поиск</span>
@@ -252,11 +251,10 @@ AppAsset::register($this);
                                 <!-- .handheld-navigation -->
                                 <div class="site-search">
                                     <div class="widget woocommerce widget_product_search">
-                                        <form role="search" method="get" class="woocommerce-product-search" action="home-v1.html">
+                                        <form role="search" method="get" class="woocommerce-product-search" action="<?= \yii\helpers\Url::to(['category/search']);?>">
                                             <label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
-                                            <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products&hellip;" value="" name="s" />
-                                            <input type="submit" value="Search" />
-                                            <input type="hidden" name="post_type" value="product" />
+                                            <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="" value="<?= htmlspecialchars("Search products") ?>" name="q" />
+                                            <input type="submit" value="Search" />                                            
                                         </form>
                                     </div>
                                     <!-- .widget -->

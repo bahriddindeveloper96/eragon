@@ -41,8 +41,11 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [                
+            'rules' => [
+                'category/<id:\d+>/page/<page:\d+>' => 'category/view',                
                 'category/<id:\d+>' => 'category/view',
+                'search' => 'category/search',
+                
             ],
         ],
       

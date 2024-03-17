@@ -20,7 +20,7 @@
                                 <div class="shop-archive-header">
                                     <div class="jumbotron">
                                         <div class="jumbotron-img">
-                                            <img width="416" height="283" alt="" src="images/eragon/cat-banner.jpg" class="jumbo-image alignright">
+                                            <img width="416" height="283" alt="" src="/images/eragon/cat-banner.jpg" class="jumbo-image alignright">
                                         </div>
                                         <div class="jumbotron-caption">
                                             <h3 class="jumbo-title">Virtual Reality Headsets</h3>
@@ -100,7 +100,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/1.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/1.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -142,7 +142,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/2.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/2.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -184,7 +184,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/3.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/3.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -226,7 +226,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/4.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/4.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -268,7 +268,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/5.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/5.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -310,7 +310,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/6.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/6.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -352,7 +352,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/7.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/7.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -394,7 +394,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/8.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/8.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -436,7 +436,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/9.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/9.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -478,7 +478,7 @@
                                                     </div>
                                                     <!-- .yith-wcwl-add-to-wishlist -->
                                                     <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/10.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/10.jpg">
                                                         <span class="price">
                                                             <span class="woocommerce-Price-amount amount">
                                                                 <span class="woocommerce-Price-currencySymbol">$</span>800.00</span>
@@ -524,7 +524,7 @@
                                             <div class="products">
                                                 <div class="product list-view-large first ">
                                                     <div class="media">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/1.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/1.jpg">
                                                         <div class="media-body">
                                                             <div class="product-info">
                                                                 <div class="yith-wcwl-add-to-wishlist">
@@ -544,7 +544,7 @@
                                                                 <!-- .woocommerce-LoopProduct-link -->
                                                                 <div class="brand">
                                                                     <a href="#">
-                                                                        <img alt="galaxy" src="images/brands/5.png">
+                                                                        <img alt="galaxy" src="/images/brands/5.png">
                                                                     </a>
                                                                 </div>
                                                                 <!-- .brand -->
@@ -584,7 +584,7 @@
                                                 <!-- .product -->
                                                 <div class="product list-view-large ">
                                                     <div class="media">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/2.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/2.jpg">
                                                         <div class="media-body">
                                                             <div class="product-info">
                                                                 <div class="yith-wcwl-add-to-wishlist">
@@ -604,7 +604,7 @@
                                                                 <!-- .woocommerce-LoopProduct-link -->
                                                                 <div class="brand">
                                                                     <a href="#">
-                                                                        <img alt="galaxy" src="images/brands/5.png">
+                                                                        <img alt="galaxy" src="/images/brands/5.png">
                                                                     </a>
                                                                 </div>
                                                                 <!-- .brand -->
@@ -644,7 +644,7 @@
                                                 <!-- .product -->
                                                 <div class="product list-view-large ">
                                                     <div class="media">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/3.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/3.jpg">
                                                         <div class="media-body">
                                                             <div class="product-info">
                                                                 <div class="yith-wcwl-add-to-wishlist">
@@ -664,7 +664,7 @@
                                                                 <!-- .woocommerce-LoopProduct-link -->
                                                                 <div class="brand">
                                                                     <a href="#">
-                                                                        <img alt="galaxy" src="images/brands/5.png">
+                                                                        <img alt="galaxy" src="/images/brands/5.png">
                                                                     </a>
                                                                 </div>
                                                                 <!-- .brand -->
@@ -704,7 +704,7 @@
                                                 <!-- .product -->
                                                 <div class="product list-view-large ">
                                                     <div class="media">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/4.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/4.jpg">
                                                         <div class="media-body">
                                                             <div class="product-info">
                                                                 <div class="yith-wcwl-add-to-wishlist">
@@ -724,7 +724,7 @@
                                                                 <!-- .woocommerce-LoopProduct-link -->
                                                                 <div class="brand">
                                                                     <a href="#">
-                                                                        <img alt="galaxy" src="images/brands/5.png">
+                                                                        <img alt="galaxy" src="/images/brands/5.png">
                                                                     </a>
                                                                 </div>
                                                                 <!-- .brand -->
@@ -764,7 +764,7 @@
                                                 <!-- .product -->
                                                 <div class="product list-view-large last">
                                                     <div class="media">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/5.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/5.jpg">
                                                         <div class="media-body">
                                                             <div class="product-info">
                                                                 <div class="yith-wcwl-add-to-wishlist">
@@ -784,7 +784,7 @@
                                                                 <!-- .woocommerce-LoopProduct-link -->
                                                                 <div class="brand">
                                                                     <a href="#">
-                                                                        <img alt="galaxy" src="images/brands/5.png">
+                                                                        <img alt="galaxy" src="/images/brands/5.png">
                                                                     </a>
                                                                 </div>
                                                                 <!-- .brand -->
@@ -824,7 +824,7 @@
                                                 <!-- .product -->
                                                 <div class="product list-view-large first ">
                                                     <div class="media">
-                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="images/eragon/products/6.jpg">
+                                                        <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/6.jpg">
                                                         <div class="media-body">
                                                             <div class="product-info">
                                                                 <div class="yith-wcwl-add-to-wishlist">
@@ -844,7 +844,7 @@
                                                                 <!-- .woocommerce-LoopProduct-link -->
                                                                 <div class="brand">
                                                                     <a href="#">
-                                                                        <img alt="galaxy" src="images/brands/5.png">
+                                                                        <img alt="galaxy" src="/images/brands/5.png">
                                                                     </a>
                                                                 </div>
                                                                 <!-- .brand -->
@@ -950,7 +950,7 @@
                                                     <div class="landscape-product-widget product">
                                                         <a class="woocommerce-LoopProduct-link" href="single-product-fullwidth.html">
                                                             <div class="media">
-                                                                <img class="wp-post-image" src="images/products/sm-1.jpg" alt="">
+                                                                <img class="wp-post-image" src="/images/products/sm-1.jpg" alt="">
                                                                 <div class="media-body">
                                                                     <span class="price">
                                                                         <ins>
@@ -980,7 +980,7 @@
                                                     <div class="landscape-product-widget product">
                                                         <a class="woocommerce-LoopProduct-link" href="single-product-fullwidth.html">
                                                             <div class="media">
-                                                                <img class="wp-post-image" src="images/products/sm-2.jpg" alt="">
+                                                                <img class="wp-post-image" src="/images/products/sm-2.jpg" alt="">
                                                                 <div class="media-body">
                                                                     <span class="price">
                                                                         <ins>
@@ -1010,7 +1010,7 @@
                                                     <div class="landscape-product-widget product">
                                                         <a class="woocommerce-LoopProduct-link" href="single-product-fullwidth.html">
                                                             <div class="media">
-                                                                <img class="wp-post-image" src="images/products/sm-3.jpg" alt="">
+                                                                <img class="wp-post-image" src="/images/products/sm-3.jpg" alt="">
                                                                 <div class="media-body">
                                                                     <span class="price">
                                                                         <ins>
@@ -1040,7 +1040,7 @@
                                                     <div class="landscape-product-widget product">
                                                         <a class="woocommerce-LoopProduct-link" href="single-product-fullwidth.html">
                                                             <div class="media">
-                                                                <img class="wp-post-image" src="images/products/sm-4.jpg" alt="">
+                                                                <img class="wp-post-image" src="/images/products/sm-4.jpg" alt="">
                                                                 <div class="media-body">
                                                                     <span class="price">
                                                                         <ins>
@@ -1101,7 +1101,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="images/brands/1.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="/images/brands/1.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1115,7 +1115,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="images/brands/2.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="/images/brands/2.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1129,7 +1129,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="images/brands/3.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="/images/brands/3.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1143,7 +1143,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="images/brands/4.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="/images/brands/4.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1157,7 +1157,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="images/brands/5.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="/images/brands/5.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1171,7 +1171,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="images/brands/6.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="/images/brands/6.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1185,7 +1185,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="handspot" src="images/brands/7.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="handspot" src="/images/brands/7.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1199,7 +1199,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="kinova" src="images/brands/8.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="kinova" src="/images/brands/8.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1213,7 +1213,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="nespresso" src="images/brands/9.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="nespresso" src="/images/brands/9.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1227,7 +1227,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="samsung" src="images/brands/10.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="samsung" src="/images/brands/10.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1241,7 +1241,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="speedway" src="images/brands/11.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="speedway" src="/images/brands/11.png">
                                     </figure>
                                 </a>
                             </div>
@@ -1255,7 +1255,7 @@
                                             </div>
                                             <!-- /.info -->
                                         </figcaption>
-                                        <img width="145" height="50" class="img-responsive desaturate" alt="yoko" src="images/brands/12.png">
+                                        <img width="145" height="50" class="img-responsive desaturate" alt="yoko" src="/images/brands/12.png">
                                     </figure>
                                 </a>
                             </div>

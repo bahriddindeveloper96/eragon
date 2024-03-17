@@ -12,6 +12,7 @@ use common\models\CategoryAttribute;
 use common\models\Model;
 use yii\helpers\ArrayHelper;
 use yii\web\Response;
+use yii\data\Pagination;
 use Yii;
 
 /**
@@ -55,12 +56,28 @@ class CategoryController extends Controller
    
     public function actionView($id)
     {
-       // $id = Yii::$app->request->get($id);
+        // $id = Yii::$app->request->get($id);
+                
         $category = Category::findOne($id);
-        $products = Product::find()->where(['category_id'=> $id])->all();
+        $query = Product::find()->where(['category_id'=> $id]);
+        $totalCount = $query->count();
+        $pages = new Pagination(['totalCount'=>$query->count(), 'pageSize'=>1,'forcePageParam'=>false,'pageSizeParam'=>false]);
+        $products = $query->offset($pages->offset)->limit($pages->limit)->all();
+        return $this->render('view',compact('products','category','pages','totalCount'));
+    } 
+    public function actionSearch()
+    {
         
-        return $this->render('view',compact('products','category'));
-    }
+        $q = trim(Yii::$app->request->get('q')); 
+        if(!$q)
+            return $this->render('search',compact('q'));       
+        $query = Product::find()->where(['like','name',$q]);
+        $totalCount = $query->count();
+        $pages = new Pagination(['totalCount'=>$query->count(), 'pageSize'=>1,'forcePageParam'=>false,'pageSizeParam'=>false]);
+        $products = $query->offset($pages->offset)->limit($pages->limit)->all();           
+        return $this->render('search',compact('products','pages','totalCount','q'));
+
+    }  
     
     protected function findModel($id)
     {
