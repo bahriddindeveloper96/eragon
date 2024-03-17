@@ -40,8 +40,7 @@ class AppAsset extends AssetBundle
         'js/waypoints-sticky.min.js',
         'js/pace.min.js',
         'js/slick.min.js',
-        'js/scripts.js',
-       // 'js/jquery-1.11.1.min.js',
+        'js/scripts.js',        
         'js/main.js',
         
     ];

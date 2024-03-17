@@ -484,7 +484,7 @@
                                                                 <h2 class="woocommerce-loop-product__title"><?= $related->name;?></h2>
                                                             </a>
                                                             <div class="hover-area">
-                                                                <a class="button add_to_cart_button" href="#" rel="nofollow">Add to cart</a>
+                                                                <a data-id="<?= $related->id;?>" class="button add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>" rel="nofollow">Add to cart</a>
                                                                 <a class="add-to-compare-link" href="#">Add to compare</a>
                                                             </div>
                                                         </div>

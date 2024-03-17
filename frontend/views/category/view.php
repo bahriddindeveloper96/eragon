@@ -207,7 +207,7 @@
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span><?= $product->price;?></span>
                                                                         </span>
                                                                         <!-- .price -->
-                                                                        <a class="button add_to_cart_button" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>
+                                                                        <a class="button add_to_cart_button add-to-cart" data-id="<?= $product->id;?>" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>
                                                                         <a class="add-to-compare-link" href="compare.html">Add to compare</a>
                                                                     </div>
                                                                     <!-- .product-actions -->

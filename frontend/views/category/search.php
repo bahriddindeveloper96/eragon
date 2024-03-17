@@ -134,7 +134,7 @@
                                                                     <?= $product->description;?>
                                                             </div>
                                                             <!-- .woocommerce-product-details__short-description -->
-                                                            <a class="button product_type_simple add_to_cart_button" href="#">Add to cart</a>
+                                                            <a data-id="<?= $product->id;?>" class="button product_type_simple add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to cart</a>
                                                             <a class="add-to-compare-link" href="#">Add to compare</a>
                                                         </div>
                                                     <?php endforeach;?>
@@ -207,7 +207,7 @@
                                                                                 <span class="woocommerce-Price-currencySymbol">$</span><?= $product->price;?></span>
                                                                         </span>
                                                                         <!-- .price -->
-                                                                        <a class="button add_to_cart_button" href="cart.html">Add to Cart</a>
+                                                                        <a data-id="<?= $product->id;?>" class="button add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>
                                                                         <a class="add-to-compare-link" href="compare.html">Add to compare</a>
                                                                     </div>
                                                                     <!-- .product-actions -->

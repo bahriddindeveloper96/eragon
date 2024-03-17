@@ -4,15 +4,21 @@
 function showCart(cart){
     $('#cart .modal-body').html(cart);
     $('#cart').modal('toggle');
+    //$('#cart').modal('hide');
     let cartSum = $('#cart-sum').text() ? $('#cart-sum').text() : '$0';
     if(cartSum){
         $('.cart-sum').text(cartSum);
     }
+    let cartCount = $('#cart-qty').text() ? $('#cart-qty').text() : '0';
+    if(cartSum){
+        $('.cart-count').text(cartCount);
+    }
 }
+
 
 function getCart(){
     $.ajax({
-        url: 'cart/show',
+        url: '/cart/show',
         type: 'GET',
         success: function (res) {
             if(!res) alert('Ошибка');
