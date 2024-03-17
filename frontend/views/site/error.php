@@ -24,13 +24,13 @@ $this->title = $name;
                                 <div class="error404">
                                     <div class="info-404">
                                         <h2 class="title">404!</h2>
-                                        <p class="lead error-text">Oops! That page can’t be found.</p>
-                                        <p class="lead">Nothing was found at this location. Try searching, or check out the links below.</p>
+                                        <p class="lead error-text"><?= nl2br(Html::encode($message));?></p>
+                                        <p class="lead">Пожалуйста поиск товаров </p>
                                         <div class="sub-form-row">
                                             <div class="widget woocommerce widget_product_search">
-                                                <form class="search-form">
-                                                    <input type="text" placeholder="Search products...">
-                                                    <button class="button" type="button">Search</button>
+                                                <form class="search-form" method="get" action="<?= \yii\helpers\Url::to(['category/search']);?>">
+                                                    <input type="text" placeholder="Поиск товаров..." name="q">
+                                                    <button class="button" type="button">Поиск</button>
                                                 </form>
                                             </div>
                                         </div>

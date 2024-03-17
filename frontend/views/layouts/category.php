@@ -12,6 +12,7 @@ use yii\bootstrap5\NavBar;
 use app\components\MenuWidget;
 use app\components\MobileWidget;
 use app\components\CategoryWidget;
+use yii\bootstrap5\Modal;
 
 AppAsset::register($this);
 ?>
@@ -479,8 +480,21 @@ AppAsset::register($this);
                 </div>
                 <!-- .col-full -->
             </footer>
-            <!-- .site-footer -->
+            <!-- .site-footer -->            
         </div>
+        <?php Modal::begin([
+            'title' => '<h2>Корзина</h2>',            
+            //'toggleButton' => ['label' => 'Click me'],
+           // 'size' => 'modal-sm',
+            'id' => 'cart',
+            'footer' => '<button type="button" class="btn btn-default" data-bs-dismiss="modal">Покупка</button>
+            <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
+            <button type="button" class="btn btn-primary">Оформить заказ</button>'
+            ]);           
+
+            Modal::end();
+            ?>
+                  
         
        
         <?php $this->endBody() ?>

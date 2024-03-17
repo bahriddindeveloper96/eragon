@@ -59,6 +59,8 @@ class CategoryController extends Controller
         // $id = Yii::$app->request->get($id);
                 
         $category = Category::findOne($id);
+        if(empty($category))
+            throw new \yii\web\HttpException(404, 'Такой категории нет');
         $query = Product::find()->where(['category_id'=> $id]);
         $totalCount = $query->count();
         $pages = new Pagination(['totalCount'=>$query->count(), 'pageSize'=>1,'forcePageParam'=>false,'pageSizeParam'=>false]);

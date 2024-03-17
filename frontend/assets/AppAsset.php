@@ -41,6 +41,8 @@ class AppAsset extends AssetBundle
         'js/pace.min.js',
         'js/slick.min.js',
         'js/scripts.js',
+       // 'js/jquery-1.11.1.min.js',
+        'js/main.js',
         
     ];
     public $depends = [

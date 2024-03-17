@@ -2,86 +2,68 @@
 
 namespace frontend\controllers;
 
+use common\models\Cart;
 use common\models\Product;
-use common\models\ProductSearch;
-use common\models\Stock;
-use common\models\Photo;
 use yii\web\Controller;
-use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
-use common\models\ProductValue;
-use common\models\Model;
-use yii\helpers\ArrayHelper;
-use yii\web\UploadedFile;
-use yii\helpers\FileHelper;
-use Exception;
 use Yii;
 
-/**
- * ProductController implements the CRUD actions for Product model.
- */
 class CartController extends Controller
 {
-    /**
-     * @inheritDoc
-     */
-    public function behaviors()
+
+    public function actionAdd()
     {
-        return array_merge(
-            parent::behaviors(),
-            [
-                'verbs' => [
-                    'class' => VerbFilter::className(),
-                    'actions' => [
-                        'delete' => ['POST'],
-                    ],
-                ],
-            ]
-        );
-    }
-
-    /**
-     * Lists all Product models.
-     *
-     * @return string
-     */
-    
-
-    public function actionIndex()
-    {        
-        $products = Product::find()->all();
-
-        return $this->render('wishlist', [
-            'products' => $products,
-        ]);
-    }
-
-    /**
-     * Displays a single Product model.
-     * @param int $id ID
-     * @return string
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    // public function actionView($id)
-    // {
-    //     return $this->render('view', [
-    //         'model' => $this->findModel($id),
-    //     ]);
-    // }
-    public function actionView($id)
-    {
-        // Find the category model with the provided ID
-        $model = $this->findModel($id);
-        return $this->render('view', [
-            'model' => $model,
-        ]);
-    }
-    protected function findModel($id)
-    {
-        if (($model = Product::findOne(['id' => $id])) !== null) {
-            return $model;
+        $id = Yii::$app->request->get('id');
+        $qty = (int) Yii::$app->request->get('qty');
+       // $qty = $qty === null ? 1 : $qty;
+        $product = Product::findOne($id);
+        
+        if(empty($product)) {
+            return false;
         }
-
-        throw new NotFoundHttpException('The requested page does not exist.');
+        
+        $session = Yii::$app->session;
+        $session->open();
+        
+        $cart = new Cart();
+        $cart->addToCart($product);
+        
+        $this->layout = false;
+        return $this->render('cart-modal', compact('session'));
     }
+
+    public function actionShow()
+    {
+        $session = \Yii::$app->session;
+        $session->open();
+        return $this->render('cart-modal', compact('session'));
+    }
+
+    public function actionDelItem()
+    {
+        $id = Yii::$app->request->get('id');
+        $session = Yii::$app->session;
+        $session->open();
+        $cart = new Cart();
+        $cart->recalc($id);
+        $this->layout = false;
+        return $this->render('cart-modal', compact('session'));
+    }
+
+    public function actionClear()
+    {
+        $session = \Yii::$app->session;
+        $session->open();
+        $this->layout = false;
+        $session->remove('cart');
+        $session->remove('cart.qty');
+        $session->remove('cart.sum');
+        return $this->render('cart-modal', compact('session'));
+    }
+
+    public function actionView()
+    {
+        //$this->setMeta("Оформление заказа :: " . \Yii::$app->name);
+        return $this->render('view');
+    }
+
 }

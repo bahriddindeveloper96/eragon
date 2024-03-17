@@ -132,14 +132,15 @@
                                                                 </ins>
                                                             </p>
                                                             <!-- .single-product-header -->
-                                                            <form enctype="multipart/form-data" method="post" class="cart">
+                                                            
                                                                 <div class="quantity">
                                                                     <label for="quantity-input">Quantity</label>
-                                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" id="quantity-input">
+                                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="qty"  id="qty">
                                                                 </div>
                                                                 <!-- .quantity -->
-                                                                <button class="single_add_to_cart_button button alt" value="185" name="add-to-cart" type="submit">Add to cart</button>
-                                                            </form>
+                                                                
+                                                                <button data-id="<?= $product->id;?>" class="single_add_to_cart_button button add-to-cart" value="185" name="add-to-cart" type="submit">Add to cart</button>
+                                                           
                                                             <!-- .cart -->
                                                             <a class="add-to-compare-link" href="#">Add to compare</a>
                                                         </div>

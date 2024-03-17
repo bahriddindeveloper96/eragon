@@ -11,6 +11,7 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use app\components\MenuWidget;
 use app\components\MobileWidget;
+use yii\bootstrap5\Modal;
 
 AppAsset::register($this);
 ?>
@@ -482,6 +483,16 @@ AppAsset::register($this);
             </footer>
             <!-- .site-footer -->
         </div>
+        <?php Modal::begin([
+            'title' => '<h2>Корзина</h2>', 
+            'id' => 'cart',
+            'footer' => '<button type="button" class="btn btn-default" data-bs-dismiss="modal">Покупка</button>
+            <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
+            <button type="button" class="btn btn-primary">Оформить заказ</button>'
+            ]);           
+
+            Modal::end();
+            ?>
         
         <?php $this->endBody() ?>
 </body>

@@ -74,6 +74,8 @@ class ProductController extends Controller
         //$model = $this->findModel($id);
         $relateds = Product::find()->all();
         $product = Product::findOne($id);
+        if(empty($product))
+            throw new \yii\web\HttpException(404, 'Такой товаров нет');
         return $this->render('view', [
             'product' => $product,
             'relateds' => $relateds,
