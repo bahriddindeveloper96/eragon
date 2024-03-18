@@ -451,7 +451,7 @@ AppAsset::register($this);
             'id' => 'cart',
             'footer' => '<button type="button" class="btn btn-default" data-bs-dismiss="modal">Покупка</button>
             <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
-            <button type="button" class="btn btn-primary">Оформить заказ</button>'
+            <a href="'. \yii\helpers\Url::to(['cart/view']) .'" class="btn btn-primary">Оформить заказ</a>'
             ]);           
 
             Modal::end();

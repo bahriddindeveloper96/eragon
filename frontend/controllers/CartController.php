@@ -26,7 +26,9 @@ class CartController extends Controller
         
         $cart = new Cart();
         $cart->addToCart($product);
-        
+        if(!Yii::$app->request->isAjax){
+            return $this->redirect(Yii::$app->request->referrer);
+        }
         $this->layout = false;
         return $this->render('cart-modal', compact('session'));
         
@@ -64,8 +66,14 @@ class CartController extends Controller
 
     public function actionView()
     {
+        $session = Yii::$app->session;
+        $session->open();
         //$this->setMeta("Оформление заказа :: " . \Yii::$app->name);
-        return $this->render('view');
+        return $this->render('view',compact('session'));
+    }
+    public function actionCheckout()
+    {
+        return $this->render('checkout');
     }
 
 }
