@@ -73,7 +73,9 @@ class CartController extends Controller
     }
     public function actionCheckout()
     {
-        return $this->render('checkout');
+        $session = Yii::$app->session;
+        $session->open();
+        return $this->render('checkout',compact('session'));
     }
 
 }
