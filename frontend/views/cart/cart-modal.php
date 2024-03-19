@@ -11,11 +11,16 @@
             </tr>
             </thead>
             <tbody>
-            <?php foreach($session['cart'] as $id => $item):?>               
+            <?php foreach($session['cart'] as $id => $item):?> 
+                <?php 
+                    $lastPhotoId = null; // Boshlang'ich qiymat null bo'lishi kerak
+                    foreach($item['photo'] as $photo) {
+                        $lastPhotoId = $photo['photo']; // Har bir bosilganing id sini saqlash
+                    }
+                ?>             
                 
-                <tr>
-                    <td></td>
-                                                                
+                <tr>                    
+                    <td><?= \yii\helpers\Html::img(Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $lastPhotoId, ['height' => '50','alt' => "$lastPhotoId",]) ?></td>                                           
                     <td><?= $item['name']?></td>
                     <td><?= $item['qty']?></td>
                     <td><?= $item['price']?></td>

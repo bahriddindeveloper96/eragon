@@ -23,7 +23,7 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th class="product-remove">&nbsp;</th>
-                                                                    <th class="product-thumbnail">&nbsp;</th>
+                                                                    <th class="product-names">Photo</th>
                                                                     <th class="product-name">Product</th>
                                                                     <th class="product-price">Price</th>
                                                                     <th class="product-quantity">Quantity</th>
@@ -34,13 +34,21 @@
                                                             </thead>
                                                             <tbody>
                                                                 <?php foreach($session['cart'] as $id => $item):?>
+                                                                    <?php 
+                                                                        $lastPhotoId = null; // Boshlang'ich qiymat null bo'lishi kerak
+                                                                        foreach($item['photo'] as $photo) {
+                                                                            $lastPhotoId = $photo['photo']; // Har bir bosilganing id sini saqlash
+                                                                        }
+                                                                    ?>             
+                                                                    
+                                                                              
                                                                     <tr>
                                                                         <td class="product-remove">
                                                                             <a class="remove" href="#">×</a>
                                                                         </td>
-                                                                        <td class="product-thumbnail">
+                                                                        <td class="product-name">
                                                                             <a href="<?= \yii\helpers\Url::to(['product/view','id'=>$id]);?>">
-                                                                                <img width="180" height="180" alt="" class="wp-post-image" src="single-product-fullwidth.html">
+                                                                                <?= \yii\helpers\Html::img(Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $lastPhotoId, ['height' => '50','class'=>"wp-post-image",'alt' => "$lastPhotoId",]) ?>
                                                                             </a>
                                                                         </td>
                                                                         <td data-title="Product" class="product-name">
