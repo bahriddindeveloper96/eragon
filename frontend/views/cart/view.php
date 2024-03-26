@@ -80,7 +80,7 @@
                                                                         </td>
                                                                             
                                                                         <td>
-                                                                            <span data-id="<?= $id?>" class="fa fa-remove text-danger del-item" aria-hidden="true"></span>
+                                                                           <a href="<?= \yii\helpers\Url::to(['cart/del-item','id'=>$id]);?>"> <span data-id="<?= $id?>" class="fa fa-remove text-danger del-item" aria-hidden="true"></span></a>
                                                                         </td>
                                                                     </tr>
                                                                 <?php endforeach;?>

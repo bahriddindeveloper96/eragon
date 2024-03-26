@@ -9,12 +9,26 @@ use Yii;
 
 class CartController extends Controller
 {
+    public function actionChangeCart()
+    {
+        $id = \Yii::$app->request->get('id');
+        $qty = \Yii::$app->request->get('qty');
+        $product = Product::findOne($id);
+        if(empty($product)){
+            return false;
+        }
+        $session = \Yii::$app->session;
+        $session->open();
+        $cart = new Cart();
+        $cart->addToCart($product, $qty);
+        return $this->renderPartial('cart-modal', compact('session'));
+    }
 
     public function actionAdd()
     {
         $id = Yii::$app->request->get('id');
         $qty = (int) Yii::$app->request->get('qty');
-       // $qty = $qty === null ? 1 : $qty;
+        $qty = !$qty ? 1 : $qty;
         $product = Product::findOne($id);
         
         if(empty($product)) {
@@ -25,7 +39,7 @@ class CartController extends Controller
         $session->open();
         
         $cart = new Cart();
-        $cart->addToCart($product);
+        $cart->addToCart($product, $qty);
         if(!Yii::$app->request->isAjax){
             return $this->redirect(Yii::$app->request->referrer);
         }
@@ -50,6 +64,9 @@ class CartController extends Controller
         $cart = new Cart();
         $cart->recalc($id);
         $this->layout = false;
+        if(!Yii::$app->request->isAjax){
+            return $this->redirect(Yii::$app->request->referrer);
+        }
         return $this->render('cart-modal', compact('session'));
     }
 

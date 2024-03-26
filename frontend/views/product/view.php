@@ -135,14 +135,17 @@
                                                             
                                                                 <div class="quantity">
                                                                     <label for="quantity-input">Quantity</label>
-                                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="qty"  id="qty">
+                                                                    <input type="number" size="4" class="input-text qty text" value="1" id="qty">
                                                                 </div>
                                                                 <!-- .quantity -->
+                                                                <div class="m-3 mt-5">
+                                                                <a href="<?= \yii\helpers\Url::to(['cart/add', 'id' => $product->id]) ?>" data-id="<?= $product->id ?>" class="single_add_to_cart_button button">Add to cart</a>               
+                                                                </div>
                                                                 
-                                                                <button data-id="<?= $product->id;?>" class="single_add_to_cart_button button add-to-cart" value="185" name="add-to-cart" type="submit">Add to cart</button>
+                                                                <!-- <button data-id="" class="single_add_to_cart_button button add-to-cart" value="185" name="add-to-cart" type="submit">Add to cart</button> -->
                                                            
                                                             <!-- .cart -->
-                                                            <a class="add-to-compare-link" href="#">Add to compare</a>
+                                                            <!-- <a class="add-to-compare-link" href="#">Add to compare</a> -->
                                                         </div>
                                                         <!-- .product-actions -->
                                                     </div>

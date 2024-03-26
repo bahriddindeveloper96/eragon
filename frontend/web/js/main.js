@@ -47,7 +47,7 @@ function clearCart() {
 $('.add-to-cart').on('click', function (e) {
     e.preventDefault();
     var id = $(this).data('id');
-        //$qty = $('#qty').val();
+        
     $.ajax({
         url: '/cart/add',
         data: {id: id},
@@ -63,6 +63,8 @@ $('.add-to-cart').on('click', function (e) {
     });
     return false;
 });
+
+
 
 $('#cart .modal-body').on('click', '.del-item', function () {
     var id = $(this).data('id');
