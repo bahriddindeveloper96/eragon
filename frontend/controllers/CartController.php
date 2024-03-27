@@ -4,6 +4,8 @@ namespace frontend\controllers;
 
 use common\models\Cart;
 use common\models\Product;
+use common\models\Order;
+use common\models\OrderItems;
 use yii\web\Controller;
 use Yii;
 
@@ -78,7 +80,8 @@ class CartController extends Controller
     {
         $session = Yii::$app->session;
         $session->open();
-        return $this->render('checkout',compact('session'));
+        $order = new Order();
+        return $this->render('checkout',compact('session','order'));
     }
 
 }
