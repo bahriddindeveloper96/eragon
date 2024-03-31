@@ -12,6 +12,11 @@ use common\models\User;
 class SignupForm extends Model
 {
     public $username;
+    public $name;
+    public $surname;
+    public $fathers_name;
+    public $phone;
+    
     public $email;
     public $password;
 
@@ -26,6 +31,26 @@ class SignupForm extends Model
             ['username', 'required'],
             ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
+            
+            ['phone', 'trim'],
+            ['phone', 'required'],
+            ['phone', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['phone', 'string', 'min' => 2, 'max' => 255],
+
+            ['name', 'trim'],
+            ['name', 'required'],
+            ['name', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['name', 'string', 'min' => 2, 'max' => 255],
+
+            ['surname', 'trim'],
+            ['surname', 'required'],
+            ['surname', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['surname', 'string', 'min' => 2, 'max' => 255],
+
+            ['fathers_name', 'trim'],
+            ['fathers_name', 'required'],
+            ['fathers_name', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
+            ['fathers_name', 'string', 'min' => 2, 'max' => 255],
 
             ['email', 'trim'],
             ['email', 'required'],
@@ -51,12 +76,17 @@ class SignupForm extends Model
         
         $user = new User();
         $user->username = $this->username;
+        $user->name = $this->name;
+        $user->surname = $this->surname;
+        $user->fathers_name = $this->fathers_name;
+        $user->phone = $this->phone;
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
         $user->generateEmailVerificationToken();
+        
 
-        return $user->save() && $this->sendEmail($user);
+        return $user->save();// && $this->sendEmail($user);
     }
 
     /**

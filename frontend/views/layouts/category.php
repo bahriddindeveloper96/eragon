@@ -201,11 +201,35 @@ AppAsset::register($this);
                             <!-- ============================================================= End Header Logo ============================================================= -->
                             <div class="handheld-header-links">
                                 <ul class="columns-3">
-                                    <li class="my-account">
-                                        <a href="login-and-register.html" class="has-icon">
-                                            <i class="tm tm-login-register"></i>
-                                        </a>
-                                    </li>
+                                <?php if(Yii::$app->user->isGuest): ?>                               
+                                        
+                                        <li class="my-account">
+                                            <?php echo Html::beginForm(['/site/login'], 'get'); ?>
+                                                <a class="has-icon" title="My Account" href="<?= Url::to(['/site/login']) ?>">
+                                                    <i class="tm tm-login-register"></i>
+                                                </a>
+                                            <?php echo Html::endForm(); ?>
+                                        </li>                          
+                                    
+                                    <?php else: ?>
+                                            <li class="my-account">
+                                                <a class="has-icon" title="Кабинет" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
+                                                <i class="tm tm-login-register"></i><?php echo Yii::$app->user->identity->username;?>
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="menu-item">
+                                                        <a title="Кабинет" href="<?= Url::to(['/site/cabinet']) ?>">Кабинет</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <?= Html::beginForm(['/site/logout'], 'post') ?>
+                                                            <a title="Кабинет" data-method="post" href="<?= Url::to(['/site/logout'])  ?>">Выход</a>
+                                                        <?= Html::endForm() ?>
+                                                    </li>     
+                                                </ul>
+                                                            <!-- .dropdown-menu -->
+                                            </li>
+                                <?php endif; ?>
                                     <li class="wishlist">
                                         <a href="wishlist.html" class="has-icon">
                                             <i class="tm tm-favorites"></i>

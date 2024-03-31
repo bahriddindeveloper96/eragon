@@ -33,10 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="form-group">
                     <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-                </div>
-                <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-                </div>
+                    <a class="btn btn-success" title="Кабинет" href="<?= \yii\helpers\Url::to(['/site/signup'])  ?>">SignUp</a>
+                </div>                
                 
 
             <?php ActiveForm::end(); ?>
