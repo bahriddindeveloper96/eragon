@@ -104,6 +104,9 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+    // public function actionGume(){
+    //     return $this->render('login');
+    // }
 
     /**
      * Logs out the current user.
