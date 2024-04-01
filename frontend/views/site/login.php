@@ -12,7 +12,22 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login container">
     <h1><?= Html::encode($this->title) ?></h1>
-
+    <?php if(Yii::$app->session->hasFlash('success')):?>
+        <div class="col-sm-12 alert alert-primary">
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+            </button>
+            <?php echo Yii::$app->session->getFlash('success');?>
+        </div>
+        <?php endif;?>
+        <?php if(Yii::$app->session->hasFlash('error')):?>
+        <div class="col-sm-12 alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+           </button>
+            <?php echo Yii::$app->session->getFlash('error');?>
+        </div>
+    <?php endif;?>
     <p>Please fill out the following fields to login:</p>
 
     <div class="row">

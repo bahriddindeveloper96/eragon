@@ -70,10 +70,14 @@ class SignupForm extends Model
      */
     public function signup()
     {
+        
         if (!$this->validate()) {
             return null;
         }
         
+        // echo '<pre>';
+        // var_dump($this->validate());die();
+        // echo '</pre>';
         $user = new User();
         $user->username = $this->username;
         $user->name = $this->name;
@@ -81,9 +85,14 @@ class SignupForm extends Model
         $user->fathers_name = $this->fathers_name;
         $user->phone = $this->phone;
         $user->email = $this->email;
-        $user->setPassword($this->password);
-        $user->generateAuthKey();
+       // $user->setPassword($this->password);
+        $user->password_hash = Yii::$app->security->generatePasswordHash($this->password);
+        $user->auth_key = Yii::$app->security->generateRandomString();
+        //$user->generateAuthKey();
         $user->generateEmailVerificationToken();
+        // echo '<pre>';
+        // var_dump($user->save());die();
+        // echo '</pre';
         
 
         return $user->save();// && $this->sendEmail($user);

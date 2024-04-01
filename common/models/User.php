@@ -90,7 +90,7 @@ class User extends ActiveRecord implements IdentityInterface
             ['email', 'email'],*/
 
             [['name', 'surname', 'fathers_name', 'role', 'phone'], 'string', 'max' => 255],
-            [['name', 'surname', 'fathers_name', 'role', 'username', 'pass'], 'required'],
+            [['name', 'surname', 'fathers_name',  'username'], 'required'],
 
             [['pass'], 'string', 'min' => 5],
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
