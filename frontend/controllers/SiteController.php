@@ -173,6 +173,10 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+    public function actionCabinet()
+    {
+        return $this->render('cabinet');
+    }
 
     /**
      * Requests password reset.
