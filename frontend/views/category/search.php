@@ -11,32 +11,14 @@
                     <div class="row">'
                         
                         <nav class="woocommerce-breadcrumb">                        
-                            <a href="home-v1.html">Home</a>
+                            <a href="<?= \yii\helpers\Url::home();?>">Главный</a>
                             <span class="delimiter">
                                 <i class="tm tm-breadcrumbs-arrow-right"></i>
-                            </span>Shop
+                            </span> <?= Html::encode($q) ?>
                         </nav>
                         <!-- .woocommerce-breadcrumb -->
                         <div id="primary" class="content-area">
-                            <main id="main" class="site-main">
-                                <div class="shop-archive-header">
-                                    <div class="jumbotron">
-                                        <div class="jumbotron-img">
-                                            <img width="416" height="283" alt="" src="/images/eragon/cat-banner.jpg" class="jumbo-image alignright">
-                                        </div>
-                                        <div class="jumbotron-caption">
-                                            <h3 class="jumbo-title">Virtual Reality Headsets</h3>
-                                            <p class="jumbo-subtitle">Nullam dignissim elit ut urna rutrum, a fermentum mi auctor. Mauris efficitur magna orci, et dignissim lacus scelerisque sit amet. Proin malesuada tincidunt nisl ac commodo. Vivamus eleifend porttitor ex sit amet suscipit. Vestibulum at ullamcorper lacus, vel facilisis arcu. Aliquam erat volutpat.
-                                                <br>
-                                                <br>Maecenas in sodales nisl. Pellentesque ac nibh mi. Ut lobortis odio nulla, congue rhoncus risus facilisis eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                                <a href="#">read more <i class="tm tm-long-arrow-right"></i></a>
-                                            </p>
-                                        </div>
-                                        <!-- .jumbotron-caption -->
-                                    </div>
-                                    <!-- .jumbotron -->
-                                </div>
-                                <!-- .shop-archive-header -->
+                            <main id="main" class="site-main">                                
                                 <div class="shop-control-bar">
                                     <div class="handheld-sidebar-toggle">
                                         <button type="button" class="btn sidebar-toggler">

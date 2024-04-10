@@ -33,40 +33,6 @@
                                     <!-- .slider-2 -->
                                 </div>
                                 <!-- .home-v1-slider -->
-                                <section class="section-top-categories section-categories-carousel" id="categories-carousel-1">
-                                    <header class="section-header" style="border:none;">
-                                        <h4 class="pre-title"></h4>
-                                        <h2 class="section-title">Топ категории
-                                            <br>На этой неделе</h2>
-                                        <nav class="custom-slick-nav"></nav>
-                                        <!-- .custom-slick-nav -->
-                                        
-                                    </header>
-                                    <!-- .section-header -->
-                                    <div class="product-categories-1 product-categories-carousel" data-ride="tm-slick-carousel" data-wrap=".products" data-slick="{&quot;slidesToShow&quot;:5,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:false,&quot;arrows&quot;:true,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-left\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-right\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;appendArrows&quot;:&quot;#categories-carousel-1 .custom-slick-nav&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:1400,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}}]}">
-                                        <div class="woocommerce columns-5">
-                                            <div class="products">
-                                                <?php foreach($categories as $category):?>
-                                                    <div class="product-category product first">
-                                                        <a href="product-category.html">
-                                                            <img width="224" height="197" alt="All in One PC" src="/images/eragon/cate-1.png">
-                                                            <h2 class="woocommerce-loop-category__title">
-                                                                <?= $category->name;?>
-                                                            </h2>
-                                                        </a>
-                                                    </div>
-                                                    <!-- .product-category -->                      
-                                                <?php endforeach;?>
-                                               
-                                            </div>
-                                            <!-- .products -->
-                                        </div>
-                                        <!-- .woocommerce -->
-                                    </div>
-                                    <!-- .product-categories-carousel -->
-                                </section>
-                                <!-- .section-categories-carousel -->
-                                
                                 <div class="section-deals-carousel-and-products-carousel-tabs row">
                                     <section class="column-1 deals-carousel" id="sale-with-timer-carousel">
                                         <div class="deals-carousel-inner-block">
