@@ -39,21 +39,21 @@ AppAsset::register($this);
                             <a title="TechMarket eCommerce - Always free delivery" href="contact-v1.html">Доставим ваш заказ бесплатно - всего за 3 день!</a>
                         </li>
                         <li class="menu-item animate-dropdown">
-                            <a title="Quality Guarantee of products" href="shop.html">Вопрос-ответ</a>
+                            <a title="Quality Guarantee of products" href="shop.html"><?= Yii::t('app', 'Вопрос-ответ') ?></a>
                         </li>
                         <li class="menu-item animate-dropdown">
-                            <a title="Fast returnings program" href="track-your-order.html">Мои заказы</a>
+                            <a title="Fast returnings program" href="track-your-order.html"><?= Yii::t('app', 'Мои заказы') ?></a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487 animate-dropdown dropdown">
                             <a title="Dollar (US)" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
-                                <i class="tm tm-language"></i>Языки
+                                <i class="tm tm-language"></i><?= Yii::t('app', 'Языки') ?>
                                 <span class="caret"></span>
                             </a>
                             
                             <ul role="menu" class=" dropdown-menu">
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-489 animate-dropdown">
-                                    <?= Html::a('UZ', Url::to(['/site/change-language', 'language' => 'uz'])); ?>
-                                    <?= Html::a('RU', Url::to(['/site/change-language', 'language' => 'ru'])); ?>
+                                    <?= Html::a(Yii::t('app', 'УЗ'), Url::to(['/site/change-language', 'language' => 'uz'])); ?>
+                                    <?= Html::a(Yii::t('app', 'РУ'), Url::to(['/site/change-language', 'language' => 'ru'])); ?>
                                 </li>     
                             </ul>
                                         <!-- .dropdown-menu -->
@@ -119,11 +119,11 @@ AppAsset::register($this);
                                                 </a>
                                                 <ul role="menu" class="dropdown-menu">
                                                     <li class="menu-item">
-                                                        <a title="Кабинет" href="<?= Url::to(['/site/cabinet']) ?>">Кабинет</a>
+                                                        <a title="Кабинет" href="<?= Url::to(['/site/cabinet']) ?>"><?= Yii::t('app', 'Кабинет') ?></a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <?= Html::beginForm(['/site/logout'], 'post') ?>
-                                                            <a title="Кабинет" data-method="post" href="<?= Url::to(['/site/logout'])  ?>">Выход</a>
+                                                            <a title="Кабинет" data-method="post" href="<?= Url::to(['/site/logout'])  ?>"><?= Yii::t('app', 'Выход') ?></a>
                                                         <?= Html::endForm() ?>
                                                     </li>     
                                                 </ul>
@@ -145,7 +145,7 @@ AppAsset::register($this);
                                             <i class="tm tm-shopping-bag"></i>
                                             <span class="cart-count">0</span>
                                             <span class="amount">
-                                                <span class="price-label">Корзина</span><span class="cart-sum">$0</span></span>
+                                                <span class="price-label"><?= Yii::t('app', 'Корзина') ?></span><span class="cart-sum">$0</span></span>
                                         </a>
                                         
                                         <!--?= MiniCartWidget::widget() ?-->
