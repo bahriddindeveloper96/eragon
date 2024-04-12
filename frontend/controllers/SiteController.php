@@ -52,6 +52,14 @@ class SiteController extends Controller
             ],
         ];
     }
+    public function actionChangeLanguage($language)
+    {
+        Yii::$app->session->set('language', $language);
+        Yii::$app->language = $language;
+        
+
+        return $this->redirect('index');
+    }
 
     /**
      * {@inheritdoc}
@@ -76,6 +84,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        Yii::$app->language = 'uz';
         $categories = Category::find()->where(['parent_id' => null])->all();
         return $this->render('index', [
             'categories' => $categories,

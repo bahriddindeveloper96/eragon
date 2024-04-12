@@ -46,12 +46,14 @@ AppAsset::register($this);
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487 animate-dropdown dropdown">
                             <a title="Dollar (US)" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
-                                <i class="tm tm-language"></i>Русский
+                                <i class="tm tm-language"></i>Языки
                                 <span class="caret"></span>
                             </a>
+                            
                             <ul role="menu" class=" dropdown-menu">
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-489 animate-dropdown">
-                                    <a title="AUD" href="#">O'zbekcha</a>
+                                    <?= Html::a('UZ', Url::to(['/site/change-language', 'language' => 'uz'])); ?>
+                                    <?= Html::a('RU', Url::to(['/site/change-language', 'language' => 'ru'])); ?>
                                 </li>     
                             </ul>
                                         <!-- .dropdown-menu -->
@@ -102,7 +104,7 @@ AppAsset::register($this);
                                         <li class="nav-item-center mt-3">
                                             <?php echo Html::beginForm(['/site/login'], 'get'); ?>
                                                 <a title="My Account" href="<?= Url::to(['/site/login']) ?>">
-                                                    <i class="tm tm-login-register"></i>Аккаунт
+                                                    <i class="tm tm-login-register"></i><?= Yii::t('app', 'Вход') ?>
                                                 </a>
                                             <?php echo Html::endForm(); ?>
                                         </li>                          

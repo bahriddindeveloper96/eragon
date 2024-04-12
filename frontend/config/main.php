@@ -11,6 +11,8 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    
+    
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -49,6 +51,8 @@ return [
                 
             ],
         ],
+       
+        
       
     ],
     'params' => $params,
