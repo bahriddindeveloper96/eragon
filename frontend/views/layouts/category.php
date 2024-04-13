@@ -29,7 +29,7 @@ AppAsset::register($this);
       
         
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900" rel="stylesheet">
-        <link rel="shortcut icon" href="images/fav-icon.png">
+        <link rel="shortcut icon" href="/images/fav-icon.png">
         <?php $this->head() ?>
     </head>
     <body class="woocommerce-active left-sidebar">
