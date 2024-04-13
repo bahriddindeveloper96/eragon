@@ -25,7 +25,7 @@ AppAsset::register($this);
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-        <title>Techmarket HTML</title>
+        <title>Eragon uz</title>
       
         
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900" rel="stylesheet">
@@ -39,22 +39,22 @@ AppAsset::register($this);
             <div class="col-full">
                     <ul id="menu-top-bar-left" class="nav justify-content-center">
                         <li class="menu-item animate-dropdown">
-                            <a title="TechMarket eCommerce - Always free delivery" href="contact-v1.html">Доставим ваш заказ бесплатно - всего за 3 день!</a>
+                            <a title="TechMarket eCommerce - Always free delivery" href="contact-v1.html"><?= Yii::t('app', 'Доставим ваш заказ бесплатно - всего за 3 день!') ?></a>
                         </li>
                         <li class="menu-item animate-dropdown">
-                            <a title="Quality Guarantee of products" href="shop.html">Вопрос-ответ</a>
+                            <a title="Quality Guarantee of products" href="shop.html"><?= Yii::t('app', 'Вопрос-ответ') ?></a>
                         </li>
                         <li class="menu-item animate-dropdown">
-                            <a title="Fast returnings program" href="track-your-order.html">Мои заказы</a>
+                            <a title="Fast returnings program" href="track-your-order.html"><?= Yii::t('app', 'Мои заказы') ?></a>
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487 animate-dropdown dropdown">
                             <a title="Dollar (US)" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
-                                <i class="tm tm-language"></i>Русский
+                                <i class="tm tm-language"></i><?= Yii::t('app', 'РУ') ?>
                                 <span class="caret"></span>
                             </a>
                             <ul role="menu" class=" dropdown-menu">
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-489 animate-dropdown">
-                                    <a title="AUD" href="#">O'zbekcha</a>
+                                    <a title="AUD" href="#"><?= Yii::t('app', 'УЗ') ?></a>
                                 </li>     
                             </ul>
                                         <!-- .dropdown-menu -->
@@ -95,7 +95,7 @@ AppAsset::register($this);
                                     <li class="nav-item-center">
                                         <?php echo Html::beginForm(['/site/login'], 'get'); ?>
                                             <a title="My Account" href="<?= Url::to(['/site/login']) ?>">
-                                                <i class="tm tm-login-register"></i>Регистер и войти
+                                                <i class="tm tm-login-register"></i><?= Yii::t('app', 'Вход') ?>
                                             </a>
                                         <?php echo Html::endForm(); ?>
                                     </li>                          
@@ -110,11 +110,11 @@ AppAsset::register($this);
                                             </a>
                                             <ul role="menu" class="dropdown-menu">
                                                 <li class="menu-item">
-                                                    <a title="Кабинет" href="<?= Url::to(['/site/cabinet']) ?>">Кабинет</a>
+                                                    <a title="Кабинет" href="<?= Url::to(['/site/cabinet']) ?>"><?= Yii::t('app', 'Кабинет') ?></a>
                                                 </li>
                                                 <li class="menu-item">
                                                     <?= Html::beginForm(['/site/logout'], 'post') ?>
-                                                        <a title="Кабинет" data-method="post" href="<?= Url::to(['/site/logout'])  ?>">Выход</a>
+                                                        <a title="Кабинет" data-method="post" href="<?= Url::to(['/site/logout'])  ?>"><?= Yii::t('app', 'Выход') ?></a>
                                                     <?= Html::endForm() ?>
                                                 </li>     
                                             </ul>
@@ -128,7 +128,7 @@ AppAsset::register($this);
                                         <i class="tm tm-shopping-bag"></i>
                                         <span class="cart-count">0</span>
                                         <span class="amount">
-                                            <span class="price-label">Корзина</span><span class="cart-sum">$0</span></span>
+                                            <span class="price-label"><?= Yii::t('app', 'Корзина') ?></span><span class="cart-sum">$0</span></span>
                                     </a>
                                     <!--?= MiniCartWidget::widget() ?-->
                                     
@@ -410,11 +410,11 @@ AppAsset::register($this);
                                                     </a>
                                                     <ul role="menu" class="dropdown-menu">
                                                         <li class="menu-item">
-                                                            <a title="Кабинет" href="<?= Url::to(['/site/cabinet']) ?>">Кабинет</a>
+                                                            <a title="Кабинет" href="<?= Url::to(['/site/cabinet']) ?>"><?= Yii::t('app', 'Кабинет') ?></a>
                                                         </li>
                                                         <li class="menu-item">
                                                             <?= Html::beginForm(['/site/logout'], 'post') ?>
-                                                                <a title="Кабинет" data-method="post" href="<?= Url::to(['/site/logout'])  ?>">Выход</a>
+                                                                <a title="Кабинет" data-method="post" href="<?= Url::to(['/site/logout'])  ?>"><?= Yii::t('app', 'Выход') ?></a>
                                                             <?= Html::endForm() ?>
                                                         </li>     
                                                     </ul>
@@ -498,11 +498,11 @@ AppAsset::register($this);
                                                 <i class="tm tm-call-us-footer"></i>
                                             </span>
                                             <div class="media-body">
-                                                <span class="call-us-title">ЕСТЬ ВОПРОСЫ? ЗВОНИТЕ НАМ 24/7!</span>
+                                                <span class="call-us-title"><?= Yii::t('app', 'ЕСТЬ ВОПРОСЫ? ЗВОНИТЕ НАМ 24/7!') ?></span>
                                                 <span class="call-us-text">(+998) 99 896 9616, (+998) 99 755 0599</span>
-                                                <address class="footer-contact-address">15 улица Лутфий, район Учтепинский, Ташкент, UZ</address>
+                                                <address class="footer-contact-address"><?= Yii::t('app', '15 улица Лутфий, район Учтепинский, Ташкент, UZ') ?></address>
                                                 <a href="#" class="footer-address-map-link">
-                                                    <i class="tm tm-map-marker"></i>Найдите нас на карте</a>
+                                                    <i class="tm tm-map-marker"></i><?= Yii::t('app', 'Найдите нас на карте') ?></a>
                                             </div>
                                             <!-- .media-body -->
                                         </div>
@@ -515,7 +515,7 @@ AppAsset::register($this);
                                                 <i class="tm tm-safe-payments"></i>
                                             </span>
                                             <div class="media-body">
-                                                <h5 class="footer-payment-info-title">МЫ ИСПОЛЬЗУЕМ БЕЗОПАСНЫЕ ПЛАТЕЖИ</h5>
+                                                <h5 class="footer-payment-info-title"><?= Yii::t('app', 'МЫ ИСПОЛЬЗУЕМ БЕЗОПАСНЫЕ ПЛАТЕЖИ') ?></h5>
                                                 <div class="footer-payment-icons">
                                                     <ul class="list-payment-icons nav">
                                                         <li class="nav-item">
@@ -534,7 +534,7 @@ AppAsset::register($this);
                                                 </div>
                                                 <!-- .footer-payment-icons -->
                                                 <div class="footer-secure-by-info">
-                                                    <h6 class="footer-secured-by-title">Обеспечено:</h6>
+                                                    <h6 class="footer-secured-by-title"><?= Yii::t('app', 'Обеспечено:') ?></h6>
                                                     <ul class="footer-secured-by-icons">
                                                         <li class="nav-item">
                                                             <img class="secure-icons-image" src="/images/secured-by/norton.svg" alt="norton" />
@@ -559,7 +559,7 @@ AppAsset::register($this);
                                 <div class="col">
                                     <aside class="widget clearfix">
                                         <div class="body">
-                                            <h4 class="widget-title">Найдите это быстро</h4>
+                                            <h4 class="widget-title"><?= Yii::t('app', 'Найдите это быстро') ?></h4>
                                             <div class="menu-footer-menu-1-container">
                                                 <ul id="menu-footer-menu-1" class="menu">
                                                     <li class="menu-item">
@@ -606,24 +606,24 @@ AppAsset::register($this);
                                 <div class="col">
                                     <aside class="widget clearfix">
                                         <div class="body">
-                                            <h4 class="widget-title">Обслуживание клиентов</h4>
+                                            <h4 class="widget-title"><?= Yii::t('app', 'Обслуживание клиентов') ?></h4>
                                             <div class="menu-footer-menu-3-container">
                                                 <ul id="menu-footer-menu-3" class="menu">
                                                     <li class="menu-item">
-                                                        <a href="#">Мой счет</a>
+                                                        <a href="#"><?= Yii::t('app', 'Мой счет') ?></a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="#">Отследить заказ</a>
+                                                        <a href="#"><?= Yii::t('app', 'Отследить заказ') ?></a>
                                                     </li>
                                                     
                                                     <li class="menu-item">
-                                                        <a href="#">Избранное</a>
+                                                        <a href="#"><?= Yii::t('app', 'Избранное') ?></a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="#">О нас</a>
+                                                        <a href="#"><?= Yii::t('app', 'О нас') ?></a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="#">Возврат/Обмен</a>
+                                                        <a href="#"><?= Yii::t('app', 'Возврат/Обмен') ?></a>
                                                     </li>
                                                     
                                                 </ul>
@@ -671,10 +671,9 @@ AppAsset::register($this);
                     <!-- .footer-widgets-block -->
                     <div class="site-info">
                         <div class="col-full">
-                            <div class="copyright">Copyright &copy; 2024 <a href="home-v1.html">Eragon.uz</a> Все права защищены»</div>
+                            <div class="copyright">Copyright &copy; 2024 <a href="home-v1.html">Eragon.uz</a> <?= Yii::t('app', 'Все права защищены') ?></div>
                             <!-- .copyright -->
-                            <div class="credit">Сделано с
-                                </i> Mitti.master</div>
+                            <div class="credit"><?= Yii::t('app', 'Сделано с Mitti.master') ?></div>
                             <!-- .credit -->
                         </div>
                         <!-- .col-full -->
@@ -686,13 +685,13 @@ AppAsset::register($this);
             <!-- .site-footer -->            
         </div>
         <?php Modal::begin([
-            'title' => '<h2>Корзина</h2>',            
+            'title' => '<h2>'.\Yii::t('app', 'Корзина').'</h2>',            
             //'toggleButton' => ['label' => 'Click me'],
            // 'size' => 'modal-sm',
             'id' => 'cart',
-            'footer' => '<button type="button" class="btn btn-default" data-bs-dismiss="modal">Покупка</button>
-            <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
-            <a href="'. \yii\helpers\Url::to(['cart/view']) .'" class="btn btn-primary">Оформить заказ</a>'
+            'footer' => '<button type="button" class="btn btn-default" data-bs-dismiss="modal">'.\Yii::t('app', 'Покупка').'</button>
+            <button type="button" class="btn btn-danger" onclick="clearCart()">'.\Yii::t('app', 'Очистить корзину').'</button>
+            <a href="'. \yii\helpers\Url::to(['cart/view']) .'" class="btn btn-primary">'.\Yii::t('app', 'Оформить заказ').'</a>'
             ]);           
 
             Modal::end();
