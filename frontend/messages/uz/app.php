@@ -6,7 +6,7 @@ return [
     'Вход' => 'Kirish',
     'Кабинет' => 'Hisobim',
     'Выход' => 'Chiqish',
-    'Корзина' => 'Savatcha',
+    'Корзина' => 'Savat',
     'Языки' => 'Tillar',
     'Мои заказы' => 'Buyurmalarim',
     'Вопрос-ответ' => 'Savol-javob',
@@ -28,7 +28,7 @@ return [
     'Все права защищены' => 'Barcha huquqlar himoyalangan',
     'Сделано с Mitti.master' => 'Mitti.master bilan yaratilgan',
     'Покупка' => 'Davom etish',
-    'Очистить корзину' => 'Savatchani tozalash',
+    'Очистить корзину' => 'Savatni tozalash',
     'Оформить заказ' => 'Rasmiylashtirish',
     // Boshqa tarjima matnlari
 ];
