@@ -3,7 +3,7 @@
 ?>
 <nav id="navbar-primary" class="navbar-primary" aria-label="Navbar Primary" data-nav="flex-menu">
      <ul id="menu-navbar-primary" class="nav yamm">            
-        <?php foreach ($categories as $category): ?>            
+        <?php $i = 1; foreach ($categories as $category): ?>            
             <li class="yamm-fw menu-item menu-item-has-children animate-dropdown dropdown">
                 <a title="Pages" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="<?= \yii\helpers\Url::to(['category/view', 'id'=>$category->id]);?>"><?= $category->name ?><span class="caret"></span></a>
                 <?php if (!empty($parent->parent_id)):?>
@@ -35,12 +35,14 @@
                     </ul>
                 <?php endif;?>
                                             <!-- .dropdown-menu -->
-            </li>
-            <!-- <li class="techmarket-flex-more-menu-item dropdown">
+            </li>           
+        <?php endforeach;?>
+        <?php if(count($categories) > 8):?>
+            <li class="techmarket-flex-more-menu-item dropdown">
                 <a title="..." href="#" data-toggle="dropdown" class="dropdown-toggle">...</a>
                 <ul class="overflow-items dropdown-menu"></ul>
-            </li> -->
-        <?php endforeach;?>
+            </li>
+            <?php endif;?>
      </ul>
                                 <!-- .nav -->
     </nav>
