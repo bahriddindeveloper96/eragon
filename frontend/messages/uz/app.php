@@ -19,17 +19,18 @@ return [
     'Обеспечено:' => 'Taqdim etilgan:',
     'Найдите нас на карте' => 'Bizni xaritada toping',
     'Мой счет' => 'Mening hisobim',
-    'Отследить ваш заказ' => 'Buyurtmangizni kuzatib boring',
+    'Отследить ваш заказ' => 'Buyurtmangizni kuzating',
     'Избранное' => 'Sevimlilar',
     'О нас' => 'Biz haqimizda',
-    'Возврат/Обмен' => 'Qaytarish va almashtirish',
+    'Возврат/Обмен' => 'Qaytar va almashtir',
     'Найдите это быстро' => 'Tez topib oling',
     'ОБСЛУЖИВАНИЕ КЛИЕНТОВ' => "MIJOZLARGA XIZMAT KO'RSATISH",
     'Все права защищены' => 'Barcha huquqlar himoyalangan',
-    'Сделано с Mitti.master' => 'Mitti.master bilan yaratilgan',
+    'Сделано с Mitti.master' => 'Mitti.master tomonidan yaratilgan',
     'Покупка' => 'Davom etish',
     'Очистить корзину' => 'Savatni tozalash',
     'Оформить заказ' => 'Rasmiylashtirish',
+    'Искать товары и категории' => 'Mahsulotlar va toifalarni qidiring',
     // Boshqa tarjima matnlari
 ];
 ?>
