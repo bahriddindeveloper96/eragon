@@ -43,8 +43,8 @@ return [
         ],
         
         'urlManager' => [
-            'class' => 'codemix\localeurls\UrlManager',
-            'languages' => ['en', 'ru', 'uz'],
+            'class' => UrlManager::class,
+            'languages' => ['ru', 'uz'],
             'enablePrettyUrl' => true,
             'showScriptName' => false,           
             'rules' => [
@@ -52,8 +52,7 @@ return [
             'category/<id:\d+>' => 'category/view',
             'product/<id:\d+>' => 'product/view',
             'search' => 'category/search',
-            ],
-           
+        ],
         ],
        
         

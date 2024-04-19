@@ -48,12 +48,16 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,           
             'rules' => [
-            'category/<id:\d+>/page/<page:\d+>' => 'category/view',
-            'category/<id:\d+>' => 'category/view',
-            'product/<id:\d+>' => 'product/view',
-            'search' => 'category/search',
-            ],
-           
+            // 'category/<id:\d+>/page/<page:\d+>' => 'category/view',
+            // 'category/<id:\d+>' => 'category/view',
+            // 'product/<id:\d+>' => 'product/view',
+            // 'search' => 'category/search',
+            'rules' => [
+            '<lang:\w{2}>' => 'site/index',
+            '<lang:\w{2}>/<controller>/<action>' => '<controller>/<action>',
+            '<lang:\w{2}>/<controller>' => '<controller>',
+        ],
+        ],
         ],
        
         

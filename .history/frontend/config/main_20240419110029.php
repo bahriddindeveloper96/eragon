@@ -1,5 +1,4 @@
 <?php
-use codemix\localeurls\UrlManager;
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -52,8 +51,7 @@ return [
             'category/<id:\d+>' => 'category/view',
             'product/<id:\d+>' => 'product/view',
             'search' => 'category/search',
-            ],
-           
+        ],
         ],
        
         

@@ -50,14 +50,12 @@ AppAsset::register($this);
                         </li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487 animate-dropdown dropdown">
                             <a title="Dollar (US)" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="#">
-                                <i class="tm tm-language"></i><?= Yii::t('app', 'Языки') ?>
+                                <i class="tm tm-language"></i><?= Yii::t('app', 'РУ') ?>
                                 <span class="caret"></span>
                             </a>
-                            
                             <ul role="menu" class=" dropdown-menu">
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-489 animate-dropdown">
-                                    <?= Html::a(Yii::t('app', 'УЗ'), Url::to(['/site/set-language', 'lang' => 'uz'])); ?>
-                                    <?= Html::a(Yii::t('app', 'РУ'), Url::to(['/site/set-language', 'lang' => 'ru'])); ?>
+                                    <a title="AUD" href="#"><?= Yii::t('app', 'УЗ') ?></a>
                                 </li>     
                             </ul>
                                         <!-- .dropdown-menu -->

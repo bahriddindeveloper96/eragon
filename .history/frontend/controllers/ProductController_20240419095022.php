@@ -25,16 +25,6 @@ class ProductController extends Controller
     /**
      * @inheritDoc
      */
-    public function init()
-    {
-
-        if (!empty(Yii::$app->request->cookies['language'])) {
-            Yii::$app->language = Yii::$app->request->cookies['language'];
-        } else {
-            Yii::$app->language = 'ru';
-        }
-        parent::init();
-    }
     public function behaviors()
     {
         return array_merge(
@@ -99,5 +89,4 @@ class ProductController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
-    
 }

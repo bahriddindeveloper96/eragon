@@ -1,5 +1,4 @@
 <?php
-use codemix\localeurls\UrlManager;
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -12,7 +11,6 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    
     
     
     'components' => [
@@ -43,17 +41,17 @@ return [
         ],
         
         'urlManager' => [
-            'class' => 'codemix\localeurls\UrlManager',
-            'languages' => ['en', 'ru', 'uz'],
             'enablePrettyUrl' => true,
-            'showScriptName' => false,           
+            'showScriptName' => false,
+            'enableLanguageDetection' => false, // Tilni aniqlash
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'languages' => ['en', 'ru', 'uz'],
             'rules' => [
-            'category/<id:\d+>/page/<page:\d+>' => 'category/view',
-            'category/<id:\d+>' => 'category/view',
-            'product/<id:\d+>' => 'product/view',
-            'search' => 'category/search',
+                '<lang:\w{2}>' => 'site/index',
+                '<lang:\w{2}>/<controller>/<action>' => '<controller>/<action>',
+                '<lang:\w{2}>/<controller>' => '<controller>',
             ],
-           
         ],
        
         
