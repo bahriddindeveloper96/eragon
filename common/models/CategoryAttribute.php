@@ -9,7 +9,8 @@ use Yii;
  *
  * @property int $id
  * @property int $category_id
- * @property string|null $name
+ * @property string|null $name_uz
+ * @property string|null $name_ru
  *
  * @property Category $category
  * @property ProductValue[] $productValues
@@ -32,7 +33,7 @@ class CategoryAttribute extends \yii\db\ActiveRecord
         return [
             [['category_id'], 'required'],
             [['category_id'], 'integer'],
-            [['name'], 'string', 'max' => 255],
+            [['name_uz', 'name_ru'], 'string', 'max' => 255],
             [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::class, 'targetAttribute' => ['category_id' => 'id']],
         ];
     }
@@ -43,9 +44,10 @@ class CategoryAttribute extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'category_id' => 'Category ID',
-            'name' => 'Name',
+            'id' => Yii::t('app', 'ID'),
+            'category_id' => Yii::t('app', 'Category ID'),
+            'name_uz' => Yii::t('app', 'Name Uz'),
+            'name_ru' => Yii::t('app', 'Name Ru'),
         ];
     }
 

@@ -10,7 +10,10 @@ use Yii;
  * @property int $id
  * @property int|null $order_id
  * @property int|null $product_id
- * @property string $name
+ * @property string $name_uz
+ * @property string $name_ru
+ * @property string $surname_uz
+ * @property string $surname_ru
  * @property float|null $price
  * @property int $qty_item
  * @property float|null $sum_item
@@ -35,9 +38,9 @@ class OrderItems extends \yii\db\ActiveRecord
     {
         return [
             [['order_id', 'product_id', 'qty_item'], 'integer'],
-            [['name', 'qty_item'], 'required'],
+            [['name_uz', 'name_ru', 'surname_uz', 'surname_ru', 'qty_item'], 'required'],
             [['price', 'sum_item'], 'number'],
-            [['name'], 'string', 'max' => 255],
+            [['name_uz', 'name_ru', 'surname_uz', 'surname_ru'], 'string', 'max' => 255],
             [['order_id'], 'exist', 'skipOnError' => true, 'targetClass' => Order::class, 'targetAttribute' => ['order_id' => 'id']],
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
@@ -49,13 +52,16 @@ class OrderItems extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'order_id' => 'Order ID',
-            'product_id' => 'Product ID',
-            'name' => 'Name',
-            'price' => 'Price',
-            'qty_item' => 'Qty Item',
-            'sum_item' => 'Sum Item',
+            'id' => Yii::t('app', 'ID'),
+            'order_id' => Yii::t('app', 'Order ID'),
+            'product_id' => Yii::t('app', 'Product ID'),
+            'name_uz' => Yii::t('app', 'Name Uz'),
+            'name_ru' => Yii::t('app', 'Name Ru'),
+            'surname_uz' => Yii::t('app', 'Surname Uz'),
+            'surname_ru' => Yii::t('app', 'Surname Ru'),
+            'price' => Yii::t('app', 'Price'),
+            'qty_item' => Yii::t('app', 'Qty Item'),
+            'sum_item' => Yii::t('app', 'Sum Item'),
         ];
     }
 
