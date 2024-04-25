@@ -59,13 +59,13 @@ $this->params['breadcrumbs'][] = $this->title;
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <?php $product_ids = Product::find()->select(['id', 'name'])->asArray()->all(); ?>
-                                    <?php $value_ids = ProductValue::find()->select(['id', 'name'])->asArray()->all(); ?>
+                                    <?php $product_ids = Product::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
+                                    <?php $value_ids = ProductValue::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
                                     <div class="panel-body">
                                         <div class="row">                                        
                                             <div class="col-sm-3">
                                                 <?= $form->field($prevent, "[{$i}]product_id")->dropDownList(
-                                                    \yii\helpers\ArrayHelper::map($product_ids, 'id', 'name'),
+                                                    \yii\helpers\ArrayHelper::map($product_ids, 'id', 'name_uz'),
                                                     ['prompt' => 'Product']
                                                 ) ?>
                                             </div>

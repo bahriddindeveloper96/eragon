@@ -30,7 +30,7 @@ class Cart extends Model
             $_SESSION['cart'][$product->id]['qty'] += $qty;
         }else{
             $_SESSION['cart'][$product->id] = [
-                'name' => $product->name,
+                'name_uz' => $product->name,
                 'price' => $product->price,
                 'qty' => $qty,
                 'photo' => $product->photos,

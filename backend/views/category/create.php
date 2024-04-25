@@ -47,16 +47,16 @@ $this->params['breadcrumbs'][] = $this->title;
                             ],
                         ]); ?>
 
-                <?php $category_ids = Category::find()->select(['id', 'name'])->asArray()->all(); ?>
+                <?php $category_ids = Category::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
                     <div class="row">
                         <div class="col-sm-4">
                             <?= $form->field($model, 'parent_id')->dropDownList(
-                                \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
+                                \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name_uz'),
                                 ['prompt' => 'Parent Category']
                             ) ?>
                         </div>
                         <div class="col-sm-4">
-                            <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+                            <?= $form->field($model, 'name_uz')->textInput(['maxlength' => true]) ?>
                         </div>
                         <div class="col-sm-4">
                             <?php $user_ids = User::find()->select(['id', 'username'])->asArray()->all(); ?>
@@ -69,9 +69,35 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
+                            <?= $form->field($model, 'description_uz')->textarea(['rows' => 6]) ?>
                         </div>
                     </div>
+                    <?php $category_ids = Category::find()->select(['id', 'name_ru'])->asArray()->all(); ?>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <?= $form->field($model, 'parent_id')->dropDownList(
+                                \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name_ru'),
+                                ['prompt' => 'Parent Category']
+                            ) ?>
+                        </div>
+                        <div class="col-sm-4">
+                            <?= $form->field($model, 'name_ru')->textInput(['maxlength' => true]) ?>
+                        </div>
+                        <div class="col-sm-4">
+                            <?php $user_ids = User::find()->select(['id', 'username'])->asArray()->all(); ?>
+
+                            <?= $form->field($model, 'created_by')->dropDownList(
+                                \yii\helpers\ArrayHelper::map($user_ids, 'id', 'username'),
+                                ['prompt' => 'Administrator']
+                            ) ?> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <?= $form->field($model, 'description_ru')->textarea(['rows' => 6]) ?>
+                        </div>
+                    </div>
+                    
 
                         <div class="container-items"><!-- widgetContainer -->
                             <?php foreach ($modelsPrevent as $i => $prevent): ?>
@@ -83,11 +109,15 @@ $this->params['breadcrumbs'][] = $this->title;
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <?php $category_ids = Category::find()->select(['id', 'name'])->asArray()->all(); ?>
+                                    <?php $category_ids = Category::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
+                                    <?php $category_ids = Category::find()->select(['id', 'name_ru'])->asArray()->all(); ?>
                                     <div class="panel-body">
                                         <div class="row"> 
                                         <div class="col-sm-12">
-                                                <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
+                                                <?= $form->field($prevent, "[{$i}]name_uz")->textInput(['maxlength' => true]) ?>
+                                        </div> 
+                                        <div class="col-sm-12">
+                                                <?= $form->field($prevent, "[{$i}]name_ru")->textInput(['maxlength' => true]) ?>
                                         </div>                        
                                         </div><!-- .row -->
                                     </div>

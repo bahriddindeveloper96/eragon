@@ -39,6 +39,16 @@ class ProductValue extends \yii\db\ActiveRecord
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    
 
     /**
      * {@inheritdoc}
@@ -68,8 +78,5 @@ class ProductValue extends \yii\db\ActiveRecord
      * {@inheritdoc}
      * @return ProductValueQuery the active query used by this AR class.
      */
-    public static function find()
-    {
-        return new ProductValueQuery(get_called_class());
-    }
+    
 }

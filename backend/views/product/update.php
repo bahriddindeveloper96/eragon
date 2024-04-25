@@ -49,23 +49,26 @@ $this->params['breadcrumbs'][] = $this->title;
                         'formId' => 'dynamic-form',
                         'formFields' => ['category_id', 'name'],
                     ]); ?>
-                    <?php $category_ids = Category::find()->select(['id', 'name'])->asArray()->all(); ?>
-                                    <?php $company_ids = Company::find()->select(['id', 'name'])->asArray()->all(); ?>
+                    <?php $category_ids = Category::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
+                                    <?php $company_ids = Company::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
                                     <div class="row">
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <?= $form->field($model, 'category_id')->dropDownList(
-                                                \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
+                                                \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name_uz'),
                                                 ['prompt' => 'Category']
                                             ) ?>
                                         </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <?= $form->field($model, 'company_id')->dropDownList(
-                                                \yii\helpers\ArrayHelper::map($company_ids, 'id', 'name'),
+                                                \yii\helpers\ArrayHelper::map($company_ids, 'id', 'name_uz'),
                                                 ['prompt' => 'Company']
                                             ) ?>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+                                        <div class="col-sm-3">
+                                            <?= $form->field($model, 'name_uz')->textInput(['maxlength' => true]) ?>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <?= $form->field($model, 'name_ru')->textInput(['maxlength' => true]) ?>
                                         </div>
                                     </div>
                                     
@@ -87,7 +90,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                            <?= $form->field($model, 'content')->widget(\bizley\quill\Quill::class, [
+                                            <?= $form->field($model, 'content_uz')->widget(\bizley\quill\Quill::class, [
                                                 'toolbarOptions' => [
                                                     ['bold', 'italic', 'underline', 'strike'],        // Formatlash tugmalar
                                                     ['link'],                                          // Havolalar
@@ -102,7 +105,47 @@ $this->params['breadcrumbs'][] = $this->title;
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12">
-                                             <?= $form->field($model, 'description')->widget(\bizley\quill\Quill::class, []) ?>
+                                            <?= $form->field($model, 'content_ru')->widget(\bizley\quill\Quill::class, [
+                                                'toolbarOptions' => [
+                                                    ['bold', 'italic', 'underline', 'strike'],        // Formatlash tugmalar
+                                                    ['link'],                                          // Havolalar
+                                                    ['image', 'video'],                                // Rasmlar va videolar
+                                                    ['clean'],                                         // Tozalash tugmasi
+                                                    ['formula']                                        // Matematik formulalar
+                                                ],                                              
+                                            ]) ?>
+                                            
+                                            <!--?= $form->field($model, 'content')->textarea(['rows' => 2]) ?-->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                             <?= $form->field($model, 'description_uz')->widget(\bizley\quill\Quill::class, []) ?>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                             <?= $form->field($model, 'description_ru')->widget(\bizley\quill\Quill::class, []) ?>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                             <?= $form->field($model, 'seo_key_uz')->widget(\bizley\quill\Quill::class, []) ?>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                             <?= $form->field($model, 'seo_key_ru')->widget(\bizley\quill\Quill::class, []) ?>
+                                        </div>
+                                    </div>
+                                     <div class="row">
+                                        <div class="col-sm-12">
+                                             <?= $form->field($model, 'seo_desc_uz')->widget(\bizley\quill\Quill::class, []) ?>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                             <?= $form->field($model, 'seo_desc_ru')->widget(\bizley\quill\Quill::class, []) ?>
                                         </div>
                                     </div>
                                     
@@ -117,7 +160,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="panel-body">
-                                    <?php $category_item = CategoryAttribute::find()->select(['id', 'name'])->asArray()->all(); ?>
+                                    <?php $category_item = CategoryAttribute::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
@@ -179,7 +222,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <?php endforeach; ?>
                     </div>
                                     <div class="col-sm-4">
-                                        <?= $form->field($modelsStock, 'quantity')->textInput() ?>
+                                        <?= $form->field($stock, 'quantity')->textInput() ?>
                                     </div>
                     <?php DynamicFormWidget::end(); ?>
                 </div>

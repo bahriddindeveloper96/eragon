@@ -50,6 +50,15 @@ class CategoryAttribute extends \yii\db\ActiveRecord
             'name_ru' => Yii::t('app', 'Name Ru'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
 
     /**
      * Gets query for [[Category]].

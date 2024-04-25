@@ -83,7 +83,7 @@ class CategoryController extends Controller
         $q = trim(Yii::$app->request->get('q')); 
         if(!$q)
             return $this->render('search',compact('q'));       
-        $query = Product::find()->where(['like','name',$q]);
+        $query = Product::find()->where(['like','name_uz',$q]);
         $totalCount = $query->count();
         $pages = new Pagination(['totalCount'=>$query->count(), 'pageSize'=>1,'forcePageParam'=>false,'pageSizeParam'=>false]);
         $products = $query->offset($pages->offset)->limit($pages->limit)->all();           

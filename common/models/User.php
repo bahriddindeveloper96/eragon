@@ -60,9 +60,9 @@ class User extends ActiveRecord implements IdentityInterface
              'pass' => 'Пароль',
              'phone' => 'Телефон',
             'name' => 'Имя',
-             'surname_uz' => 'Фамилия',
-             'fathers_name_uz' => 'Отчество',
-             'role_uz' => 'Отдель',
+             'surname' => 'Фамилия',
+             'fathers_name' => 'Отчество',
+             'role' => 'Отдель',
              'position_id' => 'Отдель',
         ];
 
@@ -71,7 +71,7 @@ class User extends ActiveRecord implements IdentityInterface
 
     public static function rolesList()
     {
-        return ArrayHelper::map(\Yii::$app->authManager->getRoles(), 'name_uz', 'description');
+        return ArrayHelper::map(\Yii::$app->authManager->getRoles(), 'name', 'description');
     }
 
 
@@ -89,14 +89,43 @@ class User extends ActiveRecord implements IdentityInterface
             ['email', 'default', 'value' => null],
             ['email', 'email'],*/
 
-            [['name_uz', 'surname_uz', 'fathers_name_uz', 'role_uz', 'phone'], 'string', 'max' => 255],
-            [['name_uz', 'surname_uz', 'fathers_name_uz',  'username'], 'required'],
+            [['name_uz','name_ru', 'surname_uz','surname_ru', 'fathers_name_uz','fathers_name_ru', 'role', 'phone'], 'string', 'max' => 255],
+            [['name_uz','name_ru', 'surname_uz', 'surname_ru','fathers_name_uz','fathers_name_ru',  'username'], 'required'],
 
             [['pass'], 'string', 'min' => 5],
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getSurname(){
+
+        if (Yii::$app->language == 'uz'):  return $this->surname_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->surname_ru;
+
+        endif;
+    }
+    public function getFathers_name(){
+
+        if (Yii::$app->language == 'uz'):  return $this->fathers_name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->fathers_name_ru;
+
+        endif;
+    }
+    
+    
 
     /**
      * {@inheritdoc}

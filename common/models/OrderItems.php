@@ -64,6 +64,24 @@ class OrderItems extends \yii\db\ActiveRecord
             'sum_item' => Yii::t('app', 'Sum Item'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getSurname(){
+
+        if (Yii::$app->language == 'uz'):  return $this->surnamename_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->surname_ru;
+
+        endif;
+    }
 
     /**
      * Gets query for [[Order]].

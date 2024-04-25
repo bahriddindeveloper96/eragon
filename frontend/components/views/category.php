@@ -6,7 +6,7 @@
                                             <?php foreach ($categories as $category): ?>
                                                 <li class="cat-item">
                                                     <a href="<?= \yii\helpers\Url::to(['category/view', 'id'=>$category->id]);?>">
-                                                        <span class="no-child"></span><?= $category->name_uz;?>
+                                                        <span class="no-child"></span><?= $category->name;?>
                                                     </a>
                                                 </li>
                                             <?php endforeach;?>

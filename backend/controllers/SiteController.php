@@ -18,6 +18,16 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
+    public function init()
+    {
+
+        if (!empty(Yii::$app->request->cookies['language'])) {
+            Yii::$app->language = Yii::$app->request->cookies['language'];
+        } else {
+            Yii::$app->language = 'ru';
+        }
+        parent::init();
+    }
     public function behaviors()
     {
         return [
@@ -96,6 +106,22 @@ class SiteController extends Controller
         return $this->render('login', [
             'model' => $model,
         ]);
+    }
+     public function actionSetLanguage($lang)
+    {
+        $langs = ['en', 'ru', 'uz']; // O'zgartirildi: 'uz' tilini qo'shish
+
+        if (in_array($lang, $langs)) {
+            \Yii::$app->language = $lang;
+            Yii::$app->session->set('app_lang', $lang);
+            $cookies = Yii::$app->response->cookies;
+            $cookies->add(new \yii\web\Cookie([
+                'name' => 'language',
+                'value' => $lang,
+            ]));
+        }       
+
+        return $this->redirect(Yii::$app->request->referrer ?: Yii::$app->homeUrl);
     }
 
     /**

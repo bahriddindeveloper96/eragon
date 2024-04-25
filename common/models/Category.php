@@ -51,6 +51,42 @@ class Category extends \yii\db\ActiveRecord
             'updated_by' => Yii::t('app', 'Updated By'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getDescription(){
+
+        if (Yii::$app->language == 'uz'):  return $this->description_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->description_ru;
+
+        endif;
+    }
+    public function getSeo_key(){
+
+        if (Yii::$app->language == 'uz'):  return $this->seo_key_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->seo_key_ru;
+
+        endif;
+    }
+    public function getSeo_desc(){
+
+        if (Yii::$app->language == 'uz'):  return $this->seo_desc_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->seo_desc_ru;
+
+        endif;
+    }
 
      public function getUser()
     {

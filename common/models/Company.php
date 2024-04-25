@@ -3,6 +3,7 @@
 namespace common\models;
 use common\models\Vendor;
 
+
 use Yii;
 
 /**
@@ -33,6 +34,7 @@ class Company extends \yii\db\ActiveRecord
     {
         return 'company';
     }
+    
 
     /**
      * {@inheritdoc}
@@ -67,6 +69,24 @@ class Company extends \yii\db\ActiveRecord
             'updated_at' => Yii::t('app', 'Updated At'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getAddress(){
+
+        if (Yii::$app->language == 'uz'):  return $this->address_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->address_ru;
+
+        endif;
+    }
 
     public function getVendor()
     {
@@ -100,8 +120,5 @@ class Company extends \yii\db\ActiveRecord
      * {@inheritdoc}
      * @return CompanyQuery the active query used by this AR class.
      */
-    public static function find()
-    {
-        return new CompanyQuery(get_called_class());
-    }
+    
 }

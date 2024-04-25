@@ -55,21 +55,23 @@ $this->params['breadcrumbs'][] = $this->title;
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <?php $category_ids = Category::find()->select(['id', 'name'])->asArray()->all(); ?>
+                                    <?php $category_ids = Category::find()->select(['id', 'name_uz'])->asArray()->all(); ?>                                   
                                     <div class="panel-body">
                                         <div class="row">                                        
-                                            <div class="col-sm-6">
+                                            <div class="col-sm-4">
                                                 <?= $form->field($prevent, "[{$i}]category_id")->dropDownList(
-                                                    \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
+                                                    \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name_uz'),
                                                     ['prompt' => 'Category']
                                                 ) ?>
                                             </div>
-                                            <div class="col-sm-6">
-                                                <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
+                                            <div class="col-sm-4">
+                                                <?= $form->field($prevent, "[{$i}]name_uz")->textInput(['maxlength' => true]) ?>
                                             </div>
-                                            
-                                                                        
+                                            <div class="col-sm-4">
+                                                <?= $form->field($prevent, "[{$i}]name_ru")->textInput(['maxlength' => true]) ?>
+                                            </div>                    
                                         </div><!-- .row -->
+                                        
                                     </div>
                                 </div>
                             <?php endforeach; ?>

@@ -9,6 +9,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\Vendor;
 use yii\helpers\ArrayHelper;
+use Yii;
 
 /**
  * CompanyController implements the CRUD actions for Company model.
@@ -18,6 +19,16 @@ class CompanyController extends Controller
     /**
      * @inheritDoc
      */
+    public function init()
+    {
+
+        if (!empty(Yii::$app->request->cookies['language'])) {
+            Yii::$app->language = Yii::$app->request->cookies['language'];
+        } else {
+            Yii::$app->language = 'ru';
+        }
+        parent::init();
+    }
     public function behaviors()
     {
         return array_merge(
@@ -70,11 +81,14 @@ class CompanyController extends Controller
     public function actionCreate()
 {
     $model = new Company();
-
+    
     if ($this->request->isPost) {
         if ($model->load($this->request->post())) {
             // Assign the value of created_by to updated_by before saving
             $model->updated_by = $model->created_by;
+            // echo '<pre>';
+            //     var_dump($this->request->isPost);die();
+            // echo '</pre>';
 
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);

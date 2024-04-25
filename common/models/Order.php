@@ -80,6 +80,42 @@ class Order extends \yii\db\ActiveRecord
             'address2_ru' => Yii::t('app', 'Address2 Ru'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getSurname(){
+
+        if (Yii::$app->language == 'uz'):  return $this->surname_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->surname_ru;
+
+        endif;
+    }
+    public function getAddress(){
+
+        if (Yii::$app->language == 'uz'):  return $this->address_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->address_ru;
+
+        endif;
+    }
+    public function getAddress2(){
+
+        if (Yii::$app->language == 'uz'):  return $this->address2_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->address2_ru;
+
+        endif;
+    }
 
     /**
      * Gets query for [[OrderItems]].

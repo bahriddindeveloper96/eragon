@@ -15,13 +15,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php $form = ActiveForm::begin(); ?>
 
-<?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+<?= $form->field($model, 'name_uz')->textInput(['maxlength' => true]) ?>
+<?= $form->field($model, 'name_ru')->textInput(['maxlength' => true]) ?>
 
 <?= $form->field($model, 'inn')->textInput() ?>
 
 <?= $form->field($model, 'phone')->textInput() ?>
 
-<?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
+<?= $form->field($model, 'address_uz')->textInput(['maxlength' => true]) ?>
+<?= $form->field($model, 'address_ru')->textInput(['maxlength' => true]) ?>
 
 
 <?php $user_ids = Vendor::find()->select(['id', 'username'])->asArray()->all(); ?>

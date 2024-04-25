@@ -89,14 +89,42 @@ class Vendor extends ActiveRecord implements IdentityInterface
             ['email', 'default', 'value' => null],
             ['email', 'email'],*/
 
-            [['name_uz', 'surname_uz', 'fathers_name_uz', 'role_uz', 'phone'], 'string', 'max' => 255],
-            [['name_uz', 'surname_uz', 'fathers_name_uz', 'role_uz', 'username_uz', 'pass'], 'required'],
+            [['name_uz', 'surname_uz', 'fathers_name_uz', 'role', 'phone'], 'string', 'max' => 255],
+            [['name_uz', 'surname_uz', 'fathers_name_uz', 'role', 'username_uz', 'pass'], 'required'],
 
             [['pass'], 'string', 'min' => 5],
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getSurname(){
+
+        if (Yii::$app->language == 'uz'):  return $this->surname_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->surname_ru;
+
+        endif;
+    }
+    public function getFathers_name(){
+
+        if (Yii::$app->language == 'uz'):  return $this->fathers_name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->fathers_name_ru;
+
+        endif;
+    }
+    
 
     /**
      * {@inheritdoc}

@@ -58,6 +58,52 @@ class Product extends \yii\db\ActiveRecord
             'updated_by' => Yii::t('app', 'Updated By'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getContent(){
+
+        if (Yii::$app->language == 'uz'):  return $this->content_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->content_ru;
+
+        endif;
+    }
+    public function getDescription(){
+
+        if (Yii::$app->language == 'uz'):  return $this->description_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->description_ru;
+
+        endif;
+    }
+    public function getSeo_key(){
+
+        if (Yii::$app->language == 'uz'):  return $this->seo_key_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->seo_key_ru;
+
+        endif;
+    }
+    public function getSeo_desc(){
+
+        if (Yii::$app->language == 'uz'):  return $this->seo_desc_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->seo_desc_ru;
+
+        endif;
+    }
+    
 
     public function getCategory()
     {
@@ -118,12 +164,5 @@ class Product extends \yii\db\ActiveRecord
         return $this->hasOne(Vendor::class, ['id' => 'updated_by']);
     }
 
-    /**
-     * {@inheritdoc}
-     * @return ProductQuery the active query used by this AR class.
-     */
-    public static function find()
-    {
-        return new ProductQuery(get_called_class());
-    }
+    
 }
