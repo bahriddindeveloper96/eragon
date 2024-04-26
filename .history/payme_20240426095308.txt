@@ -1,0 +1,5 @@
+payme turbo
+id:628b952e90f1deacf379bb08
+klyuch kassi:1J1xivmW0cgb?26Gf@gP02@5@NmtK5ickVmZ
+test:EC9ZqHvA0a9GGn?N2EX@Xso9zz%f1d88ImB1
+gateway:http://turbomarket.uz/index.php?dispatch=payment_notification.return&payment=payme

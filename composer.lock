@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1a4394b4f5dd61de8877725a913c85d",
+    "content-hash": "c7875a73de6afac09c2f5bcbaa1866c0",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -2275,6 +2275,53 @@
                 }
             ],
             "time": "2023-12-19T21:51:00+00:00"
+        },
+        {
+            "name": "uzdevid/yii2-payme",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uzdevid/yii2-payme.git",
+                "reference": "236b3b56394e32ac5526eb6b75ee32ad25edeec8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uzdevid/yii2-payme/zipball/236b3b56394e32ac5526eb6b75ee32ad25edeec8",
+                "reference": "236b3b56394e32ac5526eb6b75ee32ad25edeec8",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "uzdevid\\payme\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ibragimov Diyorbek",
+                    "email": "uzdevid@gmail.com"
+                }
+            ],
+            "description": "Payme to'lov tizimi bilan integratsiya qilish uchun Yii2 framework-i uchun kengaytma",
+            "keywords": [
+                "extension",
+                "paycom",
+                "payme",
+                "uzdevid",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/uzdevid/yii2-payme/issues",
+                "source": "https://github.com/uzdevid/yii2-payme/tree/2.0.0"
+            },
+            "time": "2023-04-12T07:35:13+00:00"
         },
         {
             "name": "wbraganca/yii2-dynamicform",
