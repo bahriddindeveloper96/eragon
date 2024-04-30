@@ -2,17 +2,17 @@
 
 use yii\db\Migration;
 
-/**
- * Handles the creation of table `{{%vendor}}`.
- */
-class m240128_102113_create_vendor_table extends Migration
+class m130524_201442_init extends Migration
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function safeUp()
+    public function up()
     {
-        $this->createTable('{{%vendor}}', [
+        $tableOptions = null;
+        if ($this->db->driverName === 'mysql') {
+            // https://stackoverflow.com/questions/766809/whats-the-difference-between-utf8-general-ci-and-utf8-unicode-ci
+            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
+        }
+
+        $this->createTable('{{%user}}', [
             'id' => $this->primaryKey(),
             'username' => $this->string()->notNull()->unique(),
             'auth_key' => $this->string(32)->notNull(),
@@ -29,16 +29,13 @@ class m240128_102113_create_vendor_table extends Migration
             'surname_ru' => $this->string(255),
             'fathers_name_uz' => $this->string(255),
             'fathers_name_ru' => $this->string(255),
-            'role' => $this->string(255),           
+            'role' => $this->string(255),            
             'phone'=> $this->bigInteger(),
-        ]);
+        ], $tableOptions);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function safeDown()
+    public function down()
     {
-        $this->dropTable('{{%vendor}}');
+        $this->dropTable('{{%user}}');
     }
 }

@@ -27,8 +27,8 @@ class m240128_105708_add_vendor_table extends Migration
             'surname_ru' => 'Кучаров',
             'fathers_name_uz' => 'MRX',
             'fathers_name_ru' => 'MRX',
-            'role' => 'admin',
-            
+            'role_uz' => 'admin',
+            'role_ru' => 'админ',
             'phone' => '998969616',
         ]);
     }

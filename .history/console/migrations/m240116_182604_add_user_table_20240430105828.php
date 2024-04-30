@@ -1,35 +1,34 @@
 <?php
 
 use yii\db\Migration;
-use common\models\Vendor;
-
+use common\models\User;
 /**
- * Class m240128_105708_add_vendor_table
+ * Class m240116_182604_add_user_table
  */
-class m240128_105708_add_vendor_table extends Migration
+class m240116_182604_add_user_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->insert('vendor', [
-            'username' => 'vendor',
+        $this->insert('user', [
+            'username' => 'adm!n',
             'auth_key' => Yii::$app->security->generateRandomString(),
             'password_hash' => Yii::$app->security->generatePasswordHash('1q2w3e4r5t'),
-           'email' => 'a@a.a',
-            'status' => Vendor::STATUS_ACTIVE,
-            'created_at' => time(),
-            'updated_at' => time(),
+            'email' => 'a@a.a',
             'name_uz' => 'Bahriddin',
-            'name_ru' => 'Бахриддин',
+            'name_ru' => 'Bahriddin',
             'surname_uz' => 'Kucharov',
-            'surname_ru' => 'Кучаров',
+            'surname_ru' => 'Kucharov',
             'fathers_name_uz' => 'MRX',
             'fathers_name_ru' => 'MRX',
-            'role' => 'admin',
-            
+            'role_uz' => 'admin',
+            'role_ru' => 'admin',
             'phone' => '998969616',
+            'status' => User::STATUS_ACTIVE,
+            'created_at' => time(),
+            'updated_at' => time(),
         ]);
     }
 
@@ -38,7 +37,7 @@ class m240128_105708_add_vendor_table extends Migration
      */
     public function safeDown()
     {
-        echo "m240128_105708_add_vendor_table cannot be reverted.\n";
+        echo "m240116_182604_add_user_table cannot be reverted.\n";
 
         return false;
     }
@@ -52,7 +51,7 @@ class m240128_105708_add_vendor_table extends Migration
 
     public function down()
     {
-        echo "m240128_105708_add_vendor_table cannot be reverted.\n";
+        echo "m240116_182604_add_user_table cannot be reverted.\n";
 
         return false;
     }

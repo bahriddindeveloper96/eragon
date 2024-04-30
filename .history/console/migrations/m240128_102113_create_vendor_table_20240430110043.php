@@ -29,7 +29,8 @@ class m240128_102113_create_vendor_table extends Migration
             'surname_ru' => $this->string(255),
             'fathers_name_uz' => $this->string(255),
             'fathers_name_ru' => $this->string(255),
-            'role' => $this->string(255),           
+            'role' => $this->string(255),
+           
             'phone'=> $this->bigInteger(),
         ]);
     }
