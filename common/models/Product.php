@@ -135,34 +135,34 @@ class Product extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery|ProductValueQuery
      */
-    public function getProductValues()
-    {
-        return $this->hasMany(ProductValue::class, ['product_id' => 'id']);
-    }
-    public function getPhotos()
-    {
-        return $this->hasMany(Photo::class, ['product_id' => 'id']);
-    }
+    // public function getProductValues()
+    // {
+    //     return $this->hasMany(ProductValue::class, ['product_id' => 'id']);
+    // }
+    // public function getPhotos()
+    // {
+    //     return $this->hasMany(Photo::class, ['product_id' => 'id']);
+    // }
 
-    /**
-     * Gets query for [[Stocks]].
-     *
-     * @return \yii\db\ActiveQuery|StockQuery
-     */
-    public function getStocks()
-    {
-        return $this->hasOne(Stock::class, ['product_id' => 'id']);
-    }
+    // /**
+    //  * Gets query for [[Stocks]].
+    //  *
+    //  * @return \yii\db\ActiveQuery|StockQuery
+    //  */
+    // public function getStocks()
+    // {
+    //     return $this->hasOne(Stock::class, ['product_id' => 'id']);
+    // }
 
-    /**
-     * Gets query for [[UpdatedBy]].
-     *
-     * @return \yii\db\ActiveQuery|yii\db\ActiveQuery
-     */
-    public function getUpdatedBy()
-    {
-        return $this->hasOne(Vendor::class, ['id' => 'updated_by']);
-    }
+    // /**
+    //  * Gets query for [[UpdatedBy]].
+    //  *
+    //  * @return \yii\db\ActiveQuery|yii\db\ActiveQuery
+    //  */
+    // public function getUpdatedBy()
+    // {
+    //     return $this->hasOne(Vendor::class, ['id' => 'updated_by']);
+    // }
 
     
 }

@@ -15,6 +15,7 @@ class m240128_105730_create_product_table extends Migration
         $this->createTable('{{%product}}', [
             'id' => $this->primaryKey(),           
             'category_id' => $this->integer(),
+            'brand_id' => $this->integer(),
             'company_id' => $this->integer(),                      
             'name_uz' => $this->string()->notNull(),
             'name_ru' => $this->string()->notNull(),
@@ -35,12 +36,14 @@ class m240128_105730_create_product_table extends Migration
         $this->createIndex('index-product_updated_by', 'product', 'updated_by');
         $this->createIndex('index-product_category_id', 'product', 'category_id');
         $this->createIndex('index-product_company_id', 'product', 'company_id');
+        $this->createIndex('index-product_brand_id', 'product', 'brand_id');
         
 
       $this->addForeignKey('fkey-product_created_by', 'product', 'created_by', 'vendor', 'id', 'CASCADE', 'CASCADE');
       $this->addForeignKey('fkey-product_updated_by', 'product', 'updated_by', 'vendor', 'id', 'CASCADE', 'CASCADE');
       $this->addForeignKey('fkey-product_category_id', 'product', 'category_id', 'category', 'id', 'CASCADE', 'CASCADE');
       $this->addForeignKey('fkey-product_company_id', 'product', 'company_id', 'company', 'id', 'CASCADE', 'CASCADE');
+      $this->addForeignKey('fkey-product_brand_id', 'product', 'brand_id', 'brand', 'id', 'CASCADE', 'CASCADE');
       
     }
 

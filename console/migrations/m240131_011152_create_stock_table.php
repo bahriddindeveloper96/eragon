@@ -14,11 +14,11 @@ class m240131_011152_create_stock_table extends Migration
     {
         $this->createTable('{{%stock}}', [
             'id' => $this->primaryKey(),
-            'product_id' => $this->integer(),            
+            'product_items_id' => $this->integer(),            
             'quantity' => $this->integer(),
         ]);
-        $this->createIndex('index-stock_product_id', 'stock', 'product_id');
-        $this->addForeignKey('fkey-stock_product_id', 'stock', 'product_id', 'product', 'id', 'CASCADE', 'CASCADE');
+        $this->createIndex('index-stock_product_items_id', 'stock', 'product_items_id');
+        $this->addForeignKey('fkey-stock_product_items_id', 'stock', 'product_items_id', 'product_items', 'id', 'CASCADE', 'CASCADE');
     }
 
     /**
