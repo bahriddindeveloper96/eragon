@@ -19,29 +19,41 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'category_id') ?>
 
+    <?= $form->field($model, 'brand_id') ?>
+
     <?= $form->field($model, 'company_id') ?>
 
-    <?= $form->field($model, 'photo_id') ?>
+    <?= $form->field($model, 'name_uz') ?>
 
-    <?= $form->field($model, 'name') ?>
+    <?php // echo $form->field($model, 'name_ru') ?>
 
-    <?php // echo $form->field($model, 'content') ?>
+    <?php // echo $form->field($model, 'content_uz') ?>
 
-    <?php // echo $form->field($model, 'description') ?>
+    <?php // echo $form->field($model, 'content_ru') ?>
+
+    <?php // echo $form->field($model, 'description_uz') ?>
+
+    <?php // echo $form->field($model, 'description_ru') ?>
 
     <?php // echo $form->field($model, 'price') ?>
 
     <?php // echo $form->field($model, 'old_price') ?>
 
-    <?php // echo $form->field($model, 'photo') ?>
+    <?php // echo $form->field($model, 'seo_key_uz') ?>
+
+    <?php // echo $form->field($model, 'seo_key_ru') ?>
+
+    <?php // echo $form->field($model, 'seo_desc_uz') ?>
+
+    <?php // echo $form->field($model, 'seo_desc_ru') ?>
 
     <?php // echo $form->field($model, 'created_by') ?>
 
     <?php // echo $form->field($model, 'updated_by') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-outline-secondary']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton(Yii::t('app', 'Reset'), ['class' => 'btn btn-outline-secondary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

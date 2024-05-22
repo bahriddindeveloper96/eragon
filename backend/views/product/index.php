@@ -10,13 +10,15 @@ use yii\grid\GridView;
 /** @var common\models\ProductSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Products';
+$this->title = Yii::t('app', 'Products');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="product-index">
 
+    <h1><?= Html::encode($this->title) ?></h1>
+
     <p>
-        <?= Html::a('Create Product', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Product'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -27,19 +29,24 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-           // 'id',
+            'id',
             'category_id',
+            'brand_id',
             'company_id',
-            //'photo_id',
-            'name',
-            'price',
+            'name_uz',
+            //'name_ru',
+            //'content_uz:ntext',
+            //'content_ru:ntext',
+            //'description_uz:ntext',
+            //'description_ru:ntext',
+            //'price',
             //'old_price',
-            //'description:ntext',    
-            //'content:ntext',
-                    
-            //'photo',
-            // 'created_by',
-            // 'updated_by',
+            //'seo_key_uz:ntext',
+            //'seo_key_ru:ntext',
+            //'seo_desc_uz:ntext',
+            //'seo_desc_ru:ntext',
+            //'created_by',
+            //'updated_by',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Product $model, $key, $index, $column) {

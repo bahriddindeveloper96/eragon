@@ -4,8 +4,6 @@ namespace common\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\Stock;
-use common\models\Photo;
 use common\models\Product;
 
 /**
@@ -19,8 +17,8 @@ class ProductSearch extends Product
     public function rules()
     {
         return [
-            [['id', 'category_id', 'company_id', 'created_by', 'updated_by'], 'integer'],
-            [['name', 'content', 'description', 'price', 'old_price'], 'safe'],
+            [['id', 'category_id', 'brand_id', 'company_id', 'created_by', 'updated_by'], 'integer'],
+            [['name_uz', 'name_ru', 'content_uz', 'content_ru', 'description_uz', 'description_ru', 'price', 'old_price', 'seo_key_uz', 'seo_key_ru', 'seo_desc_uz', 'seo_desc_ru'], 'safe'],
         ];
     }
 
@@ -42,7 +40,7 @@ class ProductSearch extends Product
      */
     public function search($params)
     {
-        $query = Product::find()->joinWith('stocks')->joinWith('photos');
+        $query = Product::find();
 
         // add conditions that should always apply here
 
@@ -62,16 +60,24 @@ class ProductSearch extends Product
         $query->andFilterWhere([
             'id' => $this->id,
             'category_id' => $this->category_id,
+            'brand_id' => $this->brand_id,
             'company_id' => $this->company_id,
             'created_by' => $this->created_by,
             'updated_by' => $this->updated_by,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'description', $this->description])
+        $query->andFilterWhere(['like', 'name_uz', $this->name_uz])
+            ->andFilterWhere(['like', 'name_ru', $this->name_ru])
+            ->andFilterWhere(['like', 'content_uz', $this->content_uz])
+            ->andFilterWhere(['like', 'content_ru', $this->content_ru])
+            ->andFilterWhere(['like', 'description_uz', $this->description_uz])
+            ->andFilterWhere(['like', 'description_ru', $this->description_ru])
             ->andFilterWhere(['like', 'price', $this->price])
-            ->andFilterWhere(['like', 'old_price', $this->old_price]);
+            ->andFilterWhere(['like', 'old_price', $this->old_price])
+            ->andFilterWhere(['like', 'seo_key_uz', $this->seo_key_uz])
+            ->andFilterWhere(['like', 'seo_key_ru', $this->seo_key_ru])
+            ->andFilterWhere(['like', 'seo_desc_uz', $this->seo_desc_uz])
+            ->andFilterWhere(['like', 'seo_desc_ru', $this->seo_desc_ru]);
 
         return $dataProvider;
     }
