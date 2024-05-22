@@ -89,7 +89,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
-                                                \yii\helpers\ArrayHelper::map($category_item, 'id', 'name_uz'),
+                                                \yii\helpers\ArrayHelper::map($category_item, 'id', 'name'),
                                                 ['prompt' => 'Attribute']
                                             ) ?>
                                         </div>

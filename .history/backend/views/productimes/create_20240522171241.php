@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                      <div class="row">                        
                         <div class="col-sm-12">                            
                             <?= $form->field($model, 'product_id')->dropDownList([
-                                "$product->id" => $product->name
+                                $product->id => $product->name
                             ]) ?> 
                         </div>
                     </div>               
@@ -89,7 +89,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
-                                                \yii\helpers\ArrayHelper::map($category_item, 'id', 'name_uz'),
+                                                \yii\helpers\ArrayHelper::map($category_item, 'id', 'name'),
                                                 ['prompt' => 'Attribute']
                                             ) ?>
                                         </div>
@@ -146,9 +146,6 @@ $this->params['breadcrumbs'][] = $this->title;
                             </div>
                         <?php endforeach; ?>
                     </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($color, 'name_uz')->textInput() ?>
-                                    </div>                        
                                     <div class="col-sm-4">
                                         <?= $form->field($stock, 'quantity')->textInput() ?>
                                     </div>

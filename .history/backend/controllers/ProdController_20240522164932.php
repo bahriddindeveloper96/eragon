@@ -77,7 +77,7 @@ class ProductController extends Controller
                 //     var_dump($model->updated_by);die();
                 // echo '</pre>';
                 if ($model->save()) {
-                    return $this->redirect(['/productimes/create', 'id' => $model->id]);
+                    return $this->redirect(['view', 'id' => $model->id]);
                 }
             }
         } else {

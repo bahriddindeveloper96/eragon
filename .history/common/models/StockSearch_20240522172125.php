@@ -59,7 +59,7 @@ class StockSearch extends Stock
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'product_items_id' => $this->product_items_id,
+            'product_id' => $this->product_id,
             'quantity' => $this->quantity,
         ]);
 

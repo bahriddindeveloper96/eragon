@@ -30,7 +30,7 @@ class Stock extends \yii\db\ActiveRecord
     {
         return [
             [['product_items_id', 'quantity'], 'integer'],
-            [['product_items_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductItems::class, 'targetAttribute' => ['product_items_id' => 'id']],
+            [['product_items_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductItems::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class Stock extends \yii\db\ActiveRecord
      */
     public function getProductItems()
     {
-        return $this->hasOne(ProductItems::class, ['id' => 'product_items_id']);
+        return $this->hasOne(ProductItems::class, ['id' => 'product_id']);
     }
     
 }

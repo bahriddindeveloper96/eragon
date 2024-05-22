@@ -2,16 +2,16 @@
 
 namespace backend\controllers;
 
-use common\models\Product;
-use common\models\ProductSearch;
+use common\models\ProductItems;
+use common\models\ProductItemsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProductController implements the CRUD actions for Product model.
+ * ProductimesController implements the CRUD actions for ProductItems model.
  */
-class ProductController extends Controller
+class ProductimesController extends Controller
 {
     /**
      * @inheritDoc
@@ -32,13 +32,13 @@ class ProductController extends Controller
     }
 
     /**
-     * Lists all Product models.
+     * Lists all ProductItems models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new ProductSearch();
+        $searchModel = new ProductItemsSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -48,7 +48,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Displays a single Product model.
+     * Displays a single ProductItems model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -61,24 +61,17 @@ class ProductController extends Controller
     }
 
     /**
-     * Creates a new Product model.
+     * Creates a new ProductItems model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Product();
+        $model = new ProductItems();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post())) {
-                // Assign the value of created_by to updated_by before saving
-                $model->updated_by = $model->created_by;
-                // echo '<pre>';
-                //     var_dump($model->updated_by);die();
-                // echo '</pre>';
-                if ($model->save()) {
-                    return $this->redirect(['/productimes/create', 'id' => $model->id]);
-                }
+            if ($model->load($this->request->post()) && $model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
             $model->loadDefaultValues();
@@ -90,7 +83,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Updates an existing Product model.
+     * Updates an existing ProductItems model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -110,7 +103,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Deletes an existing Product model.
+     * Deletes an existing ProductItems model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -124,15 +117,15 @@ class ProductController extends Controller
     }
 
     /**
-     * Finds the Product model based on its primary key value.
+     * Finds the ProductItems model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Product the loaded model
+     * @return ProductItems the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Product::findOne(['id' => $id])) !== null) {
+        if (($model = ProductItems::findOne(['id' => $id])) !== null) {
             return $model;
         }
 

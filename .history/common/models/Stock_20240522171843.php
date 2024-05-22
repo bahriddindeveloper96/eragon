@@ -30,7 +30,7 @@ class Stock extends \yii\db\ActiveRecord
     {
         return [
             [['product_items_id', 'quantity'], 'integer'],
-            [['product_items_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductItems::class, 'targetAttribute' => ['product_items_id' => 'id']],
+            [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
     }
 
@@ -41,7 +41,7 @@ class Stock extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
-            'product_items_id' => Yii::t('app', 'Product ID'),
+            'product_id' => Yii::t('app', 'Product ID'),
             'quantity' => Yii::t('app', 'Quantity'),
         ];
     }
@@ -51,9 +51,9 @@ class Stock extends \yii\db\ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getProductItems()
+    public function getProduct()
     {
-        return $this->hasOne(ProductItems::class, ['id' => 'product_items_id']);
+        return $this->hasOne(Product::class, ['id' => 'product_id']);
     }
     
 }

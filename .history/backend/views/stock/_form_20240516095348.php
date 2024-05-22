@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'product_items_id')->textInput() ?>
+    <?= $form->field($model, 'product_id')->textInput() ?>
     <?= $form->field($model, 'quantity')->textInput() ?>
 
     <div class="form-group">

@@ -5,7 +5,6 @@ use yii\widgets\ActiveForm;
 use common\models\Vendor;
 use common\models\Category;
 use common\models\Photo;
-use common\models\Product;
 use common\models\Company;
 //use kartik\widgets\FileInput;
 use common\models\CategoryAttribute;
@@ -50,13 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'formId' => 'dynamic-form',
                         'formFields' => ['category_id', 'name'],
                     ]); ?>                   
-                     <div class="row">                        
-                        <div class="col-sm-12">                            
-                            <?= $form->field($model, 'product_id')->dropDownList([
-                                "$product->id" => $product->name
-                            ]) ?> 
-                        </div>
-                    </div>               
+                                    
                                     
                     <div class="row">
                         <div class="col-sm-4">
@@ -66,7 +59,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
                         </div>
                         <div class="col-sm-4">
-                            <?php $user_ids = Vendor::find()->select(['id', 'username'])->asArray()->all();?>
+                            <?php $user_ids = Vendor::find()->select(['id', 'username'])->asArray()->all();
                             <?= $form->field($model, 'created_by')->dropDownList(
                                 \yii\helpers\ArrayHelper::map($user_ids, 'id', 'username'),
                                 ['prompt' => 'Vendor']
@@ -89,7 +82,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
-                                                \yii\helpers\ArrayHelper::map($category_item, 'id', 'name_uz'),
+                                                \yii\helpers\ArrayHelper::map($category_item, 'id', 'name'),
                                                 ['prompt' => 'Attribute']
                                             ) ?>
                                         </div>
@@ -146,9 +139,6 @@ $this->params['breadcrumbs'][] = $this->title;
                             </div>
                         <?php endforeach; ?>
                     </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($color, 'name_uz')->textInput() ?>
-                                    </div>                        
                                     <div class="col-sm-4">
                                         <?= $form->field($stock, 'quantity')->textInput() ?>
                                     </div>
