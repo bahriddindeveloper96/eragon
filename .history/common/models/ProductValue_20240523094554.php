@@ -60,7 +60,7 @@ class ProductValue extends \yii\db\ActiveRecord
             'attribute_id' => Yii::t('app', 'Attribute ID'),
             'name_uz' => Yii::t('app', 'Name Uz'),
             'name_ru' => Yii::t('app', 'Name Ru'),
-            'product_items_id' => Yii::t('app', 'Product ID'),
+            'product_id' => Yii::t('app', 'Product ID'),
         ];
     }
 

@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <div class="clearfix"></div>
                                     </div>
                                     <?php $category_ids = CategoryAttribute::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
-                                    <?php $product_ids = ProductItems::find()->select(['id', 'id'])->asArray()->all(); ?>
+                                    <?php $product_ids = ProductItems::find()->select(['id', 'name'])->asArray()->all(); ?>
                                     <div class="panel-body">
                                         <div class="row">                                        
                                             <div class="col-sm-4">

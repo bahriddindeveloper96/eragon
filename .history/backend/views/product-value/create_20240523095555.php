@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <div class="clearfix"></div>
                                     </div>
                                     <?php $category_ids = CategoryAttribute::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
-                                    <?php $product_ids = ProductItems::find()->select(['id', 'id'])->asArray()->all(); ?>
+                                    <?php $product_ids = ProductItems::find()->select(['id', 'name'])->asArray()->all(); ?>
                                     <div class="panel-body">
                                         <div class="row">                                        
                                             <div class="col-sm-4">
@@ -68,7 +68,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             </div>
                                             <div class="col-sm-4">
                                                 <?= $form->field($prevent, "[{$i}]attribute_id")->dropDownList(
-                                                    \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name_uz'),
+                                                    \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name'),
                                                     ['prompt' => 'Attribute']
                                                 ) ?>
                                             </div>

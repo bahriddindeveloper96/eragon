@@ -96,7 +96,7 @@ class ProductimesController extends Controller
 
                 if ($model->save()) {
                     // Save Stock
-                    if ($stock->load($post)) {
+                    if($stock->load($post)){
                         $stock->product_items_id = $model->id;
                         if (!$stock->save()) {
                             throw new \Exception('Failed to save stock.');
@@ -104,15 +104,15 @@ class ProductimesController extends Controller
                     }
 
                     // Save Product Values
-                    // $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
-                    // Model::loadMultiple($modelsPrevent, $post);
+                    $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
+                    Model::loadMultiple($modelsPrevent, $post);
 
-                    // foreach ($modelsPrevent as $index => $modelOptionValue) {
-                    //     $modelOptionValue->product_items_id = $model->id;
-                    //     if (!$modelOptionValue->save(false)) {
-                    //         throw new \Exception('Failed to save product values.');
-                    //     }
-                    // }
+                    foreach ($modelsPrevent as $index => $modelOptionValue) {
+                        $modelOptionValue->product_items_id = $model->id;
+                        if (!$modelOptionValue->save(false)) {
+                            throw new \Exception('Failed to save product values.');
+                        }
+                    }
 
                     // Save Photos
                     $modelsPhoto = Model::createMultiple(Photo::className(), $modelsPhoto);
@@ -144,7 +144,7 @@ class ProductimesController extends Controller
         } catch (\Exception $e) {
             $transaction->rollBack();
             Yii::error($e->getMessage());
-            // Handle the error appropriately here
+            // Handle the error appropriately here, e.g., by adding an error flash message
             Yii::$app->session->setFlash('error', $e->getMessage());
         }
     }
@@ -154,13 +154,10 @@ class ProductimesController extends Controller
         'modelsPhoto' => $modelsPhoto,
         'model' => $model,
         'stock' => $stock,
-        'color' => $color,
         'product' => $product,
+        'color' => $color,
     ]);
 }
-    
-
-
     
 
     /**

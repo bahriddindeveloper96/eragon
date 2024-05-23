@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             ) ?>
                                         </div>
                                         <div class="col-sm-6">
-                                            <?= $form->field($prevent, "[{$i}]name_uz")->textInput(['maxlength' => true]) ?>
+                                            <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
                                         </div>
                                     </div>
                                 </div>
@@ -149,8 +149,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="col-sm-4">
                                         <?php $color_ids = Color::find()->select(['id', 'name_uz'])->asArray()->all(); ?>
                                         <?= $form->field($model, 'color_id')->dropDownList(
-                                                \yii\helpers\ArrayHelper::map($color_ids, 'id', 'name_uz'),
-                                                ['prompt' => 'Color']
+                                                \yii\helpers\ArrayHelper::map($category_ids, 'id', 'name_uz'),
+                                                ['prompt' => 'Category']
                                             ) ?>
                                     </div>                        
                                     <div class="col-sm-4">

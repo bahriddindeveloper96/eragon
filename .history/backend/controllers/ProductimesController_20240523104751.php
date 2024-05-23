@@ -104,15 +104,15 @@ class ProductimesController extends Controller
                     }
 
                     // Save Product Values
-                    // $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
-                    // Model::loadMultiple($modelsPrevent, $post);
+                    $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
+                    Model::loadMultiple($modelsPrevent, $post);
 
-                    // foreach ($modelsPrevent as $index => $modelOptionValue) {
-                    //     $modelOptionValue->product_items_id = $model->id;
-                    //     if (!$modelOptionValue->save(false)) {
-                    //         throw new \Exception('Failed to save product values.');
-                    //     }
-                    // }
+                    foreach ($modelsPrevent as $index => $modelOptionValue) {
+                        $modelOptionValue->product_items_id = $model->id;
+                        if (!$modelOptionValue->save(false)) {
+                            throw new \Exception('Failed to save product values.');
+                        }
+                    }
 
                     // Save Photos
                     $modelsPhoto = Model::createMultiple(Photo::className(), $modelsPhoto);

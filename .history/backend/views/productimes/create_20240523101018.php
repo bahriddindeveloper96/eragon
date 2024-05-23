@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             ) ?>
                                         </div>
                                         <div class="col-sm-6">
-                                            <?= $form->field($prevent, "[{$i}]name_uz")->textInput(['maxlength' => true]) ?>
+                                            <?= $form->field($prevent, "[{$i}]name")->textInput(['maxlength' => true]) ?>
                                         </div>
                                     </div>
                                 </div>

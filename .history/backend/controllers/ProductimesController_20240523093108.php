@@ -91,12 +91,11 @@ class ProductimesController extends Controller
         try {
             if ($model->load($post)) {
                 // Set updated_by attribute to created_by before saving
-                $model->created_by = $product->created_by;
                 $model->updated_by = $product->created_by;
 
                 if ($model->save()) {
                     // Save Stock
-                    if ($stock->load($post)) {
+                    if($stock->load($post)){
                         $stock->product_items_id = $model->id;
                         if (!$stock->save()) {
                             throw new \Exception('Failed to save stock.');
@@ -104,15 +103,15 @@ class ProductimesController extends Controller
                     }
 
                     // Save Product Values
-                    // $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
-                    // Model::loadMultiple($modelsPrevent, $post);
+                    $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
+                    Model::loadMultiple($modelsPrevent, $post);
 
-                    // foreach ($modelsPrevent as $index => $modelOptionValue) {
-                    //     $modelOptionValue->product_items_id = $model->id;
-                    //     if (!$modelOptionValue->save(false)) {
-                    //         throw new \Exception('Failed to save product values.');
-                    //     }
-                    // }
+                    foreach ($modelsPrevent as $index => $modelOptionValue) {
+                        $modelOptionValue->product_items_id = $model->id;
+                        if (!$modelOptionValue->save(false)) {
+                            throw new \Exception('Failed to save product values.');
+                        }
+                    }
 
                     // Save Photos
                     $modelsPhoto = Model::createMultiple(Photo::className(), $modelsPhoto);
@@ -120,8 +119,8 @@ class ProductimesController extends Controller
 
                     foreach ($modelsPhoto as $index => $modelValue) {
                         $modelValue->product_items_id = $model->id;
-                        $modelValue->created_by = $product->created_by;
-                        $modelValue->updated_by = $product->created_by;
+                        $modelValue->created_by = $model->created_by;
+                        $modelValue->updated_by = $model->updated_by;
 
                         $modelValue->s_photo = UploadedFile::getInstance($modelValue, "[{$index}]photo");
                         if ($modelValue->s_photo) {
@@ -145,7 +144,6 @@ class ProductimesController extends Controller
             $transaction->rollBack();
             Yii::error($e->getMessage());
             // Handle the error appropriately here
-            Yii::$app->session->setFlash('error', $e->getMessage());
         }
     }
 
@@ -154,13 +152,10 @@ class ProductimesController extends Controller
         'modelsPhoto' => $modelsPhoto,
         'model' => $model,
         'stock' => $stock,
-        'color' => $color,
         'product' => $product,
+        'color' => $color,
     ]);
 }
-    
-
-
     
 
     /**

@@ -33,10 +33,10 @@ class ProductValue extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['attribute_id', 'product_items_id'], 'integer'],
+            [['attribute_id', 'product_id'], 'integer'],
             [['name_uz', 'name_ru'], 'string', 'max' => 255],
             [['attribute_id'], 'exist', 'skipOnError' => true, 'targetClass' => CategoryAttribute::class, 'targetAttribute' => ['attribute_id' => 'id']],
-            [['product_items_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductItems::class, 'targetAttribute' => ['product_items_id' => 'id']],
+            [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
     }
     public function getName(){
@@ -60,13 +60,13 @@ class ProductValue extends \yii\db\ActiveRecord
             'attribute_id' => Yii::t('app', 'Attribute ID'),
             'name_uz' => Yii::t('app', 'Name Uz'),
             'name_ru' => Yii::t('app', 'Name Ru'),
-            'product_items_id' => Yii::t('app', 'Product ID'),
+            'product_id' => Yii::t('app', 'Product ID'),
         ];
     }
 
     public function getProductItems()
     {
-        return $this->hasOne(ProductItems::class, ['id' => 'product_id']);
+        return $this->hasOne(Product::class, ['id' => 'product_id']);
     }
 
     public function getXususiy()

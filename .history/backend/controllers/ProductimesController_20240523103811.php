@@ -93,27 +93,51 @@ class ProductimesController extends Controller
                 // Set updated_by attribute to created_by before saving
                 $model->created_by = $product->created_by;
                 $model->updated_by = $product->created_by;
+                
 
                 if ($model->save()) {
                     // Save Stock
-                    if ($stock->load($post)) {
+                    if($stock->load($post)){
                         $stock->product_items_id = $model->id;
                         if (!$stock->save()) {
                             throw new \Exception('Failed to save stock.');
                         }
                     }
+                     
 
                     // Save Product Values
-                    // $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
-                    // Model::loadMultiple($modelsPrevent, $post);
+                    $modelsPrevent = Model::createMultiple(ProductValue::className(), $modelsPrevent);
+                    Model::loadMultiple($modelsPrevent, $post);
 
-                    // foreach ($modelsPrevent as $index => $modelOptionValue) {
-                    //     $modelOptionValue->product_items_id = $model->id;
-                    //     if (!$modelOptionValue->save(false)) {
-                    //         throw new \Exception('Failed to save product values.');
-                    //     }
-                    // }
-
+                    foreach ($modelsPrevent as $index => $modelOptionValue) {
+                $modelOptionValue->product_id = $model->id;
+                if (!$modelOptionValue->save(false)) {
+                    throw new \Exception('Failed to save product values.');
+                }
+            }
+            
+            if (Model::validateMultiple($modelsPrevent)) {
+                $transaction = Yii::$app->db->beginTransaction();
+                try {
+                    // Save CategoryAttribute models
+                    foreach ($modelsPrevent as $product) {                        
+                        $product->save(false);
+                    }
+                    $transaction->commit();
+                 //   return $this->redirect(['index']);
+                } catch (Exception $e) {
+                    $transaction->rollBack();
+                    throw $e;
+                }
+                }
+            } else {
+                // Handle the case when Category model fails to save
+                // You can log the error or perform any other actions here
+                Yii::error('Failed to save the Category model.');
+            }
+                   
+                     
+                    
                     // Save Photos
                     $modelsPhoto = Model::createMultiple(Photo::className(), $modelsPhoto);
                     Model::loadMultiple($modelsPhoto, $post);
@@ -132,6 +156,7 @@ class ProductimesController extends Controller
                             throw new \Exception('Failed to save photos.');
                         }
                     }
+                    
 
                     $transaction->commit();
                     return $this->redirect(['index']);
@@ -145,22 +170,19 @@ class ProductimesController extends Controller
             $transaction->rollBack();
             Yii::error($e->getMessage());
             // Handle the error appropriately here
-            Yii::$app->session->setFlash('error', $e->getMessage());
         }
     }
+    
 
     return $this->render('create', [
         'modelsPrevent' => $modelsPrevent,
         'modelsPhoto' => $modelsPhoto,
         'model' => $model,
         'stock' => $stock,
-        'color' => $color,
         'product' => $product,
+        'color' => $color,
     ]);
 }
-    
-
-
     
 
     /**
