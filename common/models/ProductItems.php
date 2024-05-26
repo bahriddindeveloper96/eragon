@@ -1,6 +1,7 @@
 <?php
 
 namespace common\models;
+use common\models\ProductValue;
 
 use Yii;
 
@@ -112,6 +113,10 @@ class ProductItems extends \yii\db\ActiveRecord
     public function getStocks()
     {
         return $this->hasMany(Stock::class, ['product_items_id' => 'id']);
+    }
+    public function getProductValues()
+    {
+        return $this->hasMany(ProductValue::class, ['product_items_id' => 'id']);
     }
 
     /**

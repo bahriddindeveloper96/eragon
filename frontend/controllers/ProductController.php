@@ -6,6 +6,7 @@ use common\models\Product;
 use common\models\ProductSearch;
 use common\models\Stock;
 use common\models\Photo;
+use common\models\ProductItems;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -57,14 +58,16 @@ class ProductController extends Controller
      */
     
 
-    public function actionIndex()
-    {        
-        $products = Product::find()->all();
+    // public function actionIndex()
+    // {        
+    //     $products = Product::find()->all();
+    //     $items = ProductItems::find()->all();
 
-        return $this->render('index', [
-            'products' => $products,
-        ]);
-    }
+    //     return $this->render('index', [
+    //         'products' => $products,
+    //         'items' => $items,
+    //     ]);
+    // }
 
     /**
      * Displays a single Product model.
@@ -84,11 +87,13 @@ class ProductController extends Controller
         //$model = $this->findModel($id);
         $relateds = Product::find()->all();
         $product = Product::findOne($id);
+        $items = ProductItems::find()->where(['product_id'=>$id])->all();
         if(empty($product))
             throw new \yii\web\HttpException(404, 'Такой товаров нет');
         return $this->render('view', [
             'product' => $product,
             'relateds' => $relateds,
+            'items' => $items,
         ]);
     }
     protected function findModel($id)

@@ -63,13 +63,13 @@ use common\models\Brand;
 
     <?= $form->field($model, 'description_ru')->widget(\bizley\quill\Quill::class, []) ?>
 
-    <?= $form->field($model, 'seo_key_uz')->widget(\bizley\quill\Quill::class, []) ?>
+    <?= $form->field($model, 'seo_key_uz')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'seo_key_ru')->widget(\bizley\quill\Quill::class, []) ?>
+    <?= $form->field($model, 'seo_key_ru')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'seo_desc_uz')->widget(\bizley\quill\Quill::class, []) ?>
+    <?= $form->field($model, 'seo_desc_uz')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'seo_desc_ru')->widget(\bizley\quill\Quill::class, []) ?>
+    <?= $form->field($model, 'seo_desc_ru')->textInput(['maxlength' => true]) ?>
 
     <?php $user_ids = Vendor::find()->select(['id', 'username'])->asArray()->all(); ?>
 

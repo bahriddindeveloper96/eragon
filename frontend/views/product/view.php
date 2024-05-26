@@ -1,41 +1,43 @@
+<?php 
+ use common\models\ProductItems;
+?>
 <div id="content" class="site-content" tabindex="-1">
                 <div class="col-full">
                     <div class="row">
                         <nav class="woocommerce-breadcrumb">
-                            <a href="home-v1.html">Home</a>
+                            <a href="<?= \yii\helpers\Url::home();?>">Bosh sahifa</a>
                             <span class="delimiter">
                                 <i class="tm tm-breadcrumbs-arrow-right"></i>
-                            </span><a href="product-category.html">TV & Video</a>
+                            </span><a href="product-category.html"><?= $product->category->name_uz;?></a>
                             <span class="delimiter">
                                 <i class="tm tm-breadcrumbs-arrow-right"></i>
-                            </span>60UH6150 60-Inch 4K Ultra HD Smart LED TV
+                            </span><?= $product->name_uz;?>
                         </nav>
                         <!-- .woocommerce-breadcrumb -->
                         <div id="primary" class="content-area">
                             <main id="main" class="site-main">
                                 <div class="product product-type-simple">
-                                        <?php if(!empty($product)):?> 
+                                        <?php if(!empty($product)):?>  
+                                            <?php foreach($items as $item):?>
+                                                <?php endforeach;?>
                                             <div class="single-product-wrapper">
                                                 <div class="product-images-wrapper thumb-count-4">
                                                     <span class="onsale">-
                                                         <span class="woocommerce-Price-amount amount">
                                                             <span class="woocommerce-Price-currencySymbol">$</span>
-                                                            <?php
-                                                                $oldPrice = is_numeric($product->old_price) ? $product->old_price : 0;
-                                                                $price = is_numeric($product->price) ? $product->price : 0;
-                                                                $totalPrice = $oldPrice + $price;
-                                                                echo $oldPrice;
-                                                            ?>
+                                                            <?= $item->old_price;?>
                                                         </span>
                                                     </span>
                                                     <!-- .onsale -->
                                                     <div id="techmarket-single-product-gallery" class="techmarket-single-product-gallery techmarket-single-product-gallery--with-images techmarket-single-product-gallery--columns-4 images" data-columns="4">
-                                                        <?php if(!empty($product)):?>    
+                                                        <?php if(!empty($product)):?>  
+                                                            <?php foreach($items as $item):?>
+                                                                <?php endforeach;?>
                                                             <div class="techmarket-single-product-gallery-images" data-ride="tm-slick-carousel" data-wrap=".woocommerce-product-gallery__wrapper" data-slick="{&quot;infinite&quot;:false,&quot;slidesToShow&quot;:1,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:false,&quot;arrows&quot;:false,&quot;asNavFor&quot;:&quot;#techmarket-single-product-gallery .techmarket-single-product-gallery-thumbnails__wrapper&quot;}">
                                                                 <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4">
                                                                     <a href="#" class="woocommerce-product-gallery__trigger">🔍</a>
                                                                     <figure class="woocommerce-product-gallery__wrapper ">
-                                                                        <?php foreach($product->photos as $photo):?>
+                                                                        <?php foreach($item->photos as $photo):?>
                                                                             <div data-thumb="<?= Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $photo->photo ?>" class="woocommerce-product-gallery__image">
                                                                                 <a href="<?= Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $photo->photo ?>" tabindex="0">                                                                                
                                                                                     <?= \yii\helpers\Html::img(Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $photo->photo, [
@@ -56,7 +58,7 @@
                                                         <?php if(!empty($product)):?>
                                                             <div class="techmarket-single-product-gallery-thumbnails" data-ride="tm-slick-carousel" data-wrap=".techmarket-single-product-gallery-thumbnails__wrapper" data-slick="{&quot;infinite&quot;:false,&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:false,&quot;arrows&quot;:true,&quot;vertical&quot;:true,&quot;verticalSwiping&quot;:true,&quot;focusOnSelect&quot;:true,&quot;touchMove&quot;:true,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-up\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot;&gt;&lt;i class=\&quot;tm tm-arrow-down\&quot;&gt;&lt;\/i&gt;&lt;\/a&gt;&quot;,&quot;asNavFor&quot;:&quot;#techmarket-single-product-gallery .woocommerce-product-gallery__wrapper&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:765,&quot;settings&quot;:{&quot;vertical&quot;:false,&quot;horizontal&quot;:true,&quot;verticalSwiping&quot;:false,&quot;slidesToShow&quot;:4}}]}">
                                                                 <figure class="techmarket-single-product-gallery-thumbnails__wrapper">
-                                                                    <?php foreach($product->photos as $photo):?>
+                                                                    <?php foreach($item->photos as $photo):?>
                                                                         <figure data-thumb="<?= Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $photo->photo ?>" class="techmarket-wc-product-gallery__image">                                                                        
                                                                             <?= \yii\helpers\Html::img(Yii::getAlias('@fileUrl') . '/backend/web/uploads/product/' . $photo->photo, [
                                                                                 'class' => 'attachment-shop_thumbnail size-shop_thumbnail wp-post-image',
@@ -92,7 +94,7 @@
                                                                 <a rel="tag" href="product-category.html"><?= $product->category->name;?></a>
                                                                 <br>
                                                                 <span class="sku_wrapper">Склад шт:
-                                                                <span class="sku"><?= $product->stocks->quantity;?></span>
+                                                                <span class="sku"><!--?= $item->stocks->quantity;?--></span>
                                                                 </span>                
                                                             </h6>
                                                             
@@ -124,11 +126,11 @@
                                                             <p class="price">
                                                                 <del>
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $product->old_price;?></span>
+                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $item->old_price;?></span>
                                                                 </del>
                                                                 <ins>
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $product->price;?></span>
+                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
                                                                 </ins>
                                                             </p>
                                                             <!-- .single-product-header -->
@@ -158,131 +160,23 @@
                                             <!-- .tm-related-products-carousel -->
                                             <div class="woocommerce-tabs wc-tabs-wrapper">
                                                 <ul role="tablist" class="nav tabs wc-tabs">
-                                                    <li class="nav-item accessories_tab">
+                                                    <!-- <li class="nav-item accessories_tab">
                                                         <a class="nav-link active" data-toggle="tab" role="tab" aria-controls="tab-accessories" href="#tab-accessories">Аксессуары</a>
+                                                    </li> -->
+                                                    <li class="nav-item specification_tab">
+                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-specification" href="#tab-specification">СПЕЦИФИКАЦИЯ</a>
                                                     </li>
                                                     <li class="nav-item description_tab">
                                                         <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-description" href="#tab-description">ОПИСАНИЕ</a>
                                                     </li>
-                                                    <li class="nav-item specification_tab">
-                                                        <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-specification" href="#tab-specification">СПЕЦИФИКАЦИЯ</a>
-                                                    </li>
+                                                    
                                                     <li class="nav-item reviews_tab">
                                                         <a class="nav-link" data-toggle="tab" role="tab" aria-controls="tab-reviews" href="#tab-reviews">Отзывы (1)</a>
                                                     </li>
                                                 </ul>
                                                 <!-- /.ec-tabs -->
                                                 <div class="tab-content">
-                                                    <div class="tab-pane active" id="tab-accessories" role="tabpanel">
-                                                        <div class="accessories">
-                                                            <div class="accessories-wrapper">
-                                                                <div class="accessories-product columns-4">
-                                                                    <div class="products">
-                                                                        <div class="product">
-                                                                            <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                                <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/8.jpg">
-                                                                                <span class="price">
-                                                                                    <del>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>1,239.99</span>
-                                                                                    </del>
-                                                                                    <ins>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>997.00</span>
-                                                                                    </ins>
-                                                                                </span>
-                                                                                <h2 class="woocommerce-loop-product__title">60UH6150 60-Inch 4K Ultra HD Smart LED TV</h2>
-                                                                            </a>
-                                                                            <div class="checkbox accessory-checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox" data-product-type="simple" data-product-id="185" data-price="997.00" class="product-check" checked=""> Remove
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product">
-                                                                            <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                                <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/16.jpg">
-                                                                                <span class="price">
-                                                                                    <del>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>1,239.99</span>
-                                                                                    </del>
-                                                                                    <ins>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>997.00</span>
-                                                                                    </ins>
-                                                                                </span>
-                                                                                <h2 class="woocommerce-loop-product__title">60UH6150 60-Inch 4K Ultra HD Smart LED TV</h2>
-                                                                            </a>
-                                                                            <div class="checkbox accessory-checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox" data-product-type="simple" data-product-id="185" data-price="997.00" class="product-check" checked=""> Remove
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product">
-                                                                            <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                                <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/14.jpg">
-                                                                                <span class="price">
-                                                                                    <del>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>1,239.99</span>
-                                                                                    </del>
-                                                                                    <ins>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>997.00</span>
-                                                                                    </ins>
-                                                                                </span>
-                                                                                <h2 class="woocommerce-loop-product__title">60UH6150 60-Inch 4K Ultra HD Smart LED TV</h2>
-                                                                            </a>
-                                                                            <div class="checkbox accessory-checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox" data-product-type="simple" data-product-id="185" data-price="997.00" class="product-check" checked=""> Remove
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product">
-                                                                            <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="single-product-fullwidth.html">
-                                                                                <img width="224" height="197" alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" src="/images/eragon/products/4.jpg">
-                                                                                <span class="price">
-                                                                                    <del>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>1,239.99</span>
-                                                                                    </del>
-                                                                                    <ins>
-                                                                                        <span class="woocommerce-Price-amount amount">
-                                                                                            <span class="woocommerce-Price-currencySymbol">$</span>997.00</span>
-                                                                                    </ins>
-                                                                                </span>
-                                                                                <h2 class="woocommerce-loop-product__title">60UH6150 60-Inch 4K Ultra HD Smart LED TV</h2>
-                                                                            </a>
-                                                                            <div class="checkbox accessory-checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox" data-product-type="simple" data-product-id="185" data-price="997.00" class="product-check" checked=""> Remove
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>                                                               
-                                                                </div>                                                            
-                                                                <div class="accessories-product-total-price">
-                                                                    <div class="total-price">
-                                                                        <span class="total-price-html price">
-                                                                            <span class="woocommerce-Price-amount amount">
-                                                                                <span class="woocommerce-Price-currencySymbol">$</span>1,666.94
-                                                                            </span>
-                                                                        </span>
-                                                                        <!-- .total-price-html -->
-                                                                        <span>Bundle Price for Selected items</span>
-                                                                    </div>
-                                                                    <!-- .total-price -->
-                                                                    <div class="accessories-add-all-to-cart">
-                                                                        <button class="button btn btn-primary add-all-to-cart" type="button">Add Bundle to cart</button>
-                                                                    </div>
-                                                                    <!-- .accessories-add-all-to-cart -->
-                                                                </div>                                                            
-                                                            </div>                                                       
-                                                        </div>                                                    
-                                                    </div>
+                                                    
                                                     <div class="tab-pane panel wc-tab" id="tab-description" role="tabpanel">
                                                         <h2>Description</h2>
                                                         <?= $product->content;?>
@@ -292,12 +186,12 @@
                                                         <div class="tm-shop-attributes-detail like-column columns-3">
                                                             
                                                             <h3 class="tm-attributes-title">Атрибуты</h3>
-                                                            <?php foreach($product->productValues as $value):?>
+                                                            <?php foreach($item->productValues as $value):?>
                                                                 <table class="shop_attributes">
                                                                     <tbody>
                                                                         <tr>
                                                                             <th><?= $value->xususiy->name?></th>
-                                                                            <td><?= $value->name;?></td>
+                                                                            <td><?= $value->name_uz;?></td>
                                                                         </tr>
                                                                         
                                                                        
@@ -464,7 +358,10 @@
                                                 <!-- .section-header -->
                                                 <div class="products">
                                                     <?php foreach($relateds as $related):?>
-                                                        <?php foreach($product->photos as $photo):?>                                                            
+                                                        <?php $items = ProductItems::find()->where(['product_id'=>$related->id])->all();?>
+                                                        <?php foreach($items as $item):?>
+                                                            <?php endforeach;?>
+                                                        <?php foreach($item->photos as $photo):?>                                                            
                                                         <?php endforeach;?>
                                                         <div class="product">
                                                             <div class="yith-wcwl-add-to-wishlist">
@@ -481,7 +378,7 @@
                                                                     <ins>
                                                                         <span class="amount"> </span>
                                                                     </ins>
-                                                                    <span class="amount">$<?= $related->price;?></span>
+                                                                    <span class="amount">$<?= $item->price;?></span>
                                                                 </span>
                                                                 <!-- /.price -->
                                                                 <h2 class="woocommerce-loop-product__title"><?= $related->name;?></h2>

@@ -27,6 +27,7 @@ class Photo extends \yii\db\ActiveRecord
      * {@inheritdoc}
      */
     public $s_photo;
+    public $product_id;
     public static function tableName()
     {
         return 'photo';

@@ -6,6 +6,7 @@ use common\models\Category;
 use common\models\Product;
 use common\models\CategorySearch;
 use yii\web\Controller;
+use common\models\ProductItems;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\CategoryAttribute;
@@ -54,14 +55,14 @@ class CategoryController extends Controller
      * @return string
      */
     public $layout = 'category';
-    public function actionIndex()
-    {
-       $categories = Category::find()->all();
+    // public function actionIndex()
+    // {
+    //    $categories = Category::find()->all();
 
-        return $this->render('index', [
-            'categories' => $categories,
-        ]);
-    }
+    //     return $this->render('index', [
+    //         'categories' => $categories,
+    //     ]);
+    // }
 
    
     public function actionView($id)
@@ -69,13 +70,14 @@ class CategoryController extends Controller
         // $id = Yii::$app->request->get($id);
                 
         $category = Category::findOne($id);
+        $items = ProductItems::find()->all();
         if(empty($category))
             throw new \yii\web\HttpException(404, 'Такой категории нет');
         $query = Product::find()->where(['category_id'=> $id]);
         $totalCount = $query->count();
         $pages = new Pagination(['totalCount'=>$query->count(), 'pageSize'=>1,'forcePageParam'=>false,'pageSizeParam'=>false]);
         $products = $query->offset($pages->offset)->limit($pages->limit)->all();
-        return $this->render('view',compact('products','category','pages','totalCount'));
+        return $this->render('view',compact('products','category','pages','totalCount','items'));
     } 
     public function actionSearch()
     {

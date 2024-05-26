@@ -3,8 +3,10 @@
     use app\components\CategoryWidget;
     use app\components\FiltrPriceWidget;
     use app\components\FiltrBrandWidget;
+    use common\models\Stock;
     use yii\helpers\Html;
     use app\components\ColorWidget;
+    use common\models\ProductItems;
  ?>
   <div id="content" class="site-content" tabindex="-1">
                 <div class="col-full">
@@ -14,11 +16,13 @@
                             <a href="<?= \yii\helpers\Url::home();?>">Главный</a>
                             <span class="delimiter">
                                 <i class="tm tm-breadcrumbs-arrow-right"></i>
-                            </span> <?= Html::encode($q) ?>
+                            </span><?= Html::encode($q) ?>
                         </nav>
                         <!-- .woocommerce-breadcrumb -->
                         <div id="primary" class="content-area">
-                            <main id="main" class="site-main">                                
+                            <main id="main" class="site-main">
+                                
+                                <!-- .shop-archive-header -->
                                 <div class="shop-control-bar">
                                     <div class="handheld-sidebar-toggle">
                                         <button type="button" class="btn sidebar-toggler">
@@ -42,7 +46,7 @@
                                         
                                     </ul>
                                     <!-- .shop-view-switcher -->
-                                    <form class="form-techmarket-wc-ppp" method="POST">
+                                    <!-- <form class="form-techmarket-wc-ppp" method="POST">
                                         <select class="techmarket-wc-wppp-select c-select" onchange="this.form.submit()" name="ppp">
                                             <option value="20">Show 20</option>
                                             <option value="40">Show 40</option>
@@ -51,9 +55,9 @@
                                         <input type="hidden" value="5" name="shop_columns">
                                         <input type="hidden" value="15" name="shop_per_page">
                                         <input type="hidden" value="right-sidebar" name="shop_layout">
-                                    </form>
+                                    </form> -->
                                     <!-- .form-techmarket-wc-ppp -->
-                                    <form method="get" class="woocommerce-ordering">
+                                    <!-- <form method="get" class="woocommerce-ordering">
                                         <select class="orderby" name="orderby">
                                             <option value="popularity">Sort by popularity</option>
                                             <option value="rating">Sort by average rating</option>
@@ -64,7 +68,7 @@
                                         <input type="hidden" value="5" name="shop_columns">
                                         <input type="hidden" value="15" name="shop_per_page">
                                         <input type="hidden" value="right-sidebar" name="shop_layout">
-                                    </form>
+                                    </form> -->
                                     <!-- .woocommerce-ordering -->
                                     <nav class="techmarket-advanced-pagination">
                                         <form class="form-adv-pagination" method="post">
@@ -80,7 +84,13 @@
                                             <div class="products">
                                                 <?php if(!empty($products)):?> 
                                                     <?php foreach($products as $product):?> 
-                                                        <?php foreach($product->photos as $photo):?>                                                            
+                                                        <?php $items = ProductItems::find()->where(['product_id'=> $product->id])->all();?>
+                                                        <?php foreach($items as $item):?>
+                                                            <?php endforeach;?>
+                                                            <?php $stocks = Stock::find()->where(['product_items_id'=> $item->id]);?>
+                                                            <?php foreach($stocks as $stock):?>
+                                                                <?php endforeach;?>
+                                                        <?php foreach($item->photos as $photo):?>                                                            
                                                         <?php endforeach;?>                                                  
                                                         <div class="product first">
                                                             <div class="yith-wcwl-add-to-wishlist">
@@ -96,7 +106,7 @@
                                                                 ]) ?>
                                                                 <span class="price">
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $product->price;?></span>
+                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
                                                                 </span>
                                                                 <h2 class="woocommerce-loop-product__title"><?= $product->name;?></h2>
                                                             </a>
@@ -109,7 +119,7 @@
                                                                 <span class="review-count">(1)</span>
                                                             </div>
                                                             <!-- .techmarket-product-rating -->
-                                                            <span class="sku_wrapper">Brand:
+                                                            <span class="sku_wrapper">Brand:<?= $product->brand->name_uz;?>
                                                                 <span class="sku">5487FB8/13</span>
                                                             </span>
                                                             <div class="woocommerce-product-details__short-description">
@@ -137,7 +147,8 @@
                                             <div class="products">
                                                 <?php if(!empty($products)):?>
                                                     <?php foreach($products as $product):?>
-                                                        <?php foreach($product->photos as $photo):?>                                                            
+                                                        <?php $items = ProductItems::find()->where(['product_id'=> $product->id])->all();?>
+                                                        <?php foreach($item->photos as $photo):?>                                                            
                                                         <?php endforeach;?> 
                                                         <div class="product list-view-large first ">
                                                             <div class="media">
@@ -174,7 +185,7 @@
                                                                             <?= $product->description;?>
                                                                         </div>
                                                                         <!-- .woocommerce-product-details__short-description -->
-                                                                        <span class="sku_wrapper">Brand:
+                                                                        <span class="sku_wrapper">Brand:<?= $product->brand->name_uz;?>
                                                                             <span class="sku">5487FB8/13</span>
                                                                         </span>
                                                                     </div>
@@ -182,14 +193,14 @@
                                                                     <div class="product-actions">
                                                                         <div class="availability">
                                                                             Availability:
-                                                                            <p class="stock in-stock"><?= $product->stocks->quantity;?> на склады</p>
+                                                                            <p class="stock in-stock"><!--?= $stock->id;?--> на склады</p>
                                                                         </div>
                                                                         <span class="price">
                                                                             <span class="woocommerce-Price-amount amount">
-                                                                                <span class="woocommerce-Price-currencySymbol">$</span><?= $product->price;?></span>
+                                                                                <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
                                                                         </span>
                                                                         <!-- .price -->
-                                                                        <a data-id="<?= $product->id;?>" class="button add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>
+                                                                        <a class="button add_to_cart_button add-to-cart" data-id="<?= $product->id;?>" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>
                                                                         <a class="add-to-compare-link" href="compare.html">Add to compare</a>
                                                                     </div>
                                                                     <!-- .product-actions -->
@@ -214,33 +225,31 @@
                                     <!-- .tab-pane -->                                    
                                 </div>
                                 <!-- .tab-content -->
-                                <?php if(!empty($products)):?>
-                                    <div class="shop-control-bar-bottom">
-                                        <?= Html::beginForm(['category/view'], 'post', ['class' => 'form-techmarket-wc-ppp']) ?>
-                                            <select class="techmarket-wc-wppp-select c-select" onchange="this.form.submit()" name="ppp">
-                                                <option value="1">Show 20</option>
-                                                <option value="2">Show 40</option>
-                                                <option value="3">Show All</option>
-                                            </select>
-                                            <input type="hidden" value="5" name="shop_columns">
-                                            <input type="hidden" value="15" name="shop_per_page">
-                                            <input type="hidden" value="right-sidebar" name="shop_layout">
-                                        <?= Html::endForm() ?>
-                                        <!-- .form-techmarket-wc-ppp -->
-                                        <p class="woocommerce-result-count">
-                                        Показаны <?= $pages->getPage() * $pages->getPageSize() + 1 ?>–<?= min(($pages->getPage() + 1) * $pages->getPageSize(), $totalCount) ?> из <?= $totalCount ?> результаты
-                                        </p>
-                                        <?= \yii\widgets\LinkPager::widget([
-                                            'pagination' => $pages,
-                                            'options' => ['class' => 'pagination woocommerce-pagination'],
-                                            'linkContainerOptions' => ['class' => 'page-item'],
-                                            'linkOptions' => ['class' => 'page-link'],
-                                            'prevPageLabel' => '←',
-                                            'nextPageLabel' => '→',
-                                        ]) ?>                                        
-                                    </div>
+                                <div class="shop-control-bar-bottom">
+                                    
+                                        <!-- <select class="techmarket-wc-wppp-select c-select" onchange="this.form.submit()" name="ppp">
+                                            <option value="1">Show 20</option>
+                                            <option value="2">Show 40</option>
+                                            <option value="3">Show All</option>
+                                        </select>
+                                        <input type="hidden" value="5" name="shop_columns">
+                                        <input type="hidden" value="15" name="shop_per_page">
+                                        <input type="hidden" value="right-sidebar" name="shop_layout"> -->
+                                    
+                                    <!-- .form-techmarket-wc-ppp -->
+                                    <p class="woocommerce-result-count">
+                                    Показаны <?= $pages->getPage() * $pages->getPageSize() + 1 ?>–<?= min(($pages->getPage() + 1) * $pages->getPageSize(), $totalCount) ?> из <?= $totalCount ?> результаты
+                                    </p>
+                                    <?= \yii\widgets\LinkPager::widget([
+                                        'pagination' => $pages,
+                                        'options' => ['class' => 'pagination woocommerce-pagination'],
+                                        'linkContainerOptions' => ['class' => 'page-item'],
+                                        'linkOptions' => ['class' => 'page-link'],
+                                        'prevPageLabel' => '←',
+                                        'nextPageLabel' => '→',
+                                    ]) ?>                                        
+                                </div>
                                 <!-- .shop-control-bar-bottom -->
-                                <?php endif;?>
                             </main>
                             <!-- #main -->
                         </div>
