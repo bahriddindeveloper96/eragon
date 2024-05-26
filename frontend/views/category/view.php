@@ -106,7 +106,7 @@
                                                                 ]) ?>
                                                                 <span class="price">
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
+                                                                        <?= $item->price;?><span class="woocommerce-Price-currencySymbol"> so'm</span></span>
                                                                 </span>
                                                                 <h2 class="woocommerce-loop-product__title"><?= $product->name;?></h2>
                                                             </a>
@@ -192,7 +192,7 @@
                                                                         </div>
                                                                         <span class="price">
                                                                             <span class="woocommerce-Price-amount amount">
-                                                                                <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
+                                                                                <?= $item->price;?><span class="woocommerce-Price-currencySymbol"> so'm</span></span>
                                                                         </span>
                                                                         <!-- .price -->
                                                                         <a class="button add_to_cart_button add-to-cart" data-id="<?= $product->id;?>" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>

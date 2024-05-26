@@ -24,8 +24,8 @@
                                                 <div class="product-images-wrapper thumb-count-4">
                                                     <span class="onsale">-
                                                         <span class="woocommerce-Price-amount amount">
-                                                            <span class="woocommerce-Price-currencySymbol">$</span>
-                                                            <?= $item->old_price;?>
+                                                            
+                                                            <?= $item->old_price;?><span class="woocommerce-Price-currencySymbol"> so'm</span>
                                                         </span>
                                                     </span>
                                                     <!-- .onsale -->
@@ -126,11 +126,11 @@
                                                             <p class="price">
                                                                 <del>
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $item->old_price;?></span>
+                                                                        <?= $item->old_price;?><span class="woocommerce-Price-currencySymbol"> so'm</span></span>
                                                                 </del>
                                                                 <ins>
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
+                                                                        <?= $item->price;?><span class="woocommerce-Price-currencySymbol"> so'm</span></span>
                                                                 </ins>
                                                             </p>
                                                             <!-- .single-product-header -->
@@ -378,7 +378,7 @@
                                                                     <ins>
                                                                         <span class="amount"> </span>
                                                                     </ins>
-                                                                    <span class="amount">$<?= $item->price;?></span>
+                                                                    <span class="amount"><?= $item->price;?> so'm</span>
                                                                 </span>
                                                                 <!-- /.price -->
                                                                 <h2 class="woocommerce-loop-product__title"><?= $related->name;?></h2>

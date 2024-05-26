@@ -16,6 +16,7 @@ use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use common\models\Category;
+use common\models\Banner;
 
 /**
  * Site controller
@@ -88,9 +89,11 @@ class SiteController extends Controller
     public function actionIndex()
     {
         // Yii::$app->language = 'uz';
+        $banners = Banner::find()->all();
         $categories = Category::find()->where(['parent_id' => null])->all();
         return $this->render('index', [
             'categories' => $categories,
+            'banners' => $banners,
         ]);
     }
 

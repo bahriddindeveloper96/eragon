@@ -70,11 +70,11 @@
                                         <input type="hidden" value="right-sidebar" name="shop_layout">
                                     </form> -->
                                     <!-- .woocommerce-ordering -->
-                                    <nav class="techmarket-advanced-pagination">
+                                    <!-- <nav class="techmarket-advanced-pagination">
                                         <form class="form-adv-pagination" method="post">
                                             <input type="number" value="1" class="form-control" step="1" max="5" min="1" size="2" id="goto-page">
                                         </form> of 5<a href="#" class="next page-numbers">→</a>
-                                    </nav>
+                                    </nav> -->
                                     <!-- .techmarket-advanced-pagination -->
                                 </div>
                                 <!-- .shop-control-bar -->
@@ -106,7 +106,7 @@
                                                                 ]) ?>
                                                                 <span class="price">
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
+                                                                        <?= $item->price;?><span class="woocommerce-Price-currencySymbol"> so'm</span></span>
                                                                 </span>
                                                                 <h2 class="woocommerce-loop-product__title"><?= $product->name;?></h2>
                                                             </a>
@@ -197,7 +197,7 @@
                                                                         </div>
                                                                         <span class="price">
                                                                             <span class="woocommerce-Price-amount amount">
-                                                                                <span class="woocommerce-Price-currencySymbol">$</span><?= $item->price;?></span>
+                                                                                <?= $item->price;?><span class="woocommerce-Price-currencySymbol"> so'm</span></span>
                                                                         </span>
                                                                         <!-- .price -->
                                                                         <a class="button add_to_cart_button add-to-cart" data-id="<?= $product->id;?>" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>
