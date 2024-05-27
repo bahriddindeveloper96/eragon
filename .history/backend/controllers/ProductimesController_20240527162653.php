@@ -171,7 +171,7 @@ public function actionCreate($id)
     if ($this->request->isPost) {       
         if ($model->load($post)) {
             // Set updated_by attribute to created_by before saving
-            $model->updated_by = $product->created_by;                       
+            $model->updated_by = $model->created_by;                       
             if ($model->save()) {
                
              } 
@@ -218,8 +218,8 @@ public function actionCreate($id)
 
             foreach ($modelsPhoto as $index => $modelValue) {
                 $modelValue->product_items_id = $model->id;
-                $modelValue->created_by = $product->created_by;
-                $modelValue->updated_by = $product->updated_by;
+                $modelValue->created_by = $model->created_by;
+                $modelValue->updated_by = $model->updated_by;
                 
                 
                 $modelValue->s_photo = UploadedFile::getInstance($modelValue, "[{$index}]photo");                
