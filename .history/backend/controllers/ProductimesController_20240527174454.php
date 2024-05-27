@@ -213,7 +213,6 @@ public function actionCreate($id)
                 // You can log the error or perform any other actions here
                 Yii::error('Failed to save the Category model.');
             }
-            $product = Product::findOne($id);
             $modelsPhoto = Model::createMultiple(Photo::className(),  $modelsPhoto);
             Model::loadMultiple($modelsPhoto, $post);
 
