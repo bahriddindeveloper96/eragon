@@ -1,46 +1,13 @@
+<?php
+    use app\components\BrandWidget;
+    use app\components\BannerWidget;
+?>
 <div id="content" class="site-content">
                 <div class="col-full">
                     <div class="row">
                         <div id="primary" class="content-area">
                             <main id="main" class="site-main">
-                                <?php if(!empty($banners)):?>
-                                    <div class="home-v1-slider home-slider">
-                                        <?php foreach($banners as $banner):?>
-                                            <div class="slider-1" style="background-image: url(<?= Yii::getAlias('@fileUrl') ?>/backend/web/uploads/banner/<?= $banner->background ?>);">
-                                                <?= \yii\helpers\Html::img(Yii::getAlias('@fileUrl') . '/backend/web/uploads/banner/' . $banner->photo, [
-                                                                    'width' => '600',
-                                                                    'height' => '600',
-                                                                    'alt' => "$banner->name_uz",
-                                                                ]) ?>
-                                                <div class="caption">
-                                                    <div class="title"><?= $banner->name_uz;?></div>
-                                                    <div class="sub-title"><?= $banner->description_uz;?></div>
-                                                    <div class="button">Batafsil
-                                                        <i class="tm tm-long-arrow-right"></i>
-                                                    </div>
-                                                    <!-- <div class="bottom-caption">Free shipping on US Terority</div> -->
-                                                </div>
-                                            </div>
-                                            <!-- .slider-1 -->
-                                            <!-- <div class="slider-1 slider-2" style="background-image: url(images/eragon/home-v2-background.jpg);">
-                                                <img src="/images/eragon/banner-2.png" alt="">
-                                                <div class="caption">
-                                                    <div class="title">The new-tech gift you
-                                                        <br> are wishing for is
-                                                        <br> right here</div>
-                                                    <div class="sub-title">Big screens in incredibly slim designs
-                                                        <br>that in your hand.</div>
-                                                    <div class="button">Browse now
-                                                        <i class="tm tm-long-arrow-right"></i>
-                                                    </div>
-                                                    <div class="bottom-caption">Free shipping on US Terority </div>
-                                                </div>
-                                            </div> -->
-                                            <!-- .slider-2 -->
-                                        <?php endforeach;?>
-                                        
-                                    </div>
-                                <?php endif;?>
+                                <?= BannerWidget::widget() ?>
                                 <!-- .home-v1-slider -->
                                 <div class="section-deals-carousel-and-products-carousel-tabs row">
                                     <section class="column-1 deals-carousel" id="sale-with-timer-carousel">
@@ -2821,99 +2788,7 @@
                                     <!-- /.section-header -->
                                 </div>
                                 <!-- /.banner -->
-                                <section class="brands-carousel">
-                                    <h2 class="sr-only">Brands Carousel</h2>
-                                    <div class="col-full" data-ride="tm-slick-carousel" data-wrap=".brands" data-slick="{&quot;slidesToShow&quot;:6,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:false,&quot;arrows&quot;:true,&quot;responsive&quot;:[{&quot;breakpoint&quot;:400,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesToScroll&quot;:1}},{&quot;breakpoint&quot;:800,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3}},{&quot;breakpoint&quot;:992,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3}},{&quot;breakpoint&quot;:1200,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}},{&quot;breakpoint&quot;:1400,&quot;settings&quot;:{&quot;slidesToShow&quot;:5,&quot;slidesToScroll&quot;:5}}]}">
-                                        <div class="brands">
-                                            <div class="item">
-                                                <a href="shop.html">
-                                                    <figure>
-                                                        <figcaption class="text-overlay">
-                                                            <div class="info">
-                                                                <h4>apple</h4>
-                                                            </div>
-                                                            <!-- /.info -->
-                                                        </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="apple" src="/images/eragon/brand-1.png">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                            <!-- .item -->
-                                            <div class="item">
-                                                <a href="shop.html">
-                                                    <figure>
-                                                        <figcaption class="text-overlay">
-                                                            <div class="info">
-                                                                <h4>bosch</h4>
-                                                            </div>
-                                                            <!-- /.info -->
-                                                        </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="bosch" src="/images/eragon/brand-3.png">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                            <!-- .item -->
-                                            <div class="item">
-                                                <a href="shop.html">
-                                                    <figure>
-                                                        <figcaption class="text-overlay">
-                                                            <div class="info">
-                                                                <h4>cannon</h4>
-                                                            </div>
-                                                            <!-- /.info -->
-                                                        </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="cannon" src="/images/eragon/brand-2.png">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                            <!-- .item -->
-                                            <div class="item">
-                                                <a href="shop.html">
-                                                    <figure>
-                                                        <figcaption class="text-overlay">
-                                                            <div class="info">
-                                                                <h4>connect</h4>
-                                                            </div>
-                                                            <!-- /.info -->
-                                                        </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="connect" src="/images/eragon/brand-4.png">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                            <!-- .item -->
-                                            <div class="item">
-                                                <a href="shop.html">
-                                                    <figure>
-                                                        <figcaption class="text-overlay">
-                                                            <div class="info">
-                                                                <h4>galaxy</h4>
-                                                            </div>
-                                                            <!-- /.info -->
-                                                        </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="galaxy" src="/images/eragon/brand-5.png">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                            <!-- .item -->
-                                            <div class="item">
-                                                <a href="shop.html">
-                                                    <figure>
-                                                        <figcaption class="text-overlay">
-                                                            <div class="info">
-                                                                <h4>gopro</h4>
-                                                            </div>
-                                                            <!-- /.info -->
-                                                        </figcaption>
-                                                        <img width="145" height="50" class="img-responsive desaturate" alt="gopro" src="/images/eragon/brand-2.png">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                            <!-- .item -->
-                                          
-                                        </div>
-                                    </div>
-                                    <!-- .col-full -->
-                                </section>
+                                <?= BrandWidget::widget() ?>
                                 <!-- .brands-carousel -->
                             </main>
                             <!-- #main -->

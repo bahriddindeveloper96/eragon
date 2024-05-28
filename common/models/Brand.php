@@ -1,6 +1,8 @@
 <?php
 
 namespace common\models;
+use yii\db\Expression;
+
 
 use Yii;
 
@@ -37,7 +39,8 @@ class Brand extends \yii\db\ActiveRecord
         return [
             [['created_by', 'updated_by'], 'required'],
             [['created_by', 'updated_by'], 'integer'],
-            [['name_uz', 'name_ru', 'icon', 'description'], 'string', 'max' => 255],
+            [['name_uz', 'name_ru','description'], 'string', 'max' => 255],
+            [['icon'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['created_by' => 'id']],
             [['updated_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['updated_by' => 'id']],
         ];
@@ -58,6 +61,16 @@ class Brand extends \yii\db\ActiveRecord
             'updated_by' => Yii::t('app', 'Updated By'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    
 
     /**
      * Gets query for [[CreatedBy]].

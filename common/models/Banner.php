@@ -91,6 +91,24 @@ class Banner extends \yii\db\ActiveRecord
             'status' => Yii::t('app', 'Status'),
         ];
     }
+    public function getName(){
+
+        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+
+        endif;
+    }
+    public function getDescription(){
+
+        if (Yii::$app->language == 'uz'):  return $this->description_uz;
+
+        endif;
+        if (Yii::$app->language == 'ru'):  return $this->description_ru;
+
+        endif;
+    }
 
     /**
      * Gets query for [[CreatedBy]].

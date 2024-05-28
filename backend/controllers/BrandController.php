@@ -7,7 +7,9 @@ use common\models\BrandSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\web\UploadedFile;
+use yii\helpers\FileHelper;
+use Yii;
 /**
  * BrandController implements the CRUD actions for Brand model.
  */
@@ -65,16 +67,46 @@ class BrandController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
+    // public function actionCreate()
+    // {
+    //     $model = new Brand();
+
+    //     if ($this->request->isPost) {
+
+    //         if ($model->load($this->request->post()) && $model->save()) {
+    //             return $this->redirect(['view', 'id' => $model->id]);
+    //         }
+    //     } else {
+    //         $model->loadDefaultValues();
+    //     }
+
+    //     return $this->render('create', [
+    //         'model' => $model,
+    //     ]);
+    // }
     public function actionCreate()
     {
         $model = new Brand();
 
-        if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
-                return $this->redirect(['view', 'id' => $model->id]);
+        if (Yii::$app->request->isPost) {
+            $model->load(Yii::$app->request->post());
+
+            // Retrieve uploaded files
+            $model->icon = UploadedFile::getInstance($model, 'icon');
+           
+
+            // Validate and save the model
+            if ($model->validate()) {
+                // Save the model first
+                if ($model->save()) {
+                    // Upload files if they exist
+                    
+                    $model->icon->saveAs(Yii::getAlias('@webroot/uploads/brand/') . $model->icon->baseName . '.' . $model->icon->extension);
+                    
+                    
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
             }
-        } else {
-            $model->loadDefaultValues();
         }
 
         return $this->render('create', [
@@ -92,10 +124,26 @@ class BrandController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+         if (Yii::$app->request->isPost) {
+            $model->load(Yii::$app->request->post());
 
-        if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
+            // Retrieve uploaded files
+            $model->icon = UploadedFile::getInstance($model, 'icon');
+           
+
+            // Validate and save the model
+            if ($model->validate()) {
+                // Save the model first
+                if ($model->save()) {
+                    // Upload files if they exist
+                    
+                    $model->icon->saveAs(Yii::getAlias('@webroot/uploads/brand/') . $model->icon->baseName . '.' . $model->icon->extension);
+                    
+                    
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
+            }
+        }      
 
         return $this->render('update', [
             'model' => $model,

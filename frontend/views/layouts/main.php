@@ -12,6 +12,7 @@ use yii\bootstrap5\NavBar;
 use app\components\MenuWidget;
 use app\components\MobileWidget;
 use app\components\MiniCartWidget;
+use app\components\BrandWidget;
 use app\components\miniMenuWidget;
 use yii\bootstrap5\Modal;
 use yii\helpers\Url;
