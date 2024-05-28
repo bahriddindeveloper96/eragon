@@ -2,6 +2,7 @@
 
 namespace common\models;
 
+
 use Yii;
 
 /**
@@ -38,11 +39,11 @@ class OrderItems extends \yii\db\ActiveRecord
     {
         return [
             [['order_id', 'product_id', 'qty_item'], 'integer'],
-            [['name_uz', 'name_ru', 'surname_uz', 'surname_ru', 'qty_item'], 'required'],
+            [['name','surname','qty_item'], 'required'],
             [['price', 'sum_item'], 'number'],
-            [['name_uz', 'name_ru', 'surname_uz', 'surname_ru'], 'string', 'max' => 255],
+            [['name',  'surname'], 'string', 'max' => 255],
             [['order_id'], 'exist', 'skipOnError' => true, 'targetClass' => Order::class, 'targetAttribute' => ['order_id' => 'id']],
-            [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],
+            [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => ProductItems::class, 'targetAttribute' => ['product_id' => 'id']],
         ];
     }
 
@@ -55,33 +56,32 @@ class OrderItems extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'order_id' => Yii::t('app', 'Order ID'),
             'product_id' => Yii::t('app', 'Product ID'),
-            'name_uz' => Yii::t('app', 'Name Uz'),
-            'name_ru' => Yii::t('app', 'Name Ru'),
-            'surname_uz' => Yii::t('app', 'Surname Uz'),
-            'surname_ru' => Yii::t('app', 'Surname Ru'),
+            'name' => Yii::t('app', 'Name Uz'),            
+            'surname' => Yii::t('app', 'Surname Uz'),
+           
             'price' => Yii::t('app', 'Price'),
             'qty_item' => Yii::t('app', 'Qty Item'),
             'sum_item' => Yii::t('app', 'Sum Item'),
         ];
     }
-    public function getName(){
+    // public function getName(){
 
-        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+    //     if (Yii::$app->language == 'uz'):  return $this->name_uz;
 
-        endif;
-        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+    //     endif;
+    //     if (Yii::$app->language == 'ru'):  return $this->name_ru;
 
-        endif;
-    }
-    public function getSurname(){
+    //     endif;
+    // }
+    // public function getSurname(){
 
-        if (Yii::$app->language == 'uz'):  return $this->surnamename_uz;
+    //     if (Yii::$app->language == 'uz'):  return $this->surnamename_uz;
 
-        endif;
-        if (Yii::$app->language == 'ru'):  return $this->surname_ru;
+    //     endif;
+    //     if (Yii::$app->language == 'ru'):  return $this->surname_ru;
 
-        endif;
-    }
+    //     endif;
+    // }
 
     /**
      * Gets query for [[Order]].
@@ -100,6 +100,6 @@ class OrderItems extends \yii\db\ActiveRecord
      */
     public function getProduct()
     {
-        return $this->hasOne(Product::class, ['id' => 'product_id']);
+        return $this->hasOne(ProductItems::class, ['id' => 'product_id']);
     }
 }

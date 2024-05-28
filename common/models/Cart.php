@@ -30,7 +30,7 @@ class Cart extends Model
             $_SESSION['cart'][$product->id]['qty'] += $qty;
         }else{
             $_SESSION['cart'][$product->id] = [
-                'name_uz' => $product->name_uz,
+                'name' => $product->product->name_uz,
                 'price' => $product->price,
                 'qty' => $qty,
                 'photo' => $product->photos,
@@ -38,6 +38,9 @@ class Cart extends Model
         }
         $_SESSION['cart.qty'] = isset($_SESSION['cart.qty']) ? $_SESSION['cart.qty'] + $qty : $qty;
         $_SESSION['cart.sum'] = isset($_SESSION['cart.sum']) ? $_SESSION['cart.sum'] + $qty * $product->price : $qty * $product->price;
+        // echo '<pre>';
+        //     var_dump($product->photos);die();
+        // echo '</pre>';
         
     }
 

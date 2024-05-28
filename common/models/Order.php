@@ -49,10 +49,10 @@ class Order extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['created_at', 'updated_at', 'qty', 'name_uz', 'name_ru', 'surname_uz', 'surname_ru', 'phone', 'address_uz', 'address_ru', 'address2_uz', 'address2_ru'], 'required'],
+            [[ 'qty', 'name','surname',  'phone', 'address', 'address2'], 'required'],
             [['created_at', 'updated_at', 'qty', 'status'], 'integer'],
             [['sum'], 'number'],
-            [['name_uz', 'name_ru', 'surname_uz', 'surname_ru', 'email', 'phone', 'address_uz', 'address_ru', 'address2_uz', 'address2_ru'], 'string', 'max' => 255],
+            [['name', 'surname', 'email', 'phone', 'address','address2'], 'string', 'max' => 255],
         ];
     }
 
@@ -68,54 +68,50 @@ class Order extends \yii\db\ActiveRecord
             'qty' => Yii::t('app', 'Qty'),
             'sum' => Yii::t('app', 'Sum'),
             'status' => Yii::t('app', 'Status'),
-            'name_uz' => Yii::t('app', 'Name Uz'),
-            'name_ru' => Yii::t('app', 'Name Ru'),
-            'surname_uz' => Yii::t('app', 'Surname Uz'),
-            'surname_ru' => Yii::t('app', 'Surname Ru'),
+            'name' => Yii::t('app', 'Name Uz'),           
+            'surname' => Yii::t('app', 'Surname Uz'),            
             'email' => Yii::t('app', 'Email'),
-            'phone' => Yii::t('app', 'Phone'),
-            'address_uz' => Yii::t('app', 'Address Uz'),
-            'address_ru' => Yii::t('app', 'Address Ru'),
-            'address2_uz' => Yii::t('app', 'Address2 Uz'),
-            'address2_ru' => Yii::t('app', 'Address2 Ru'),
+            'phone' => Yii::t('app', 'Phone'),            
+            'address' => Yii::t('app', 'Address Ru'),            
+            'address2' => Yii::t('app', 'Address2 Ru'),
         ];
     }
-    public function getName(){
+    // public function getName(){
 
-        if (Yii::$app->language == 'uz'):  return $this->name_uz;
+    //     if (Yii::$app->language == 'uz'):  return $this->name_uz;
 
-        endif;
-        if (Yii::$app->language == 'ru'):  return $this->name_ru;
+    //     endif;
+    //     if (Yii::$app->language == 'ru'):  return $this->name_ru;
 
-        endif;
-    }
-    public function getSurname(){
+    //     endif;
+    // }
+    // public function getSurname(){
 
-        if (Yii::$app->language == 'uz'):  return $this->surname_uz;
+    //     if (Yii::$app->language == 'uz'):  return $this->surname_uz;
 
-        endif;
-        if (Yii::$app->language == 'ru'):  return $this->surname_ru;
+    //     endif;
+    //     if (Yii::$app->language == 'ru'):  return $this->surname_ru;
 
-        endif;
-    }
-    public function getAddress(){
+    //     endif;
+    // }
+    // public function getAddress(){
 
-        if (Yii::$app->language == 'uz'):  return $this->address_uz;
+    //     if (Yii::$app->language == 'uz'):  return $this->address_uz;
 
-        endif;
-        if (Yii::$app->language == 'ru'):  return $this->address_ru;
+    //     endif;
+    //     if (Yii::$app->language == 'ru'):  return $this->address_ru;
 
-        endif;
-    }
-    public function getAddress2(){
+    //     endif;
+    // }
+    // public function getAddress2(){
 
-        if (Yii::$app->language == 'uz'):  return $this->address2_uz;
+    //     if (Yii::$app->language == 'uz'):  return $this->address2_uz;
 
-        endif;
-        if (Yii::$app->language == 'ru'):  return $this->address2_ru;
+    //     endif;
+    //     if (Yii::$app->language == 'ru'):  return $this->address2_ru;
 
-        endif;
-    }
+    //     endif;
+    // }
 
     /**
      * Gets query for [[OrderItems]].

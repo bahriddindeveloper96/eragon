@@ -3,7 +3,7 @@
 namespace frontend\controllers;
 
 use common\models\Cart;
-use common\models\Product;
+use common\models\ProductItems;
 use common\models\Order;
 use common\models\OrderItems;
 use yii\web\Controller;
@@ -17,7 +17,7 @@ class CartController extends Controller
         $id = Yii::$app->request->get('id');
         $qty = (int) Yii::$app->request->get('qty');
         $qty = !$qty ? 1 : $qty;
-        $product = Product::findOne($id);
+        $product = ProductItems::findOne($id);
         
         if(empty($product)) {
             return false;
@@ -83,7 +83,7 @@ class CartController extends Controller
         $order = new Order();
         if($order->load(Yii::$app->request->post())){
             $order->qty = $session['cart.qty'];
-            $order->sum = $session['cart.sum'];
+            $order->sum = $session['cart.sum'];           
             if($order->save()){
                 $this->saveOrderItems($session['cart'],$order->id);
                 Yii::$app->session->setFlash('success','Ваш заказ принять');
@@ -105,11 +105,17 @@ class CartController extends Controller
             $order_items->order_id = $order_id;
             $order_items->product_id = $id;
             $order_items->name = $item['name'];
-           // $order_items->surname = $item['surname'];
+           // $order_items->name_ru = $item['name_ru'];
+            //$order_items->surname_uz = $item['surname'];
+            $order_items->surname = $item['name'];
             $order_items->price = $item['price'];
             $order_items->qty_item = $item['qty'];
             $order_items->sum_item = $item['qty'] * $item['price'];
+            // echo '<pre>';
+            //     var_dump($order_items->order_id);die();
+            // echo '</pre>';
             $order_items->save();
+            
         }
     }
 }

@@ -141,7 +141,7 @@
                                                                 </div>
                                                                 <!-- .quantity -->
                                                                 <div class="m-3 mt-5">
-                                                                <a data-id="<?= $product->id ?>" class="single_add_to_cart_button button add-to-cart">Add to cart</a>               
+                                                                <a data-id="<?= $item->id ?>" class="single_add_to_cart_button button add-to-cart">Add to cart</a>               
                                                                 </div>
                                                                 
                                                                 <!-- <button data-id="" class="single_add_to_cart_button button add-to-cart" value="185" name="add-to-cart" type="submit">Add to cart</button> -->

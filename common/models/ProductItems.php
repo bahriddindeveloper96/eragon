@@ -118,6 +118,7 @@ class ProductItems extends \yii\db\ActiveRecord
     {
         return $this->hasMany(ProductValue::class, ['product_items_id' => 'id']);
     }
+    
 
     /**
      * Gets query for [[UpdatedBy]].

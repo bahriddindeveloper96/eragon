@@ -92,11 +92,15 @@
                                                     <div class="row">
                                                         <div class="row col-sm-8">                                                           
                                                                 <?= $form->field($order, 'name'); ?>
+                                                               
                                                                  <?= $form->field($order, 'surname'); ?>
+                                                                 
                                                                 <?= $form->field($order, 'email'); ?> 
                                                                 <?= $form->field($order, 'phone'); ?>
                                                                 <?= $form->field($order, 'address'); ?>
+                                                                
                                                                 <?= $form->field($order, 'address2'); ?>
+                                                                
                                                         </div>                                                        
                                                         <div class="col-sm-4">
                                                             <!-- .col2-set -->

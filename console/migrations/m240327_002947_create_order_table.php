@@ -19,16 +19,14 @@ class m240327_002947_create_order_table extends Migration
             'qty' => $this->integer(11)->notNull(),
             'sum' => $this->float(),
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
-            'name_uz' => $this->string()->notNull(),
-            'name_ru' => $this->string()->notNull(),
-            'surname_uz' => $this->string()->notNull(),
-            'surname_ru' => $this->string()->notNull(),
+            'name' => $this->string()->notNull(),
+           
+            'surname' => $this->string()->notNull(),
+            
             'email' => $this->string(),
             'phone' => $this->string()->notNull(),
-            'address_uz' => $this->string()->notNull(),
-            'address_ru' => $this->string()->notNull(),
-            'address2_uz' => $this->string()->notNull(),
-            'address2_ru' => $this->string()->notNull(),
+            'address' => $this->string()->notNull(),            
+            'address2' => $this->string()->notNull(),           
         ]);
     }
 

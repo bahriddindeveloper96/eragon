@@ -126,7 +126,7 @@
                                                                     <?= $product->description;?>
                                                             </div>
                                                             <!-- .woocommerce-product-details__short-description -->
-                                                            <a data-id="<?= $product->id;?>" class="button product_type_simple add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to cart</a>
+                                                            <a data-id="<?= $item->id;?>" class="button product_type_simple add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$item->id]);?>">Add to cart</a>
                                                             <a class="add-to-compare-link" href="#">Add to compare</a>
                                                         </div>
                                                     <?php endforeach;?>
@@ -200,7 +200,7 @@
                                                                                 <?= $item->price;?><span class="woocommerce-Price-currencySymbol"> so'm</span></span>
                                                                         </span>
                                                                         <!-- .price -->
-                                                                        <a class="button add_to_cart_button add-to-cart" data-id="<?= $product->id;?>" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to Cart</a>
+                                                                        <a class="button add_to_cart_button add-to-cart" data-id="<?= $item->id;?>" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$item->id]);?>">Add to Cart</a>
                                                                         <a class="add-to-compare-link" href="compare.html">Add to compare</a>
                                                                     </div>
                                                                     <!-- .product-actions -->

@@ -126,7 +126,7 @@
                                                                     <?= $product->description;?>
                                                             </div>
                                                             <!-- .woocommerce-product-details__short-description -->
-                                                            <a data-id="<?= $product->id;?>" class="button product_type_simple add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$product->id]);?>">Add to cart</a>
+                                                            <a data-id="<?= $item->id;?>" class="button product_type_simple add_to_cart_button add-to-cart" href="<?= \yii\helpers\Url::to(['cart/add','id'=>$item->id]);?>">Add to cart</a>
                                                             <a class="add-to-compare-link" href="#">Add to compare</a>
                                                         </div>
                                                     <?php endforeach;?>
