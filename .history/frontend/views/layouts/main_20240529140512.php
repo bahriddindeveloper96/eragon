@@ -482,7 +482,6 @@ AppAsset::register($this);
             <?php Modal::begin([
                 'title' => '<h2>'.\Yii::t('app', 'Корзина').'</h2>', 
                 'id' => 'cart',
-                'options' => ['style' => 'margin-top:6%;'],
                 'footer' => '<button type="button" class="btn btn-default" data-bs-dismiss="modal">'.\Yii::t('app', 'Покупка').'</button>
                 <button type="button" class="btn btn-danger" onclick="clearCart()">'.\Yii::t('app', 'Очистить корзину').'</button>
                 <a href="'. \yii\helpers\Url::to(['cart/view']) .'" class="btn btn-primary">'.\Yii::t('app', 'Оформить заказ').'</a>'
