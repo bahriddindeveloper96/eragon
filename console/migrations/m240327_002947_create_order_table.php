@@ -14,10 +14,11 @@ class m240327_002947_create_order_table extends Migration
     {
         $this->createTable('{{%order}}', [
             'id' => $this->primaryKey(),
+            'user_id' => $this->integer()->notNull(),
             'created_at' => $this->integer()->notNull(),
             'updated_at' => $this->integer()->notNull(),
             'qty' => $this->integer(11)->notNull(),
-            'sum' => $this->float(),
+            'amount' => $this->float(),
             'status' => $this->smallInteger()->notNull()->defaultValue(10),
             'name' => $this->string()->notNull(),
            
@@ -28,6 +29,8 @@ class m240327_002947_create_order_table extends Migration
             'address' => $this->string()->notNull(),            
             'address2' => $this->string()->notNull(),           
         ]);
+        $this->createIndex('index-order-user_id', 'order', 'user_id');
+        $this->addForeignKey('fkey-order-user_id', 'order', 'user_id', 'user', 'id', 'CASCADE', 'CASCADE');
     }
 
     /**

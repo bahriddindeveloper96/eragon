@@ -2,6 +2,7 @@
 
 namespace common\models;
 use common\models\OrderItems;
+use common\models\User;
 use yii\behaviors\TimestampBehavior;
 use Yii;
 
@@ -49,9 +50,9 @@ class Order extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [[ 'qty', 'name','surname',  'phone', 'address', 'address2'], 'required'],
-            [['created_at', 'updated_at', 'qty', 'status'], 'integer'],
-            [['sum'], 'number'],
+            [[ 'qty','user_id', 'name','surname',  'phone', 'address', 'address2'], 'required'],
+            [['created_at', 'updated_at', 'qty','user_id', 'status'], 'integer'],
+            [['amount'], 'number'],
             [['name', 'surname', 'email', 'phone', 'address','address2'], 'string', 'max' => 255],
         ];
     }
@@ -121,5 +122,9 @@ class Order extends \yii\db\ActiveRecord
     public function getOrderItems()
     {
         return $this->hasMany(OrderItems::class, ['order_id' => 'id']);
+    }
+    public function getUser()
+    {
+        return $this->hasOne(User::class, ['id' => 'user_id']);
     }
 }

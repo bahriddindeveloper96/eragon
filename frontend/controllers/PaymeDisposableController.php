@@ -9,7 +9,7 @@ use uzdevid\payme\merchant\disposable\DisposableControllerInterface;
 
 class PaymeDisposableController extends DisposableAccount implements DisposableControllerInterface {
     public function init(): void {
-        $this->key = $_ENV['PAYME_TEST_KEY'];
+        $this->key = '0VZmO5fdONRr19uId5XyDaNh3JHmdwReG?Hg';
         parent::init();
     }
 

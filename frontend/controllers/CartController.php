@@ -83,7 +83,11 @@ class CartController extends Controller
         $order = new Order();
         if($order->load(Yii::$app->request->post())){
             $order->qty = $session['cart.qty'];
-            $order->sum = $session['cart.sum'];           
+            $order->amount = $session['cart.sum']; 
+            $order->user_id = Yii::$app->user->id; 
+            // echo '<pre>';
+            //     var_dump($order->save());die();
+            // echo '</pre>';          
             if($order->save()){
                 $this->saveOrderItems($session['cart'],$order->id);
                 Yii::$app->session->setFlash('success','Ваш заказ принять');
