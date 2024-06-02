@@ -8,8 +8,9 @@ use uzdevid\payme\merchant\disposable\DisposableAccount;
 use uzdevid\payme\merchant\disposable\DisposableControllerInterface;
 
 class PaymeDisposableController extends DisposableAccount implements DisposableControllerInterface {
+    public $enableCsrfValidation = false;
     public function init(): void {
-        $this->key = $_ENV['PAYME_TEST_KEY'];
+        $this->key = getenv('PAYME_TEST_KEY');
        // $this->merchantId = '628783c3d7e616cbdee67d34'; // YOUR_MERCHANT_ID o'rniga sizning ma'lumotlaringizga mos "merchant ID" ni yozing
         parent::init();
     }
