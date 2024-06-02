@@ -10,7 +10,8 @@ use common\models\PaymeTransaction;
 class PaymeController extends SavingsAccount implements SavingsControllerInterface {
     
     public function init(): void {
-        $this->key = "{payme kaliti}";
+        $this->key = $_ENV['PAYME_TEST_KEY'];
+       // $this->merchantId = '628783c3d7e616cbdee67d34'; // YOUR_MERCHANT_ID o'rniga sizning ma'lumotlaringizga mos "merchant ID" ni yozing
         parent::init();
     }
 

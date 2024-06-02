@@ -30,7 +30,8 @@
     "wbraganca/yii2-dynamicform": "*",
     "kartik-v/yii2-widget-datepicker": "1.4.x-dev",
     "bizley/quill": "^3.3",
-    "uzdevid/yii2-payme": "2.0"
+    "uzdevid/yii2-payme": "2.0",
+    "vlucas/phpdotenv": "^5.6"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "~2.1.0",
