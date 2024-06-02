@@ -2,6 +2,7 @@
 
 namespace common\models;
 use common\models\ProductValue;
+use yii\behaviors\TimestampBehavior;
 
 use Yii;
 
@@ -41,7 +42,7 @@ class ProductItems extends \yii\db\ActiveRecord
         return [
             [['product_id', 'color_id', 'created_by', 'updated_by'], 'integer'],
             [['created_by', 'updated_by'], 'required'],
-            [['price', 'old_price'], 'string', 'max' => 255],
+            [['price', 'old_price','status',], 'string', 'max' => 255],
             [['color_id'], 'exist', 'skipOnError' => true, 'targetClass' => Color::class, 'targetAttribute' => ['color_id' => 'id']],
             [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => Vendor::class, 'targetAttribute' => ['created_by' => 'id']],
             [['product_id'], 'exist', 'skipOnError' => true, 'targetClass' => Product::class, 'targetAttribute' => ['product_id' => 'id']],

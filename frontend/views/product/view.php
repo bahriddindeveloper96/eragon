@@ -24,9 +24,14 @@
                                             <div class="single-product-wrapper">
                                                 <div class="product-images-wrapper thumb-count-4">
                                                     <span class="onsale">-
+                                                        <?php 
+                                                            $wallet = $item->old_price;
+                                                            $wallets = $item->price;
+                                                            $itog = $wallet - $wallets;
+                                                        ?>
                                                         <span class="woocommerce-Price-amount amount">
                                                             
-                                                            <?= $item->old_price;?><span class="woocommerce-Price-currencySymbol"> so'm</span>
+                                                            <?= $itog;?><span class="woocommerce-Price-currencySymbol"> so'm</span>
                                                         </span>
                                                     </span>
                                                     <!-- .onsale -->

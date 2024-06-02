@@ -17,6 +17,7 @@ class m240128_105731_create_product_items_table extends Migration
             'product_id' => $this->integer(),
             'color_id' => $this->integer(),
             'price' => $this->string(),
+            'status' => $this->string(),
             'old_price' => $this->string(),            
             'created_by' => $this->integer()->notNull(),
             'updated_by' => $this->integer()->notNull(),

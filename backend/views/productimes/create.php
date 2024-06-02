@@ -51,10 +51,13 @@ $this->params['breadcrumbs'][] = $this->title;
                         'formFields' => ['category_id', 'name'],
                     ]); ?>                   
                      <div class="row">                        
-                        <div class="col-sm-12">                            
+                        <div class="col-sm-8">                            
                             <?= $form->field($model, 'product_id')->dropDownList([
                                 "$product->id" => $product->name
                             ]) ?> 
+                        </div>
+                        <div class="col-sm-4">                            
+                            <?= $form->field($model, 'status')->textInput(['maxlength' => true]) ?>
                         </div>
                     </div>               
                                     

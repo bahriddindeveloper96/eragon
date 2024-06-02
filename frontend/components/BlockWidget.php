@@ -1,6 +1,6 @@
 <?php 
 namespace app\components;
-use common\models\Banner;
+use common\models\ProductItems;
 
 use yii\base\Widget;
 
@@ -8,11 +8,11 @@ class BlockWidget extends Widget
 {
     public function run()
     {
-        $banners = Banner::find()->all();
+        $products = ProductItems::find()->where(['status'=>1])->all();
         
        
         return $this->render('block', [
-            'banners' => $banners,            
+            'products' => $products,            
         ]);
     }
 }
