@@ -10,6 +10,7 @@ use uzdevid\payme\merchant\disposable\DisposableControllerInterface;
 class PaymeDisposableController extends DisposableAccount implements DisposableControllerInterface {
     public function init(): void {
         $this->key = '0VZmO5fdONRr19uId5XyDaNh3JHmdwReG?Hg';
+        $this->merchantId = '628783c3d7e616cbdee67d34'; // YOUR_MERCHANT_ID o'rniga sizning ma'lumotlaringizga mos "merchant ID" ni yozing
         parent::init();
     }
 
